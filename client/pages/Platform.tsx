@@ -106,9 +106,10 @@ export default function Platform() {
 
       <div className="max-w-full mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
-          {/* Left Side - Specification File */}
-          <div className="space-y-4">
-            <Card className="h-full">
+          {/* Left Side - Specification File and Submittal Generation */}
+          <div className="space-y-6">
+            {/* Specification Document */}
+            <Card>
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between">
                   <CardTitle className="flex items-center">
@@ -116,7 +117,7 @@ export default function Platform() {
                     Specification Document
                   </CardTitle>
                   <div className="flex items-center space-x-2">
-                    <Badge variant="outline">Section 05.12</Badge>
+                    <Badge variant="outline">Section 07.50</Badge>
                     <Button variant="ghost" size="sm">
                       <Search className="h-4 w-4" />
                     </Button>
