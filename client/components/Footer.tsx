@@ -51,11 +51,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center">
               <img
-                src="/logo.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F8a1c079fe0344be5a1ef43b38026af4b?format=webp&width=800"
                 alt="Hafestus Logo"
-                className="h-8 w-auto"
+                className="h-10 w-auto"
                 onError={(e) => {
                   // Fallback to text logo if image fails to load
                   e.currentTarget.style.display = "none";
