@@ -1589,51 +1589,924 @@ export default function Platform() {
                                 </div>
                               </div>
 
-                              <div className="space-y-4 mt-8 text-xs text-gray-600 bg-gray-50 p-4 rounded">
-                                <p className="text-center font-semibold">
-                                  --- DOCUMENT CONTINUES ---
-                                </p>
-                                <p className="text-center">
-                                  Pages 2-50 contain additional sections
-                                  including:
-                                </p>
-                                <div className="grid grid-cols-2 gap-2 mt-4 text-[10px]">
+                              <div className="space-y-6 mt-8">
+                                <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                  SECTION 07 60 00 - FLASHING AND SHEET METAL
+                                  (CONTINUED)
+                                </h3>
+
+                                <div className="space-y-4">
                                   <div>
-                                    <p className="font-medium">
-                                      • Sheet Metal Materials (Pages 8-12)
-                                    </p>
-                                    <p>
-                                      • Installation Procedures (Pages 13-17)
-                                    </p>
-                                    <p>• Quality Control (Pages 18-20)</p>
-                                    <p>
-                                      • Section 07 70 00 - Roof Specialties
-                                      (Pages 21-28)
-                                    </p>
-                                    <p>
-                                      • Roof Hatches and Curbs (Pages 29-32)
-                                    </p>
+                                    <h4 className="font-bold mb-2">
+                                      PART 2 - PRODUCTS (CONTINUED)
+                                    </h4>
+
+                                    <div className="space-y-3">
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          2.3 SHEET METAL MATERIALS
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>A. Aluminum Sheet:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              1. Alloy: 3003-H14 for general
+                                              applications
+                                            </li>
+                                            <li>
+                                              2. Thickness: 0.050 inch (1.27 mm)
+                                              minimum for copings
+                                            </li>
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              3. Finish: Kynar 500 PVDF coating,
+                                              70% PVDF minimum
+                                            </li>
+                                            <li>
+                                              4. Color: As selected from
+                                              manufacturer's standard colors
+                                            </li>
+                                            <li>
+                                              5. Warranty: 20-year finish
+                                              warranty
+                                            </li>
+                                          </ul>
+                                          <p>B. Stainless Steel Sheet:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li>
+                                              1. Type: 316L stainless steel for
+                                              coastal environments
+                                            </li>
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              2. Thickness: 0.062 inch (1.57 mm)
+                                              minimum
+                                            </li>
+                                            <li>
+                                              3. Finish: 2B mill finish or No. 4
+                                              brushed
+                                            </li>
+                                            <li>
+                                              4. Temper: Half-hard (H1/2) for
+                                              forming
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          2.4 FASTENERS AND HARDWARE
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>A. Concealed Fasteners:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                              1. Type: Stainless steel screws
+                                              with EPDM washers
+                                            </li>
+                                            <li>
+                                              2. Size: #12 x 1-1/4 inch minimum
+                                              length
+                                            </li>
+                                            <li>
+                                              3. Thread: Self-drilling point for
+                                              steel substrates
+                                            </li>
+                                            <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                              4. Corrosion resistance: 1000-hour
+                                              salt spray test
+                                            </li>
+                                          </ul>
+                                          <p>B. Cleats and Clips:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li>
+                                              1. Material: Same as flashing
+                                              material
+                                            </li>
+                                            <li>
+                                              2. Thickness: 0.050 inch minimum
+                                            </li>
+                                            <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                              3. Spacing: 24 inches on center
+                                              maximum
+                                            </li>
+                                            <li>
+                                              4. Anchorage: Mechanical fasteners
+                                              into structure
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          2.5 SEALANTS AND GASKETS
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>A. Structural Glazing Sealant:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              1. Type: Two-component structural
+                                              silicone
+                                            </li>
+                                            <li>2. Shore A Hardness: 35 ± 5</li>
+                                            <li>
+                                              3. Movement capability: ±25%
+                                              minimum
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              4. UV resistance: No degradation
+                                              after 2000 hours
+                                            </li>
+                                          </ul>
+                                          <p>B. Weather Sealant:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li>
+                                              1. Type: Single-component
+                                              polyurethane
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              2. Life expectancy: 20 years
+                                              minimum
+                                            </li>
+                                            <li>
+                                              3. Temperature range: -40°F to
+                                              180°F
+                                            </li>
+                                            <li>
+                                              4. Tooling time: 15 minutes
+                                              minimum
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div>
-                                    <p className="font-medium">
-                                      • Section 07 80 00 - Fire Protection
-                                      (Pages 33-40)
-                                    </p>
-                                    <p>
-                                      • Section 07 90 00 - Joint Protection
-                                      (Pages 41-45)
-                                    </p>
-                                    <p>
-                                      • Testing and Commissioning (Pages 46-48)
-                                    </p>
-                                    <p>• Appendices A-C (Pages 49-50)</p>
-                                    <p>• Technical Data Sheets</p>
+
+                                  <div className="border-t pt-4">
+                                    <h4 className="font-bold mb-2">
+                                      PART 3 - EXECUTION
+                                    </h4>
+
+                                    <div className="space-y-3">
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          3.1 PREPARATION
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>
+                                            A. Verify that substrate surfaces
+                                            are clean, dry, and properly
+                                            prepared.
+                                          </p>
+                                          <p className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                            B. Install temporary weather
+                                            protection during installation.
+                                          </p>
+                                          <p>
+                                            C. Coordinate flashing installation
+                                            with membrane installation.
+                                          </p>
+                                          <p>
+                                            D. Mark locations of concealed
+                                            fasteners for future reference.
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          3.2 INSTALLATION OF THROUGH-WALL
+                                          FLASHING
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>
+                                            A. Install flashing in continuous
+                                            lengths where possible.
+                                          </p>
+                                          <p className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                            B. Lap joints minimum 6 inches in
+                                            direction of water flow.
+                                          </p>
+                                          <p>
+                                            C. Seal all joints with compatible
+                                            sealant.
+                                          </p>
+                                          <p>
+                                            D. Provide end dams at terminations.
+                                          </p>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          3.3 METAL COPING INSTALLATION
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>
+                                            A. Install over continuous cleat
+                                            system.
+                                          </p>
+                                          <p className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                            B. Provide thermal movement joints
+                                            every 40 feet.
+                                          </p>
+                                          <p>
+                                            C. Seal all joints with structural
+                                            glazing sealant.
+                                          </p>
+                                          <p>
+                                            D. Install drainage system at low
+                                            points.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
-                                <p className="text-center mt-4 font-medium">
-                                  All sections contain detailed AI-highlighted
-                                  requirements and manufacturer specifications
-                                </p>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    SECTION 07 70 00 - ROOF SPECIALTIES
+                                  </h3>
+
+                                  <div className="space-y-4">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 1 - GENERAL
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.1 SUMMARY
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Section includes:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                                1. Roof hatches and access doors
+                                              </li>
+                                              <li>
+                                                2. Equipment supports and curbs
+                                              </li>
+                                              <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                                3. Roof ventilators and exhaust
+                                                fans
+                                              </li>
+                                              <li>
+                                                4. Pipe supports and equipment
+                                                rails
+                                              </li>
+                                              <li>
+                                                5. Snow guards and edge
+                                                protection
+                                              </li>
+                                              <li>
+                                                6. Walkway systems and fall
+                                                protection
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.2 PERFORMANCE REQUIREMENTS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Structural Performance:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                                1. Design loads per ASCE 7 for
+                                                roof live loads
+                                              </li>
+                                              <li>
+                                                2. Wind resistance: 150 mph
+                                                basic wind speed
+                                              </li>
+                                              <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                                3. Seismic design category D
+                                                requirements
+                                              </li>
+                                              <li>
+                                                4. Snow load resistance: 40 psf
+                                                ground snow load
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 2 - PRODUCTS
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.1 ROOF HATCHES
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Personnel Hatches:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                                1. Size: 30" x 36" (762 x 914
+                                                mm) minimum
+                                              </li>
+                                              <li>
+                                                2. Material: Aluminum
+                                                construction with steel frame
+                                              </li>
+                                              <li>
+                                                3. Insulation: R-10 minimum
+                                                thermal resistance
+                                              </li>
+                                              <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                                4. Hardware: Self-closing spring
+                                                operators
+                                              </li>
+                                              <li>
+                                                5. Locking: Cylinder lock with
+                                                panic hardware
+                                              </li>
+                                              <li>
+                                                6. Ladder: Aluminum ship ladder,
+                                                OSHA compliant
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.2 EQUIPMENT SUPPORTS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Manufactured Curbs:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Material: Galvanized steel,
+                                                16 gauge minimum
+                                              </li>
+                                              <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                                2. Height: 8 inches minimum
+                                                above roof surface
+                                              </li>
+                                              <li>
+                                                3. Insulation: Continuous
+                                                insulation around perimeter
+                                              </li>
+                                              <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                                4. Thermal break: Non-conductive
+                                                material at base
+                                              </li>
+                                              <li>
+                                                5. Flashing: Integral flashing
+                                                with EPDM membrane
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.3 WALKWAY SYSTEMS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Rooftop Walkways:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-teal-100 px-2 py-1 rounded border-l-4 border-teal-500">
+                                                1. Material: Interlocking rubber
+                                                pavers
+                                              </li>
+                                              <li>
+                                                2. Thickness: 1/2 inch minimum
+                                              </li>
+                                              <li>
+                                                3. Size: 24" x 24" modular units
+                                              </li>
+                                              <li className="bg-teal-100 px-2 py-1 rounded border-l-4 border-teal-500">
+                                                4. Surface: Non-slip texture, UV
+                                                resistant
+                                              </li>
+                                              <li>
+                                                5. Installation: Ballasted
+                                                system, no penetrations
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 3 - EXECUTION
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            3.1 INSTALLATION OF ROOF HATCHES
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>
+                                              A. Install hatches plumb and
+                                              level.
+                                            </p>
+                                            <p className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                              B. Coordinate with structural
+                                              framing and roof membrane.
+                                            </p>
+                                            <p>
+                                              C. Install flashing and seal all
+                                              penetrations.
+                                            </p>
+                                            <p>
+                                              D. Test operation and adjust
+                                              hardware.
+                                            </p>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            3.2 EQUIPMENT SUPPORT INSTALLATION
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>
+                                              A. Coordinate curb locations with
+                                              equipment placement.
+                                            </p>
+                                            <p className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                              B. Install thermal breaks to
+                                              prevent condensation.
+                                            </p>
+                                            <p>
+                                              C. Provide vibration isolation
+                                              where required.
+                                            </p>
+                                            <p>
+                                              D. Test all connections for
+                                              structural adequacy.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    SECTION 07 80 00 - FIRE AND SMOKE PROTECTION
+                                  </h3>
+
+                                  <div className="space-y-4">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 1 - GENERAL
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.1 SUMMARY
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Section includes:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                                1. Fire-rated roof assemblies
+                                              </li>
+                                              <li>
+                                                2. Penetration fire-stopping
+                                                systems
+                                              </li>
+                                              <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                                3. Smoke and fire dampers
+                                              </li>
+                                              <li>
+                                                4. Emergency egress lighting
+                                              </li>
+                                              <li>
+                                                5. Fire alarm interface systems
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.2 FIRE RESISTANCE REQUIREMENTS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Roof Assembly Rating:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                                1. Fire resistance: 2-hour
+                                                rating minimum
+                                              </li>
+                                              <li>
+                                                2. Testing standard: UL 263
+                                                (ASTM E 119)
+                                              </li>
+                                              <li>
+                                                3. Class A fire rating per ASTM
+                                                E 108
+                                              </li>
+                                              <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                                4. FM Global approval required
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 2 - PRODUCTS
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.1 FIRE-STOPPING MATERIALS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Intumescent Sealants:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                                1. Type: Single-component
+                                                intumescent caulk
+                                              </li>
+                                              <li>
+                                                2. Fire rating: 3-hour F and T
+                                                rating
+                                              </li>
+                                              <li>
+                                                3. Temperature range: -20°F to
+                                                180°F
+                                              </li>
+                                              <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                                4. Movement capability: ±25%
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.2 FIRE DAMPERS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Roof Exhaust Fire Dampers:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Rating: 1.5-hour fire rating
+                                                minimum
+                                              </li>
+                                              <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                                2. Actuator: 165°F fusible link
+                                              </li>
+                                              <li>
+                                                3. Construction: Galvanized
+                                                steel frame
+                                              </li>
+                                              <li>
+                                                4. Leakage: Class I per UL 555
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    SECTION 07 90 00 - JOINT PROTECTION
+                                  </h3>
+
+                                  <div className="space-y-4">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 1 - GENERAL
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.1 SUMMARY
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Section includes:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-cyan-100 px-2 py-1 rounded border-l-4 border-cyan-500">
+                                                1. Building expansion joints
+                                              </li>
+                                              <li>
+                                                2. Control joints in roofing
+                                              </li>
+                                              <li>
+                                                3. Seismic separation joints
+                                              </li>
+                                              <li className="bg-cyan-100 px-2 py-1 rounded border-l-4 border-cyan-500">
+                                                4. Perimeter sealant joints
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            1.2 PERFORMANCE REQUIREMENTS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Movement Capability:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-cyan-100 px-2 py-1 rounded border-l-4 border-cyan-500">
+                                                1. Thermal movement: ±2 inches
+                                              </li>
+                                              <li>
+                                                2. Seismic movement: ±4 inches
+                                              </li>
+                                              <li>3. Wind sway: ±1 inch</li>
+                                              <li className="bg-cyan-100 px-2 py-1 rounded border-l-4 border-cyan-500">
+                                                4. Building settlement: 1/2 inch
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        PART 2 - PRODUCTS
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.1 EXPANSION JOINT SYSTEMS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>
+                                              A. Structural Expansion Joints:
+                                            </p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                                1. Type: Modular bridge system
+                                              </li>
+                                              <li>
+                                                2. Movement: ±4 inches total
+                                                movement
+                                              </li>
+                                              <li>
+                                                3. Weatherproofing: EPDM
+                                                compression seal
+                                              </li>
+                                              <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                                4. Fire rating: 2-hour assembly
+                                                rating
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            2.2 CONTROL JOINT FILLERS
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Preformed Joint Fillers:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Material: Closed-cell foam
+                                                rubber
+                                              </li>
+                                              <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                                2. Compression: 25% compression
+                                                set maximum
+                                              </li>
+                                              <li>
+                                                3. Temperature range: -40°F to
+                                                200°F
+                                              </li>
+                                              <li>
+                                                4. Ozone resistance: No cracking
+                                                after 100 hours
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    QUALITY CONTROL AND TESTING
+                                  </h3>
+
+                                  <div className="space-y-4">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        FIELD QUALITY CONTROL
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            Testing Requirements
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Membrane Testing:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                                1. Electronic leak detection:
+                                                100% of membrane area
+                                              </li>
+                                              <li>
+                                                2. Seam peel testing: 1 test per
+                                                500 linear feet
+                                              </li>
+                                              <li>
+                                                3. Flood testing: All roof areas
+                                                for 24 hours
+                                              </li>
+                                              <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                                4. Core cut testing: 2 cuts per
+                                                10,000 sq ft
+                                              </li>
+                                            </ul>
+                                            <p>B. Insulation Testing:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Thermal imaging: 100% of
+                                                insulated area
+                                              </li>
+                                              <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                                2. Moisture scanning: Bi-weekly
+                                                during installation
+                                              </li>
+                                              <li>
+                                                3. Fastener pullout: 1 test per
+                                                1,000 fasteners
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            Documentation Requirements
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Daily Reports:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Weather conditions and
+                                                temperatures
+                                              </li>
+                                              <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                                2. Materials installed and
+                                                quantities
+                                              </li>
+                                              <li>
+                                                3. Quality control test results
+                                              </li>
+                                              <li>
+                                                4. Deficiencies noted and
+                                                corrected
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    MAINTENANCE AND WARRANTY
+                                  </h3>
+
+                                  <div className="space-y-4">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        MAINTENANCE REQUIREMENTS
+                                      </h4>
+
+                                      <div className="space-y-3">
+                                        <div>
+                                          <h5 className="font-semibold">
+                                            Routine Maintenance
+                                          </h5>
+                                          <div className="ml-4 space-y-2">
+                                            <p>A. Monthly Inspections:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                                1. Check drains and gutters for
+                                                debris
+                                              </li>
+                                              <li>
+                                                2. Inspect membrane for damage
+                                                or wear
+                                              </li>
+                                              <li>
+                                                3. Verify flashing integrity
+                                              </li>
+                                              <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                                4. Document all findings with
+                                                photographs
+                                              </li>
+                                            </ul>
+                                            <p>B. Semi-Annual Maintenance:</p>
+                                            <ul className="ml-4 space-y-1">
+                                              <li>
+                                                1. Clean all roof drains and
+                                                scuppers
+                                              </li>
+                                              <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                                2. Inspect and clean HVAC
+                                                equipment
+                                              </li>
+                                              <li>3. Check walkway systems</li>
+                                              <li>
+                                                4. Test emergency roof access
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div className="border-t pt-6 mt-8">
+                                  <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                    APPENDICES
+                                  </h3>
+
+                                  <div className="space-y-4 text-xs">
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        APPENDIX A - TECHNICAL DATA SHEETS
+                                      </h4>
+                                      <p>
+                                        Complete manufacturer data sheets for
+                                        all specified products...
+                                      </p>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        APPENDIX B - INSTALLATION DETAILS
+                                      </h4>
+                                      <p>
+                                        Detailed installation drawings and
+                                        connection details...
+                                      </p>
+                                    </div>
+
+                                    <div>
+                                      <h4 className="font-bold mb-2">
+                                        APPENDIX C - WARRANTY DOCUMENTATION
+                                      </h4>
+                                      <p>
+                                        Sample warranty forms and registration
+                                        requirements...
+                                      </p>
+                                    </div>
+
+                                    <div className="bg-gray-100 p-4 rounded mt-6">
+                                      <p className="text-center font-bold text-gray-700">
+                                        END OF SPECIFICATION DOCUMENT
+                                      </p>
+                                      <p className="text-center text-gray-600 mt-2">
+                                        Metropolitan Hospital Expansion Project
+                                        • 50 Pages Complete
+                                      </p>
+                                      <p className="text-center text-gray-500 text-[10px] mt-1">
+                                        This document contains comprehensive
+                                        roofing specifications including
+                                        membrane systems, insulation, flashing,
+                                        specialties, fire protection, joint
+                                        protection, quality control, testing
+                                        procedures, maintenance requirements,
+                                        and technical appendices.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
