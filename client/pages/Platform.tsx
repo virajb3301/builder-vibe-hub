@@ -2247,7 +2247,7 @@ export default function Platform() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4 h-64 overflow-y-auto mb-4">
+                <div className="space-y-4 h-80 overflow-y-auto mb-4">
                   {chatHistory.map((chat, index) => (
                     <div
                       key={index}
