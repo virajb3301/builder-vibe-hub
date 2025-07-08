@@ -27,31 +27,33 @@ export default function Platform() {
   const aiRecommendations = [
     {
       id: 1,
-      type: "manufacturer",
-      title: "Steel Beam Recommendation",
-      manufacturer: "ArcelorMittal",
-      product: "W18x76 Wide Flange Beam",
-      compliance: 98,
+      type: "membrane",
+      title: "EPDM Membrane System",
+      manufacturer: "Carlisle SynTec",
+      product: 'Sure-Weld 0.060" EPDM Membrane',
+      compliance: 100,
       reason:
-        "Meets ASTM A992 Grade 50 specifications with superior load capacity",
+        "Exceeds ASTM D 4637 Type I specifications with 20-year warranty and proven hospital installation performance",
     },
     {
       id: 2,
-      type: "material",
-      title: "Concrete Mix Design",
-      manufacturer: "LafargeHolcim",
-      product: "4000 PSI High-Strength Concrete",
-      compliance: 95,
-      reason: "Complies with ACI 318 requirements for structural concrete",
+      type: "insulation",
+      title: "Polyiso Roof Insulation",
+      manufacturer: "GAF Materials",
+      product: "EnergyGuard Polyiso R-25",
+      compliance: 97,
+      reason:
+        "Meets R-25 thermal requirements with Class A fire rating and compatible adhesive system",
     },
     {
       id: 3,
-      type: "component",
-      title: "HVAC System",
-      manufacturer: "Carrier",
-      product: "AquaSnap 30RB Series Chiller",
-      compliance: 100,
-      reason: "Exceeds ASHRAE 90.1 energy efficiency standards",
+      type: "fasteners",
+      title: "Mechanical Fasteners",
+      manufacturer: "Olympic Fastening",
+      product: 'OlyFast 6" HD Insulation Fasteners',
+      compliance: 95,
+      reason:
+        "Provides 165 lbf/sq ft uplift resistance meeting wind load requirements per ASCE 7",
     },
   ];
 
