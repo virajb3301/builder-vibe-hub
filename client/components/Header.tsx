@@ -20,12 +20,24 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-primary rounded-lg p-1.5">
-              <Zap className="h-6 w-6 text-white" />
+            <img
+              src="/logo.png"
+              alt="Hafestus Logo"
+              className="h-8 w-auto"
+              onError={(e) => {
+                // Fallback to text logo if image fails to load
+                e.currentTarget.style.display = "none";
+                e.currentTarget.nextElementSibling.style.display = "flex";
+              }}
+            />
+            <div className="hidden items-center space-x-2">
+              <div className="bg-primary rounded-lg p-1.5">
+                <Zap className="h-6 w-6 text-white" />
+              </div>
+              <span className="text-xl font-bold text-brand-gray-900">
+                Hafestus
+              </span>
             </div>
-            <span className="text-xl font-bold text-brand-gray-900">
-              Hafestus
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
