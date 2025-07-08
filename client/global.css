@@ -38,12 +38,12 @@
     --ring: 220 95% 50%;
 
     /* Hafestus Brand Colors */
-    --brand-blue-50: 217 91% 97%;
-    --brand-blue-100: 216 85% 92%;
-    --brand-blue-200: 218 89% 83%;
-    --brand-blue-500: 220 95% 50%;
-    --brand-blue-600: 221 83% 53%;
-    --brand-blue-700: 224 76% 48%;
+    --brand-blue-50: 200 100% 97%;
+    --brand-blue-100: 200 100% 92%;
+    --brand-blue-200: 200 100% 83%;
+    --brand-blue-500: 200 100% 47%;
+    --brand-blue-600: 200 100% 42%;
+    --brand-blue-700: 200 100% 37%;
     --brand-blue-900: 220 26% 14%;
 
     --brand-orange-100: 24 100% 95%;
