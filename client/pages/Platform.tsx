@@ -55,6 +55,96 @@ export default function Platform() {
       reason:
         "Provides 165 lbf/sq ft uplift resistance meeting wind load requirements per ASCE 7",
     },
+    {
+      id: 4,
+      type: "adhesive",
+      title: "EPDM Bonding Adhesive",
+      manufacturer: "Carlisle SynTec",
+      product: "Bonding Adhesive BA-2004",
+      compliance: 98,
+      reason:
+        "Compatible with Sure-Weld EPDM membrane, provides permanent bond with 1-hour open time",
+    },
+    {
+      id: 5,
+      type: "flashing",
+      title: "Base Flashing System",
+      manufacturer: "Firestone",
+      product: "UltraPly TPO Base Flashing",
+      compliance: 94,
+      reason:
+        "Heat-weldable to EPDM membrane, 8-inch minimum height meets specification requirements",
+    },
+    {
+      id: 6,
+      type: "sealant",
+      title: "Lap Sealant",
+      manufacturer: "Tremco",
+      product: "Spectrem 1 Structural Glazing Sealant",
+      compliance: 96,
+      reason:
+        "Structural grade sealant provides 25% movement capability, compatible with EPDM chemistry",
+    },
+    {
+      id: 7,
+      type: "drain",
+      title: "Roof Drain Assembly",
+      manufacturer: "Zurn Industries",
+      product: "Z100 4-inch Cast Iron Roof Drain",
+      compliance: 100,
+      reason:
+        "Meets 7.5 GPM per 100 sq ft capacity requirement, vandal-resistant dome, hospital-grade",
+    },
+    {
+      id: 8,
+      type: "walkway",
+      title: "Protection Walkway Pads",
+      manufacturer: "Carlisle SynTec",
+      product: "RUSS (Rooftop Universal Support System)",
+      compliance: 92,
+      reason:
+        "Protects membrane from foot traffic, interlocking design, UV-resistant material",
+    },
+    {
+      id: 9,
+      type: "vapor_barrier",
+      title: "Vapor Retarder System",
+      manufacturer: "Henry Company",
+      product: "Air-Bloc 31MR Self-Adhering Membrane",
+      compliance: 99,
+      reason:
+        "0.05 perms rating meets specification, self-adhering installation, compatible substrate",
+    },
+    {
+      id: 10,
+      type: "pipe_boot",
+      title: "Pipe Penetration Boots",
+      manufacturer: "Oatey",
+      product: "All-Flash EPDM Pipe Boots",
+      compliance: 93,
+      reason:
+        "Pre-formed EPDM construction, 3-inch to 4-inch diameter range, stainless steel clamps",
+    },
+    {
+      id: 11,
+      type: "edge_metal",
+      title: "Perimeter Edge Metal",
+      manufacturer: "Drexel Metals",
+      product: "Kynar 500 Painted Aluminum Coping",
+      compliance: 97,
+      reason:
+        "0.050-inch aluminum thickness, Kynar 500 finish, continuous cleat attachment system",
+    },
+    {
+      id: 12,
+      type: "expansion_joint",
+      title: "Expansion Joint Cover",
+      manufacturer: "EMSEAL",
+      product: "Seismic Colorseal DSM System",
+      compliance: 89,
+      reason:
+        "Accommodates ±2-inch movement, weather-sealed design, hospital seismic requirements",
+    },
   ];
 
   const chatHistory = [
