@@ -24,13 +24,13 @@ import { Badge } from "../components/ui/badge";
 export default function Platform() {
   const [chatMessage, setChatMessage] = useState("");
 
-      const aiRecommendations = [
+  const aiRecommendations = [
     {
       id: 1,
       type: "membrane",
       title: "EPDM Membrane System",
       manufacturer: "Carlisle SynTec",
-      product: "Sure-Weld 0.060\" EPDM Membrane",
+      product: 'Sure-Weld 0.060" EPDM Membrane',
       compliance: 100,
       reason:
         "Exceeds ASTM D 4637 Type I specifications with 20-year warranty and proven hospital installation performance",
@@ -42,16 +42,18 @@ export default function Platform() {
       manufacturer: "GAF Materials",
       product: "EnergyGuard Polyiso R-25",
       compliance: 97,
-      reason: "Meets R-25 thermal requirements with Class A fire rating and compatible adhesive system",
+      reason:
+        "Meets R-25 thermal requirements with Class A fire rating and compatible adhesive system",
     },
     {
       id: 3,
       type: "fasteners",
       title: "Mechanical Fasteners",
       manufacturer: "Olympic Fastening",
-      product: "OlyFast 6\" HD Insulation Fasteners",
+      product: 'OlyFast 6" HD Insulation Fasteners',
       compliance: 95,
-      reason: "Provides 165 lbf/sq ft uplift resistance meeting wind load requirements per ASCE 7",
+      reason:
+        "Provides 165 lbf/sq ft uplift resistance meeting wind load requirements per ASCE 7",
     },
     {
       id: 4,
@@ -60,7 +62,8 @@ export default function Platform() {
       manufacturer: "Carlisle SynTec",
       product: "Bonding Adhesive BA-2004",
       compliance: 98,
-      reason: "Compatible with Sure-Weld EPDM membrane, provides permanent bond with 1-hour open time",
+      reason:
+        "Compatible with Sure-Weld EPDM membrane, provides permanent bond with 1-hour open time",
     },
     {
       id: 5,
@@ -69,7 +72,8 @@ export default function Platform() {
       manufacturer: "Firestone",
       product: "UltraPly TPO Base Flashing",
       compliance: 94,
-      reason: "Heat-weldable to EPDM membrane, 8-inch minimum height meets specification requirements",
+      reason:
+        "Heat-weldable to EPDM membrane, 8-inch minimum height meets specification requirements",
     },
     {
       id: 6,
@@ -78,7 +82,8 @@ export default function Platform() {
       manufacturer: "Tremco",
       product: "Spectrem 1 Structural Glazing Sealant",
       compliance: 96,
-      reason: "Structural grade sealant provides 25% movement capability, compatible with EPDM chemistry",
+      reason:
+        "Structural grade sealant provides 25% movement capability, compatible with EPDM chemistry",
     },
     {
       id: 7,
@@ -87,7 +92,8 @@ export default function Platform() {
       manufacturer: "Zurn Industries",
       product: "Z100 4-inch Cast Iron Roof Drain",
       compliance: 100,
-      reason: "Meets 7.5 GPM per 100 sq ft capacity requirement, vandal-resistant dome, hospital-grade",
+      reason:
+        "Meets 7.5 GPM per 100 sq ft capacity requirement, vandal-resistant dome, hospital-grade",
     },
     {
       id: 8,
@@ -96,7 +102,8 @@ export default function Platform() {
       manufacturer: "Carlisle SynTec",
       product: "RUSS (Rooftop Universal Support System)",
       compliance: 92,
-      reason: "Protects membrane from foot traffic, interlocking design, UV-resistant material",
+      reason:
+        "Protects membrane from foot traffic, interlocking design, UV-resistant material",
     },
     {
       id: 9,
@@ -105,7 +112,8 @@ export default function Platform() {
       manufacturer: "Henry Company",
       product: "Air-Bloc 31MR Self-Adhering Membrane",
       compliance: 99,
-      reason: "0.05 perms rating meets specification, self-adhering installation, compatible substrate",
+      reason:
+        "0.05 perms rating meets specification, self-adhering installation, compatible substrate",
     },
     {
       id: 10,
@@ -114,7 +122,8 @@ export default function Platform() {
       manufacturer: "Oatey",
       product: "All-Flash EPDM Pipe Boots",
       compliance: 93,
-      reason: "Pre-formed EPDM construction, 3-inch to 4-inch diameter range, stainless steel clamps",
+      reason:
+        "Pre-formed EPDM construction, 3-inch to 4-inch diameter range, stainless steel clamps",
     },
     {
       id: 11,
@@ -123,7 +132,8 @@ export default function Platform() {
       manufacturer: "Drexel Metals",
       product: "Kynar 500 Painted Aluminum Coping",
       compliance: 97,
-      reason: "0.050-inch aluminum thickness, Kynar 500 finish, continuous cleat attachment system",
+      reason:
+        "0.050-inch aluminum thickness, Kynar 500 finish, continuous cleat attachment system",
     },
     {
       id: 12,
@@ -132,11 +142,12 @@ export default function Platform() {
       manufacturer: "EMSEAL",
       product: "Seismic Colorseal DSM System",
       compliance: 89,
-      reason: "Accommodates ±2-inch movement, weather-sealed design, hospital seismic requirements",
+      reason:
+        "Accommodates ±2-inch movement, weather-sealed design, hospital seismic requirements",
     },
   ];
 
-    const chatHistory = [
+  const chatHistory = [
     {
       type: "ai",
       message:
@@ -145,7 +156,8 @@ export default function Platform() {
     },
     {
       type: "user",
-      message: "Yes, please focus on the EPDM membrane requirements and compatible insulation systems.",
+      message:
+        "Yes, please focus on the EPDM membrane requirements and compatible insulation systems.",
       time: "2:35 PM",
     },
     {
@@ -163,7 +175,7 @@ export default function Platform() {
         <div className="max-w-full mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-                            <h1 className="text-2xl font-bold text-gray-900">Platform</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Platform</h1>
               <Badge variant="secondary" className="bg-primary/10 text-primary">
                 AI Analysis Complete
               </Badge>
@@ -184,7 +196,7 @@ export default function Platform() {
 
       <div className="max-w-full mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
-                    {/* Left Side - Specification File and Submittal Generation */}
+          {/* Left Side - Specification File and Submittal Generation */}
           <div className="space-y-6">
             {/* Specification Document */}
             <Card>
@@ -203,31 +215,66 @@ export default function Platform() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                                                <div className="bg-white border rounded-lg shadow-sm h-[calc(100vh-200px)] overflow-y-auto">
-                                                      <div className="bg-gray-100 px-4 py-2 border-b text-xs text-gray-600 flex justify-between items-center">
-                    <span>Metropolitan_Hospital_Roofing_Specifications.pdf</span>
+                <div className="bg-white border rounded-lg shadow-sm h-[calc(100vh-200px)] overflow-y-auto">
+                  <div className="bg-gray-100 px-4 py-2 border-b text-xs text-gray-600 flex justify-between items-center">
+                    <span>
+                      Metropolitan_Hospital_Roofing_Specifications.pdf
+                    </span>
                     <span>Page 1 of 50 • 100% zoom</span>
                   </div>
-                  <div className="p-8 text-sm leading-relaxed" style={{ fontFamily: 'serif' }}>
+                  <div
+                    className="p-8 text-sm leading-relaxed"
+                    style={{ fontFamily: "serif" }}
+                  >
                     <div className="text-center mb-8">
-                      <h1 className="text-xl font-bold mb-2">ROOFING TECHNICAL SPECIFICATIONS</h1>
-                      <h2 className="text-lg font-semibold mb-1">Metropolitan Hospital Expansion Project</h2>
+                      <h1 className="text-xl font-bold mb-2">
+                        ROOFING TECHNICAL SPECIFICATIONS
+                      </h1>
+                      <h2 className="text-lg font-semibold mb-1">
+                        Metropolitan Hospital Expansion Project
+                      </h2>
                       <p className="text-gray-600">Project No: MHE-2024-007</p>
                       <p className="text-gray-600">Date: March 15, 2024</p>
-                      <p className="text-gray-600 text-xs mt-2">Prepared by: Henderson Roofing Consultants</p>
+                      <p className="text-gray-600 text-xs mt-2">
+                        Prepared by: Henderson Roofing Consultants
+                      </p>
                     </div>
 
                     <div className="space-y-8">
                       {/* TABLE OF CONTENTS */}
                       <div className="border-b pb-6">
-                        <h3 className="text-lg font-bold mb-4 uppercase tracking-wide">TABLE OF CONTENTS</h3>
+                        <h3 className="text-lg font-bold mb-4 uppercase tracking-wide">
+                          TABLE OF CONTENTS
+                        </h3>
                         <div className="space-y-1 text-xs">
-                          <div className="flex justify-between"><span>SECTION 07 50 00 - MEMBRANE ROOFING</span><span>3</span></div>
-                          <div className="flex justify-between"><span>SECTION 07 60 00 - FLASHING AND SHEET METAL</span><span>15</span></div>
-                          <div className="flex justify-between"><span>SECTION 07 70 00 - ROOF SPECIALTIES</span><span>25</span></div>
-                          <div className="flex justify-between"><span>SECTION 07 80 00 - FIRE AND SMOKE PROTECTION</span><span>35</span></div>
-                          <div className="flex justify-between"><span>SECTION 07 90 00 - JOINT PROTECTION</span><span>42</span></div>
-                          <div className="flex justify-between"><span>APPENDICES</span><span>48</span></div>
+                          <div className="flex justify-between">
+                            <span>SECTION 07 50 00 - MEMBRANE ROOFING</span>
+                            <span>3</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>
+                              SECTION 07 60 00 - FLASHING AND SHEET METAL
+                            </span>
+                            <span>15</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>SECTION 07 70 00 - ROOF SPECIALTIES</span>
+                            <span>25</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>
+                              SECTION 07 80 00 - FIRE AND SMOKE PROTECTION
+                            </span>
+                            <span>35</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>SECTION 07 90 00 - JOINT PROTECTION</span>
+                            <span>42</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>APPENDICES</span>
+                            <span>48</span>
+                          </div>
                         </div>
                       </div>
 
@@ -239,220 +286,477 @@ export default function Platform() {
 
                         <div className="space-y-6">
                           <div>
-                            <h4 className="font-bold mb-3 text-base">PART 1 - GENERAL</h4>
+                            <h4 className="font-bold mb-3 text-base">
+                              PART 1 - GENERAL
+                            </h4>
 
                             <div className="space-y-4">
                               <div>
-                                <h5 className="font-semibold text-sm">1.1 SUMMARY</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.1 SUMMARY
+                                </h5>
                                 <div className="ml-4 space-y-2 text-justify">
-                                                                    <p>A. Section includes:</p>
+                                  <p>A. Section includes:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">1. Fully adhered EPDM membrane roofing system</li>
-                                    <li>2. Mechanically attached EPDM membrane roofing system</li>
-                                    <li>3. Ballasted EPDM membrane roofing system</li>
-                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">4. TPO membrane roofing system with mechanically attached membrane</li>
-                                    <li>5. Modified bitumen membrane roofing system</li>
-                                    <li>6. Built-up roofing system with gravel surfacing</li>
-                                    <li>7. Liquid applied membrane roofing system</li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                      1. Fully adhered EPDM membrane roofing
+                                      system
+                                    </li>
+                                    <li>
+                                      2. Mechanically attached EPDM membrane
+                                      roofing system
+                                    </li>
+                                    <li>
+                                      3. Ballasted EPDM membrane roofing system
+                                    </li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                      4. TPO membrane roofing system with
+                                      mechanically attached membrane
+                                    </li>
+                                    <li>
+                                      5. Modified bitumen membrane roofing
+                                      system
+                                    </li>
+                                    <li>
+                                      6. Built-up roofing system with gravel
+                                      surfacing
+                                    </li>
+                                    <li>
+                                      7. Liquid applied membrane roofing system
+                                    </li>
                                   </ul>
                                   <p>B. Related Sections:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Section 06 10 00 - Rough Carpentry: Wood blocking and nailers</li>
-                                    <li>2. Section 07 21 00 - Thermal Insulation: Roof insulation systems</li>
-                                    <li>3. Section 07 60 00 - Flashing and Sheet Metal: Roof flashings</li>
-                                    <li>4. Section 07 70 00 - Roof Specialties: Roof accessories and specialties</li>
+                                    <li>
+                                      1. Section 06 10 00 - Rough Carpentry:
+                                      Wood blocking and nailers
+                                    </li>
+                                    <li>
+                                      2. Section 07 21 00 - Thermal Insulation:
+                                      Roof insulation systems
+                                    </li>
+                                    <li>
+                                      3. Section 07 60 00 - Flashing and Sheet
+                                      Metal: Roof flashings
+                                    </li>
+                                    <li>
+                                      4. Section 07 70 00 - Roof Specialties:
+                                      Roof accessories and specialties
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.2 DEFINITIONS</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.2 DEFINITIONS
+                                </h5>
                                 <div className="ml-4 space-y-2">
-                                  <p>A. EPDM: Ethylene propylene diene terpolymer, a synthetic rubber membrane.</p>
-                                  <p>B. TPO: Thermoplastic polyolefin, a single-ply roofing membrane.</p>
-                                  <p>C. Modified Bitumen: Asphalt modified with rubber or plastic polymers.</p>
-                                  <p>D. Ballast: Aggregate or pavers used to hold down roofing membrane.</p>
-                                  <p>E. Base Sheet: The bottom ply in a multi-ply membrane system.</p>
-                                  <p>F. Cap Sheet: The top ply in a multi-ply membrane system.</p>
-                                  <p>G. Substrate: The surface to which roofing is applied.</p>
-                                  <p>H. Vapor Retarder: Material that restricts passage of water vapor.</p>
+                                  <p>
+                                    A. EPDM: Ethylene propylene diene
+                                    terpolymer, a synthetic rubber membrane.
+                                  </p>
+                                  <p>
+                                    B. TPO: Thermoplastic polyolefin, a
+                                    single-ply roofing membrane.
+                                  </p>
+                                  <p>
+                                    C. Modified Bitumen: Asphalt modified with
+                                    rubber or plastic polymers.
+                                  </p>
+                                  <p>
+                                    D. Ballast: Aggregate or pavers used to hold
+                                    down roofing membrane.
+                                  </p>
+                                  <p>
+                                    E. Base Sheet: The bottom ply in a multi-ply
+                                    membrane system.
+                                  </p>
+                                  <p>
+                                    F. Cap Sheet: The top ply in a multi-ply
+                                    membrane system.
+                                  </p>
+                                  <p>
+                                    G. Substrate: The surface to which roofing
+                                    is applied.
+                                  </p>
+                                  <p>
+                                    H. Vapor Retarder: Material that restricts
+                                    passage of water vapor.
+                                  </p>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.3 PERFORMANCE REQUIREMENTS</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.3 PERFORMANCE REQUIREMENTS
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. General Performance:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Provide roofing system capable of withstanding design loads</li>
-                                    <li>2. Minimum 20-year warranty from membrane manufacturer</li>
-                                    <li>3. System shall be compatible with existing building structure</li>
-                                    <li>4. Comply with local building codes and fire ratings</li>
+                                    <li>
+                                      1. Provide roofing system capable of
+                                      withstanding design loads
+                                    </li>
+                                    <li>
+                                      2. Minimum 20-year warranty from membrane
+                                      manufacturer
+                                    </li>
+                                    <li>
+                                      3. System shall be compatible with
+                                      existing building structure
+                                    </li>
+                                    <li>
+                                      4. Comply with local building codes and
+                                      fire ratings
+                                    </li>
                                   </ul>
-                                                                    <p>B. Wind Uplift Resistance:</p>
+                                  <p>B. Wind Uplift Resistance:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Design for wind uplift loads per ASCE 7</li>
-                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">2. Minimum uplift rating: 165 lbf/sq ft (7.9 kN/sq m)</li>
-                                    <li>3. Factory Mutual approved systems where indicated</li>
-                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">4. Testing per ASTM D 6878 and UL 580</li>
+                                    <li>
+                                      1. Design for wind uplift loads per ASCE 7
+                                    </li>
+                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                      2. Minimum uplift rating: 165 lbf/sq ft
+                                      (7.9 kN/sq m)
+                                    </li>
+                                    <li>
+                                      3. Factory Mutual approved systems where
+                                      indicated
+                                    </li>
+                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                      4. Testing per ASTM D 6878 and UL 580
+                                    </li>
                                   </ul>
                                   <p>C. Fire Performance:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Class A fire rating per ASTM E 108</li>
-                                    <li>2. Comply with UL 263 fire resistance rating</li>
-                                    <li>3. Non-combustible insulation where required by code</li>
+                                    <li>
+                                      1. Class A fire rating per ASTM E 108
+                                    </li>
+                                    <li>
+                                      2. Comply with UL 263 fire resistance
+                                      rating
+                                    </li>
+                                    <li>
+                                      3. Non-combustible insulation where
+                                      required by code
+                                    </li>
                                   </ul>
-                                                                    <p>D. Thermal Performance:</p>
+                                  <p>D. Thermal Performance:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">1. Minimum R-value: R-25 (RSI-4.4) for climate zone 4</li>
-                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">2. Thermal bridging mitigation per ASHRAE 90.1</li>
-                                    <li>3. Continuous insulation requirements</li>
+                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                      1. Minimum R-value: R-25 (RSI-4.4) for
+                                      climate zone 4
+                                    </li>
+                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                      2. Thermal bridging mitigation per ASHRAE
+                                      90.1
+                                    </li>
+                                    <li>
+                                      3. Continuous insulation requirements
+                                    </li>
                                   </ul>
                                   <p>E. Weather Resistance:</p>
                                   <ul className="ml-4 space-y-1">
                                     <li>1. UV resistance per ASTM G 154</li>
                                     <li>2. Ozone resistance per ASTM D 1149</li>
-                                    <li>3. Temperature cycling resistance: -40°F to 180°F (-40°C to 82°C)</li>
-                                    <li>4. Hail resistance: Class 4 per UL 2218</li>
+                                    <li>
+                                      3. Temperature cycling resistance: -40°F
+                                      to 180°F (-40°C to 82°C)
+                                    </li>
+                                    <li>
+                                      4. Hail resistance: Class 4 per UL 2218
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.4 SUBMITTALS</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.4 SUBMITTALS
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Product Data:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Manufacturer's product data sheets for each membrane type</li>
-                                    <li>2. Insulation product data including thermal properties</li>
-                                    <li>3. Adhesive and sealant product data</li>
-                                    <li>4. Fastener specifications and installation data</li>
-                                    <li>5. Accessory product data including flashings and trim</li>
+                                    <li>
+                                      1. Manufacturer's product data sheets for
+                                      each membrane type
+                                    </li>
+                                    <li>
+                                      2. Insulation product data including
+                                      thermal properties
+                                    </li>
+                                    <li>
+                                      3. Adhesive and sealant product data
+                                    </li>
+                                    <li>
+                                      4. Fastener specifications and
+                                      installation data
+                                    </li>
+                                    <li>
+                                      5. Accessory product data including
+                                      flashings and trim
+                                    </li>
                                   </ul>
                                   <p>B. Shop Drawings:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Roofing layout showing membrane arrangement</li>
-                                    <li>2. Insulation layout and fastening patterns</li>
-                                    <li>3. Flashing details and terminations</li>
+                                    <li>
+                                      1. Roofing layout showing membrane
+                                      arrangement
+                                    </li>
+                                    <li>
+                                      2. Insulation layout and fastening
+                                      patterns
+                                    </li>
+                                    <li>
+                                      3. Flashing details and terminations
+                                    </li>
                                     <li>4. Drain and scupper locations</li>
                                     <li>5. Equipment support details</li>
-                                    <li>6. Expansion joint locations and details</li>
+                                    <li>
+                                      6. Expansion joint locations and details
+                                    </li>
                                   </ul>
                                   <p>C. Samples:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. 12-inch by 12-inch membrane samples</li>
-                                    <li>2. Seam samples showing joining methods</li>
+                                    <li>
+                                      1. 12-inch by 12-inch membrane samples
+                                    </li>
+                                    <li>
+                                      2. Seam samples showing joining methods
+                                    </li>
                                     <li>3. Insulation samples with facings</li>
                                     <li>4. Flashing material samples</li>
                                   </ul>
                                   <p>D. Design Data:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Wind uplift calculations and test reports</li>
+                                    <li>
+                                      1. Wind uplift calculations and test
+                                      reports
+                                    </li>
                                     <li>2. Fire rating certifications</li>
                                     <li>3. Thermal analysis calculations</li>
-                                    <li>4. System compatibility certifications</li>
+                                    <li>
+                                      4. System compatibility certifications
+                                    </li>
                                   </ul>
                                   <p>E. Quality Control:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Installer qualifications and certifications</li>
-                                    <li>2. Material certificates of compliance</li>
+                                    <li>
+                                      1. Installer qualifications and
+                                      certifications
+                                    </li>
+                                    <li>
+                                      2. Material certificates of compliance
+                                    </li>
                                     <li>3. Weather monitoring reports</li>
-                                    <li>4. Installation quality control checklists</li>
+                                    <li>
+                                      4. Installation quality control checklists
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.5 QUALITY ASSURANCE</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.5 QUALITY ASSURANCE
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Installer Qualifications:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Authorized dealer/installer of membrane manufacturer</li>
-                                    <li>2. Minimum 10 years experience with similar systems</li>
-                                    <li>3. Certified by single-source manufacturer</li>
-                                    <li>4. Provide list of 10 similar completed projects</li>
-                                    <li>5. Maintain required licensing and insurance</li>
+                                    <li>
+                                      1. Authorized dealer/installer of membrane
+                                      manufacturer
+                                    </li>
+                                    <li>
+                                      2. Minimum 10 years experience with
+                                      similar systems
+                                    </li>
+                                    <li>
+                                      3. Certified by single-source manufacturer
+                                    </li>
+                                    <li>
+                                      4. Provide list of 10 similar completed
+                                      projects
+                                    </li>
+                                    <li>
+                                      5. Maintain required licensing and
+                                      insurance
+                                    </li>
                                   </ul>
                                   <p>B. Source Limitations:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Single source for primary membrane materials</li>
-                                    <li>2. Compatible accessory materials from approved sources</li>
-                                    <li>3. Factory-fabricated accessories where possible</li>
+                                    <li>
+                                      1. Single source for primary membrane
+                                      materials
+                                    </li>
+                                    <li>
+                                      2. Compatible accessory materials from
+                                      approved sources
+                                    </li>
+                                    <li>
+                                      3. Factory-fabricated accessories where
+                                      possible
+                                    </li>
                                   </ul>
                                   <p>C. Pre-Installation Conference:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Conduct meeting prior to roofing installation</li>
-                                    <li>2. Review installation procedures and sequences</li>
-                                    <li>3. Discuss weather limitations and contingencies</li>
+                                    <li>
+                                      1. Conduct meeting prior to roofing
+                                      installation
+                                    </li>
+                                    <li>
+                                      2. Review installation procedures and
+                                      sequences
+                                    </li>
+                                    <li>
+                                      3. Discuss weather limitations and
+                                      contingencies
+                                    </li>
                                     <li>4. Coordinate with other trades</li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.6 DELIVERY, STORAGE, AND HANDLING</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.6 DELIVERY, STORAGE, AND HANDLING
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Delivery:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Deliver materials in original, unopened containers</li>
-                                    <li>2. Coordinate delivery to minimize double handling</li>
-                                    <li>3. Schedule delivery to match installation progress</li>
-                                    <li>4. Inspect materials upon delivery for damage</li>
+                                    <li>
+                                      1. Deliver materials in original, unopened
+                                      containers
+                                    </li>
+                                    <li>
+                                      2. Coordinate delivery to minimize double
+                                      handling
+                                    </li>
+                                    <li>
+                                      3. Schedule delivery to match installation
+                                      progress
+                                    </li>
+                                    <li>
+                                      4. Inspect materials upon delivery for
+                                      damage
+                                    </li>
                                   </ul>
                                   <p>B. Storage:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Store materials in dry, ventilated area</li>
-                                    <li>2. Protect from weather and temperature extremes</li>
-                                    <li>3. Store membrane rolls vertically when possible</li>
-                                    <li>4. Maintain storage temperatures per manufacturer's requirements</li>
-                                    <li>5. First in, first out inventory rotation</li>
+                                    <li>
+                                      1. Store materials in dry, ventilated area
+                                    </li>
+                                    <li>
+                                      2. Protect from weather and temperature
+                                      extremes
+                                    </li>
+                                    <li>
+                                      3. Store membrane rolls vertically when
+                                      possible
+                                    </li>
+                                    <li>
+                                      4. Maintain storage temperatures per
+                                      manufacturer's requirements
+                                    </li>
+                                    <li>
+                                      5. First in, first out inventory rotation
+                                    </li>
                                   </ul>
                                   <p>C. Handling:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Handle materials to prevent damage</li>
-                                    <li>2. Use appropriate equipment for material size and weight</li>
-                                    <li>3. Protect material surfaces from contamination</li>
-                                    <li>4. Do not drag materials across surfaces</li>
+                                    <li>
+                                      1. Handle materials to prevent damage
+                                    </li>
+                                    <li>
+                                      2. Use appropriate equipment for material
+                                      size and weight
+                                    </li>
+                                    <li>
+                                      3. Protect material surfaces from
+                                      contamination
+                                    </li>
+                                    <li>
+                                      4. Do not drag materials across surfaces
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.7 PROJECT CONDITIONS</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.7 PROJECT CONDITIONS
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Weather Limitations:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Do not install during precipitation</li>
-                                    <li>2. Minimum ambient temperature: 40°F (4°C)</li>
-                                    <li>3. Maximum wind speed: 25 mph (40 km/h)</li>
-                                    <li>4. Substrate must be dry and free of frost</li>
-                                    <li>5. Monitor weather forecasts continuously</li>
+                                    <li>
+                                      1. Do not install during precipitation
+                                    </li>
+                                    <li>
+                                      2. Minimum ambient temperature: 40°F (4°C)
+                                    </li>
+                                    <li>
+                                      3. Maximum wind speed: 25 mph (40 km/h)
+                                    </li>
+                                    <li>
+                                      4. Substrate must be dry and free of frost
+                                    </li>
+                                    <li>
+                                      5. Monitor weather forecasts continuously
+                                    </li>
                                   </ul>
                                   <p>B. Field Measurements:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Verify existing conditions before installation</li>
-                                    <li>2. Check substrate for proper slopes and drainage</li>
-                                    <li>3. Confirm structural adequacy for loads</li>
-                                    <li>4. Identify and resolve discrepancies</li>
+                                    <li>
+                                      1. Verify existing conditions before
+                                      installation
+                                    </li>
+                                    <li>
+                                      2. Check substrate for proper slopes and
+                                      drainage
+                                    </li>
+                                    <li>
+                                      3. Confirm structural adequacy for loads
+                                    </li>
+                                    <li>
+                                      4. Identify and resolve discrepancies
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">1.8 WARRANTY</h5>
+                                <h5 className="font-semibold text-sm">
+                                  1.8 WARRANTY
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Manufacturer's Warranty:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. 20-year non-prorated membrane warranty</li>
-                                    <li>2. Coverage for material defects and premature failure</li>
-                                    <li>3. Include labor and materials for repairs</li>
-                                    <li>4. Transferable warranty with proper registration</li>
+                                    <li>
+                                      1. 20-year non-prorated membrane warranty
+                                    </li>
+                                    <li>
+                                      2. Coverage for material defects and
+                                      premature failure
+                                    </li>
+                                    <li>
+                                      3. Include labor and materials for repairs
+                                    </li>
+                                    <li>
+                                      4. Transferable warranty with proper
+                                      registration
+                                    </li>
                                   </ul>
                                   <p>B. Installer's Warranty:</p>
                                   <ul className="ml-4 space-y-1">
                                     <li>1. 5-year workmanship warranty</li>
-                                    <li>2. Coverage for installation defects</li>
-                                    <li>3. Include emergency repair services</li>
+                                    <li>
+                                      2. Coverage for installation defects
+                                    </li>
+                                    <li>
+                                      3. Include emergency repair services
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
@@ -460,285 +764,632 @@ export default function Platform() {
                           </div>
 
                           <div className="border-t pt-6 mt-8">
-                            <h4 className="font-bold mb-3 text-base">PART 2 - PRODUCTS</h4>
+                            <h4 className="font-bold mb-3 text-base">
+                              PART 2 - PRODUCTS
+                            </h4>
 
                             <div className="space-y-4">
                               <div>
-                                <h5 className="font-semibold text-sm">2.1 EPDM MEMBRANE SYSTEM</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.1 EPDM MEMBRANE SYSTEM
+                                </h5>
                                 <div className="ml-4 space-y-3">
-                                                                    <p>A. EPDM Membrane:</p>
+                                  <p>A. EPDM Membrane:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">1. Manufacturer: Carlisle, Firestone, or GAF as basis of design</li>
-                                    <li>2. Type: Ethylene propylene diene terpolymer (EPDM)</li>
-                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">3. Thickness: 0.060 inch (1.52 mm) minimum</li>
-                                    <li>4. Width: Maximum practical width to minimize seams</li>
-                                    <li>5. Color: Black standard, white where indicated</li>
-                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">6. Properties per ASTM D 4637, Type I</li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                      1. Manufacturer: Carlisle, Firestone, or
+                                      GAF as basis of design
+                                    </li>
+                                    <li>
+                                      2. Type: Ethylene propylene diene
+                                      terpolymer (EPDM)
+                                    </li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                      3. Thickness: 0.060 inch (1.52 mm) minimum
+                                    </li>
+                                    <li>
+                                      4. Width: Maximum practical width to
+                                      minimize seams
+                                    </li>
+                                    <li>
+                                      5. Color: Black standard, white where
+                                      indicated
+                                    </li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                      6. Properties per ASTM D 4637, Type I
+                                    </li>
                                   </ul>
                                   <p>B. EPDM Membrane Properties:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Tensile strength: 1200 psi (8.3 MPa) minimum</li>
-                                    <li>2. Elongation at break: 300% minimum</li>
-                                    <li>3. Tear resistance: 200 lbf/in (35 kN/m) minimum</li>
-                                    <li>4. Ozone resistance: No cracking after 100 hours</li>
-                                    <li>5. UV resistance: Excellent per ASTM G 154</li>
-                                    <li>6. Temperature range: -40°F to 180°F (-40°C to 82°C)</li>
+                                    <li>
+                                      1. Tensile strength: 1200 psi (8.3 MPa)
+                                      minimum
+                                    </li>
+                                    <li>
+                                      2. Elongation at break: 300% minimum
+                                    </li>
+                                    <li>
+                                      3. Tear resistance: 200 lbf/in (35 kN/m)
+                                      minimum
+                                    </li>
+                                    <li>
+                                      4. Ozone resistance: No cracking after 100
+                                      hours
+                                    </li>
+                                    <li>
+                                      5. UV resistance: Excellent per ASTM G 154
+                                    </li>
+                                    <li>
+                                      6. Temperature range: -40°F to 180°F
+                                      (-40°C to 82°C)
+                                    </li>
                                   </ul>
                                   <p>C. EPDM Accessories:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Seam tape: Pressure-sensitive, 6-inch wide minimum</li>
-                                    <li>2. Lap sealant: Single-component elastomeric sealant</li>
-                                    <li>3. Primers: As recommended by membrane manufacturer</li>
-                                    <li>4. Inside corners: Pre-molded EPDM corner units</li>
-                                    <li>5. Outside corners: Pre-molded EPDM corner units</li>
-                                    <li>6. Penetration boots: EPDM with stainless steel clamps</li>
+                                    <li>
+                                      1. Seam tape: Pressure-sensitive, 6-inch
+                                      wide minimum
+                                    </li>
+                                    <li>
+                                      2. Lap sealant: Single-component
+                                      elastomeric sealant
+                                    </li>
+                                    <li>
+                                      3. Primers: As recommended by membrane
+                                      manufacturer
+                                    </li>
+                                    <li>
+                                      4. Inside corners: Pre-molded EPDM corner
+                                      units
+                                    </li>
+                                    <li>
+                                      5. Outside corners: Pre-molded EPDM corner
+                                      units
+                                    </li>
+                                    <li>
+                                      6. Penetration boots: EPDM with stainless
+                                      steel clamps
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">2.2 TPO MEMBRANE SYSTEM</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.2 TPO MEMBRANE SYSTEM
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. TPO Membrane:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Manufacturer: Carlisle, GAF, or Johns Manville</li>
-                                    <li>2. Type: Thermoplastic polyolefin (TPO)</li>
-                                    <li>3. Thickness: 0.060 inch (1.52 mm) minimum</li>
+                                    <li>
+                                      1. Manufacturer: Carlisle, GAF, or Johns
+                                      Manville
+                                    </li>
+                                    <li>
+                                      2. Type: Thermoplastic polyolefin (TPO)
+                                    </li>
+                                    <li>
+                                      3. Thickness: 0.060 inch (1.52 mm) minimum
+                                    </li>
                                     <li>4. Width: 10 feet (3 m) standard</li>
-                                    <li>5. Color: White standard, gray where indicated</li>
+                                    <li>
+                                      5. Color: White standard, gray where
+                                      indicated
+                                    </li>
                                     <li>6. Properties per ASTM D 6878</li>
                                   </ul>
                                   <p>B. TPO Membrane Properties:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Tensile strength: 1800 psi (12.4 MPa) minimum</li>
-                                    <li>2. Elongation at break: 450% minimum</li>
-                                    <li>3. Tear resistance: 300 lbf/in (53 kN/m) minimum</li>
-                                    <li>4. Heat aging: Minimal property change after 28 days at 158°F</li>
-                                    <li>5. UV resistance: Excellent long-term stability</li>
-                                    <li>6. Chemical resistance: Excellent resistance to common chemicals</li>
+                                    <li>
+                                      1. Tensile strength: 1800 psi (12.4 MPa)
+                                      minimum
+                                    </li>
+                                    <li>
+                                      2. Elongation at break: 450% minimum
+                                    </li>
+                                    <li>
+                                      3. Tear resistance: 300 lbf/in (53 kN/m)
+                                      minimum
+                                    </li>
+                                    <li>
+                                      4. Heat aging: Minimal property change
+                                      after 28 days at 158°F
+                                    </li>
+                                    <li>
+                                      5. UV resistance: Excellent long-term
+                                      stability
+                                    </li>
+                                    <li>
+                                      6. Chemical resistance: Excellent
+                                      resistance to common chemicals
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">2.3 MODIFIED BITUMEN SYSTEM</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.3 MODIFIED BITUMEN SYSTEM
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Base Sheet:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Type: SBS-modified bitumen base sheet</li>
-                                    <li>2. Reinforcement: Non-woven polyester mat</li>
-                                    <li>3. Thickness: 160 mils (4.1 mm) minimum</li>
+                                    <li>
+                                      1. Type: SBS-modified bitumen base sheet
+                                    </li>
+                                    <li>
+                                      2. Reinforcement: Non-woven polyester mat
+                                    </li>
+                                    <li>
+                                      3. Thickness: 160 mils (4.1 mm) minimum
+                                    </li>
                                     <li>4. Surfacing: Burn-off film or sand</li>
-                                    <li>5. Application: Fully adhered with cold adhesive</li>
+                                    <li>
+                                      5. Application: Fully adhered with cold
+                                      adhesive
+                                    </li>
                                   </ul>
                                   <p>B. Cap Sheet:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Type: SBS-modified bitumen cap sheet</li>
-                                    <li>2. Reinforcement: Fiberglass mat or polyester</li>
-                                    <li>3. Thickness: 180 mils (4.6 mm) minimum</li>
-                                    <li>4. Surfacing: Mineral granules or smooth</li>
-                                    <li>5. Application: Torch-applied or cold adhesive</li>
+                                    <li>
+                                      1. Type: SBS-modified bitumen cap sheet
+                                    </li>
+                                    <li>
+                                      2. Reinforcement: Fiberglass mat or
+                                      polyester
+                                    </li>
+                                    <li>
+                                      3. Thickness: 180 mils (4.6 mm) minimum
+                                    </li>
+                                    <li>
+                                      4. Surfacing: Mineral granules or smooth
+                                    </li>
+                                    <li>
+                                      5. Application: Torch-applied or cold
+                                      adhesive
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">2.4 INSULATION MATERIALS</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.4 INSULATION MATERIALS
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Polyisocyanurate Insulation:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Type: Rigid polyisocyanurate foam</li>
-                                    <li>2. Thickness: As required for R-value compliance</li>
-                                    <li>3. Facings: Glass fiber mat both sides</li>
-                                    <li>4. Compressive strength: 25 psi (172 kPa) minimum</li>
-                                    <li>5. R-value: 6.5 per inch at 75°F mean temperature</li>
-                                    <li>6. Fire rating: Class A when tested per ASTM E 84</li>
+                                    <li>
+                                      1. Type: Rigid polyisocyanurate foam
+                                    </li>
+                                    <li>
+                                      2. Thickness: As required for R-value
+                                      compliance
+                                    </li>
+                                    <li>
+                                      3. Facings: Glass fiber mat both sides
+                                    </li>
+                                    <li>
+                                      4. Compressive strength: 25 psi (172 kPa)
+                                      minimum
+                                    </li>
+                                    <li>
+                                      5. R-value: 6.5 per inch at 75°F mean
+                                      temperature
+                                    </li>
+                                    <li>
+                                      6. Fire rating: Class A when tested per
+                                      ASTM E 84
+                                    </li>
                                   </ul>
                                   <p>B. Tapered Insulation:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Factory-cut tapered polyisocyanurate</li>
-                                    <li>2. Minimum thickness: 1/2 inch at thin edge</li>
+                                    <li>
+                                      1. Factory-cut tapered polyisocyanurate
+                                    </li>
+                                    <li>
+                                      2. Minimum thickness: 1/2 inch at thin
+                                      edge
+                                    </li>
                                     <li>3. Slope: 1/4 inch per foot minimum</li>
-                                    <li>4. Drainage design per manufacturer's software</li>
+                                    <li>
+                                      4. Drainage design per manufacturer's
+                                      software
+                                    </li>
                                   </ul>
                                   <p>C. Cover Board:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Type: High-density polyisocyanurate or gypsum</li>
-                                    <li>2. Thickness: 1/2 inch (13 mm) minimum</li>
-                                    <li>3. Purpose: Provide smooth substrate for membrane</li>
-                                    <li>4. Compressive strength: 60 psi (414 kPa) minimum</li>
+                                    <li>
+                                      1. Type: High-density polyisocyanurate or
+                                      gypsum
+                                    </li>
+                                    <li>
+                                      2. Thickness: 1/2 inch (13 mm) minimum
+                                    </li>
+                                    <li>
+                                      3. Purpose: Provide smooth substrate for
+                                      membrane
+                                    </li>
+                                    <li>
+                                      4. Compressive strength: 60 psi (414 kPa)
+                                      minimum
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
-                                                            <div>
-                                <h5 className="font-semibold text-sm">2.5 VAPOR RETARDERS</h5>
+                              <div>
+                                <h5 className="font-semibold text-sm">
+                                  2.5 VAPOR RETARDERS
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Self-Adhering Vapor Retarder:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">1. Type: Self-adhering modified bitumen membrane</li>
-                                    <li>2. Thickness: 40 mils (1.0 mm) minimum</li>
-                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">3. Permeance: 0.05 perms maximum per ASTM E 96</li>
-                                    <li>4. Reinforcement: Cross-laminated polyethylene film</li>
+                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                      1. Type: Self-adhering modified bitumen
+                                      membrane
+                                    </li>
+                                    <li>
+                                      2. Thickness: 40 mils (1.0 mm) minimum
+                                    </li>
+                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                      3. Permeance: 0.05 perms maximum per ASTM
+                                      E 96
+                                    </li>
+                                    <li>
+                                      4. Reinforcement: Cross-laminated
+                                      polyethylene film
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">2.6 FASTENERS AND ADHESIVES</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.6 FASTENERS AND ADHESIVES
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Mechanical Fasteners:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">1. Type: Coated steel screws with polyolefin plates</li>
-                                    <li>2. Length: Penetrate structural deck minimum 3/4 inch</li>
-                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">3. Pullout strength: 400 lbf minimum per FM 4470</li>
-                                    <li>4. Corrosion resistance: 500-hour salt spray test</li>
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      1. Type: Coated steel screws with
+                                      polyolefin plates
+                                    </li>
+                                    <li>
+                                      2. Length: Penetrate structural deck
+                                      minimum 3/4 inch
+                                    </li>
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      3. Pullout strength: 400 lbf minimum per
+                                      FM 4470
+                                    </li>
+                                    <li>
+                                      4. Corrosion resistance: 500-hour salt
+                                      spray test
+                                    </li>
                                   </ul>
                                   <p>B. Contact Adhesive:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Type: Solvent-based contact adhesive</li>
-                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">2. Coverage rate: 1 gallon per 200 sq ft</li>
-                                    <li>3. Open time: 30 minutes minimum at 70°F</li>
-                                    <li>4. Service temperature: -40°F to 200°F</li>
+                                    <li>
+                                      1. Type: Solvent-based contact adhesive
+                                    </li>
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      2. Coverage rate: 1 gallon per 200 sq ft
+                                    </li>
+                                    <li>
+                                      3. Open time: 30 minutes minimum at 70°F
+                                    </li>
+                                    <li>
+                                      4. Service temperature: -40°F to 200°F
+                                    </li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm">2.7 ROOF DRAINS AND ACCESSORIES</h5>
+                                <h5 className="font-semibold text-sm">
+                                  2.7 ROOF DRAINS AND ACCESSORIES
+                                </h5>
                                 <div className="ml-4 space-y-3">
                                   <p>A. Primary Roof Drains:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">1. Type: Cast iron with clamping ring</li>
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      1. Type: Cast iron with clamping ring
+                                    </li>
                                     <li>2. Size: 4-inch minimum diameter</li>
-                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">3. Capacity: 7.5 GPM per 100 sq ft of roof area</li>
-                                    <li>4. Dome strainer: Vandal-resistant cast iron</li>
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      3. Capacity: 7.5 GPM per 100 sq ft of roof
+                                      area
+                                    </li>
+                                    <li>
+                                      4. Dome strainer: Vandal-resistant cast
+                                      iron
+                                    </li>
                                   </ul>
                                   <p>B. Overflow Drains:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>1. Located 2 inches above primary drain inlet</li>
-                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">2. Same capacity as primary drain system</li>
+                                    <li>
+                                      1. Located 2 inches above primary drain
+                                      inlet
+                                    </li>
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      2. Same capacity as primary drain system
+                                    </li>
                                     <li>3. Separate overflow piping system</li>
                                   </ul>
                                 </div>
                               </div>
 
                               <div className="border-t pt-6 mt-8">
-                                <h4 className="font-bold mb-3 text-base">PART 3 - EXECUTION</h4>
+                                <h4 className="font-bold mb-3 text-base">
+                                  PART 3 - EXECUTION
+                                </h4>
 
                                 <div className="space-y-4">
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.1 EXAMINATION</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.1 EXAMINATION
+                                    </h5>
                                     <div className="ml-4 space-y-3">
-                                      <p>A. Examine substrates for conditions affecting performance:</p>
+                                      <p>
+                                        A. Examine substrates for conditions
+                                        affecting performance:
+                                      </p>
                                       <ul className="ml-4 space-y-1">
-                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">1. Verify structural adequacy and proper slopes</li>
-                                        <li>2. Check for smooth, clean, and dry surfaces</li>
-                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">3. Confirm proper installation of vapor retarder</li>
-                                        <li>4. Verify coordination with other building systems</li>
+                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                          1. Verify structural adequacy and
+                                          proper slopes
+                                        </li>
+                                        <li>
+                                          2. Check for smooth, clean, and dry
+                                          surfaces
+                                        </li>
+                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                          3. Confirm proper installation of
+                                          vapor retarder
+                                        </li>
+                                        <li>
+                                          4. Verify coordination with other
+                                          building systems
+                                        </li>
                                       </ul>
-                                      <p>B. Proceed with installation only after unsatisfactory conditions have been corrected.</p>
+                                      <p>
+                                        B. Proceed with installation only after
+                                        unsatisfactory conditions have been
+                                        corrected.
+                                      </p>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.2 PREPARATION</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.2 PREPARATION
+                                    </h5>
                                     <div className="ml-4 space-y-3">
-                                      <p>A. Clean substrate of dust, debris, and foreign matter.</p>
-                                      <p>B. Complete installation of items that penetrate membrane before membrane installation.</p>
-                                      <p className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">C. Install temporary edge protection during membrane installation.</p>
-                                      <p>D. Coordinate with rooftop equipment installation schedule.</p>
+                                      <p>
+                                        A. Clean substrate of dust, debris, and
+                                        foreign matter.
+                                      </p>
+                                      <p>
+                                        B. Complete installation of items that
+                                        penetrate membrane before membrane
+                                        installation.
+                                      </p>
+                                      <p className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                        C. Install temporary edge protection
+                                        during membrane installation.
+                                      </p>
+                                      <p>
+                                        D. Coordinate with rooftop equipment
+                                        installation schedule.
+                                      </p>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.3 INSTALLATION OF INSULATION</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.3 INSTALLATION OF INSULATION
+                                    </h5>
                                     <div className="ml-4 space-y-3">
-                                      <p>A. General Installation Requirements:</p>
+                                      <p>
+                                        A. General Installation Requirements:
+                                      </p>
                                       <ul className="ml-4 space-y-1">
-                                        <li>1. Install insulation in single or multiple layers</li>
-                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">2. Stagger joints between layers minimum 6 inches</li>
-                                        <li>3. Fit tightly together without gaps or voids</li>
-                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">4. Minimum 3-inch clearance from roof drains</li>
+                                        <li>
+                                          1. Install insulation in single or
+                                          multiple layers
+                                        </li>
+                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                          2. Stagger joints between layers
+                                          minimum 6 inches
+                                        </li>
+                                        <li>
+                                          3. Fit tightly together without gaps
+                                          or voids
+                                        </li>
+                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                          4. Minimum 3-inch clearance from roof
+                                          drains
+                                        </li>
                                       </ul>
                                       <p>B. Fastening Requirements:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">1. Mechanically fasten first layer at 4 fasteners per board</li>
-                                        <li>2. Adhesively attach subsequent layers</li>
-                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">3. Install fasteners minimum 2 inches from board edges</li>
+                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                          1. Mechanically fasten first layer at
+                                          4 fasteners per board
+                                        </li>
+                                        <li>
+                                          2. Adhesively attach subsequent layers
+                                        </li>
+                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                          3. Install fasteners minimum 2 inches
+                                          from board edges
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.4 MEMBRANE INSTALLATION</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.4 MEMBRANE INSTALLATION
+                                    </h5>
                                     <div className="ml-4 space-y-3">
                                       <p>A. EPDM Membrane Installation:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">1. Install membrane in largest practical sizes</li>
-                                        <li>2. Allow membrane to relax minimum 30 minutes before adhering</li>
-                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">3. Apply adhesive at manufacturer's specified coverage rate</li>
-                                        <li>4. Install membrane without wrinkles or air bubbles</li>
-                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">5. Seam overlap: 3 inches minimum, 6 inches maximum</li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          1. Install membrane in largest
+                                          practical sizes
+                                        </li>
+                                        <li>
+                                          2. Allow membrane to relax minimum 30
+                                          minutes before adhering
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          3. Apply adhesive at manufacturer's
+                                          specified coverage rate
+                                        </li>
+                                        <li>
+                                          4. Install membrane without wrinkles
+                                          or air bubbles
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          5. Seam overlap: 3 inches minimum, 6
+                                          inches maximum
+                                        </li>
                                       </ul>
                                       <p>B. Seaming Procedures:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li>1. Clean seam area with manufacturer's cleaner</li>
-                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">2. Apply primer and allow to dry completely</li>
-                                        <li>3. Install seam tape with firm pressure</li>
-                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">4. Apply sealant to edges of seam tape</li>
-                                        <li>5. Test seams with probe after 24-hour cure time</li>
+                                        <li>
+                                          1. Clean seam area with manufacturer's
+                                          cleaner
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          2. Apply primer and allow to dry
+                                          completely
+                                        </li>
+                                        <li>
+                                          3. Install seam tape with firm
+                                          pressure
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          4. Apply sealant to edges of seam tape
+                                        </li>
+                                        <li>
+                                          5. Test seams with probe after 24-hour
+                                          cure time
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.5 FLASHING INSTALLATION</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.5 FLASHING INSTALLATION
+                                    </h5>
                                     <div className="ml-4 space-y-3">
                                       <p>A. Base Flashing:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">1. Extend minimum 8 inches onto roof surface</li>
-                                        <li>2. Extend minimum 8 inches up vertical surfaces</li>
-                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">3. Install without wrinkles or bridging</li>
-                                        <li>4. Seal all terminations and penetrations</li>
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          1. Extend minimum 8 inches onto roof
+                                          surface
+                                        </li>
+                                        <li>
+                                          2. Extend minimum 8 inches up vertical
+                                          surfaces
+                                        </li>
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          3. Install without wrinkles or
+                                          bridging
+                                        </li>
+                                        <li>
+                                          4. Seal all terminations and
+                                          penetrations
+                                        </li>
                                       </ul>
                                       <p>B. Cap Flashing:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li>1. Install over base flashing with proper overlap</li>
-                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">2. Secure with concealed fasteners</li>
-                                        <li>3. Seal all joints and terminations</li>
+                                        <li>
+                                          1. Install over base flashing with
+                                          proper overlap
+                                        </li>
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          2. Secure with concealed fasteners
+                                        </li>
+                                        <li>
+                                          3. Seal all joints and terminations
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.6 QUALITY CONTROL</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.6 QUALITY CONTROL
+                                    </h5>
                                     <div className="ml-4 space-y-3">
                                       <p>A. Field Quality Control:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">1. Daily inspection of installation progress</li>
-                                        <li>2. Weather monitoring and documentation</li>
-                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">3. Seam testing with probe at 6-foot intervals</li>
-                                        <li>4. Flood testing of completed areas</li>
-                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">5. Electronic leak detection where specified</li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          1. Daily inspection of installation
+                                          progress
+                                        </li>
+                                        <li>
+                                          2. Weather monitoring and
+                                          documentation
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          3. Seam testing with probe at 6-foot
+                                          intervals
+                                        </li>
+                                        <li>
+                                          4. Flood testing of completed areas
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          5. Electronic leak detection where
+                                          specified
+                                        </li>
                                       </ul>
                                       <p>B. Testing Requirements:</p>
                                       <ul className="ml-4 space-y-1">
-                                        <li>1. All seams tested for continuity</li>
-                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">2. Flood test duration: 24 hours minimum</li>
-                                        <li>3. Water depth: 2 inches minimum</li>
-                                        <li>4. Document test results with photographs</li>
+                                        <li>
+                                          1. All seams tested for continuity
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          2. Flood test duration: 24 hours
+                                          minimum
+                                        </li>
+                                        <li>
+                                          3. Water depth: 2 inches minimum
+                                        </li>
+                                        <li>
+                                          4. Document test results with
+                                          photographs
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
 
                                   <div>
-                                    <h5 className="font-semibold text-sm">3.7 PROTECTION AND CLEANING</h5>
+                                    <h5 className="font-semibold text-sm">
+                                      3.7 PROTECTION AND CLEANING
+                                    </h5>
                                     <div className="ml-4 space-y-3">
-                                      <p>A. Protect installed roofing from damage during construction.</p>
-                                      <p>B. Prohibit foot traffic except where necessary for construction.</p>
-                                      <p>C. Install protective walkways for maintenance access.</p>
-                                      <p>D. Clean membrane surface of debris and foreign materials.</p>
+                                      <p>
+                                        A. Protect installed roofing from damage
+                                        during construction.
+                                      </p>
+                                      <p>
+                                        B. Prohibit foot traffic except where
+                                        necessary for construction.
+                                      </p>
+                                      <p>
+                                        C. Install protective walkways for
+                                        maintenance access.
+                                      </p>
+                                      <p>
+                                        D. Clean membrane surface of debris and
+                                        foreign materials.
+                                      </p>
                                     </div>
                                   </div>
                                 </div>
@@ -751,37 +1402,70 @@ export default function Platform() {
 
                                 <div className="space-y-4">
                                   <div>
-                                    <h4 className="font-bold mb-2">PART 1 - GENERAL</h4>
+                                    <h4 className="font-bold mb-2">
+                                      PART 1 - GENERAL
+                                    </h4>
 
                                     <div className="space-y-3">
                                       <div>
-                                        <h5 className="font-semibold">1.1 SUMMARY</h5>
+                                        <h5 className="font-semibold">
+                                          1.1 SUMMARY
+                                        </h5>
                                         <div className="ml-4 space-y-2">
                                           <p>A. Section includes:</p>
                                           <ul className="ml-4 space-y-1">
-                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">1. Through-wall flashing systems</li>
-                                            <li>2. Metal roof drainage systems</li>
-                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">3. Expansion joint covers</li>
-                                            <li>4. Metal copings and cap flashings</li>
-                                            <li>5. Reglets and counterflashings</li>
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              1. Through-wall flashing systems
+                                            </li>
+                                            <li>
+                                              2. Metal roof drainage systems
+                                            </li>
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              3. Expansion joint covers
+                                            </li>
+                                            <li>
+                                              4. Metal copings and cap flashings
+                                            </li>
+                                            <li>
+                                              5. Reglets and counterflashings
+                                            </li>
                                           </ul>
                                         </div>
                                       </div>
 
                                       <div>
-                                        <h5 className="font-semibold">1.2 PERFORMANCE REQUIREMENTS</h5>
+                                        <h5 className="font-semibold">
+                                          1.2 PERFORMANCE REQUIREMENTS
+                                        </h5>
                                         <div className="ml-4 space-y-2">
                                           <p>A. Structural Performance:</p>
                                           <ul className="ml-4 space-y-1">
-                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">1. Wind load resistance: 150 mph basic wind speed</li>
-                                            <li>2. Seismic design per ASCE 7 requirements</li>
-                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">3. Thermal movement accommodation</li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              1. Wind load resistance: 150 mph
+                                              basic wind speed
+                                            </li>
+                                            <li>
+                                              2. Seismic design per ASCE 7
+                                              requirements
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              3. Thermal movement accommodation
+                                            </li>
                                           </ul>
                                           <p>B. Water Resistance:</p>
                                           <ul className="ml-4 space-y-1">
-                                            <li>1. Watertight construction under test pressure</li>
-                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">2. Drainage capacity per local plumbing codes</li>
-                                            <li>3. Compatible with building envelope systems</li>
+                                            <li>
+                                              1. Watertight construction under
+                                              test pressure
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              2. Drainage capacity per local
+                                              plumbing codes
+                                            </li>
+                                            <li>
+                                              3. Compatible with building
+                                              envelope systems
+                                            </li>
                                           </ul>
                                         </div>
                                       </div>
@@ -791,25 +1475,50 @@ export default function Platform() {
                               </div>
 
                               <div className="space-y-4 mt-8 text-xs text-gray-600 bg-gray-50 p-4 rounded">
-                                <p className="text-center font-semibold">--- DOCUMENT CONTINUES ---</p>
-                                <p className="text-center">Pages 2-50 contain additional sections including:</p>
+                                <p className="text-center font-semibold">
+                                  --- DOCUMENT CONTINUES ---
+                                </p>
+                                <p className="text-center">
+                                  Pages 2-50 contain additional sections
+                                  including:
+                                </p>
                                 <div className="grid grid-cols-2 gap-2 mt-4 text-[10px]">
                                   <div>
-                                    <p className="font-medium">• Sheet Metal Materials (Pages 8-12)</p>
-                                    <p>• Installation Procedures (Pages 13-17)</p>
+                                    <p className="font-medium">
+                                      • Sheet Metal Materials (Pages 8-12)
+                                    </p>
+                                    <p>
+                                      • Installation Procedures (Pages 13-17)
+                                    </p>
                                     <p>• Quality Control (Pages 18-20)</p>
-                                    <p>• Section 07 70 00 - Roof Specialties (Pages 21-28)</p>
-                                    <p>• Roof Hatches and Curbs (Pages 29-32)</p>
+                                    <p>
+                                      • Section 07 70 00 - Roof Specialties
+                                      (Pages 21-28)
+                                    </p>
+                                    <p>
+                                      • Roof Hatches and Curbs (Pages 29-32)
+                                    </p>
                                   </div>
                                   <div>
-                                    <p className="font-medium">• Section 07 80 00 - Fire Protection (Pages 33-40)</p>
-                                    <p>• Section 07 90 00 - Joint Protection (Pages 41-45)</p>
-                                    <p>• Testing and Commissioning (Pages 46-48)</p>
+                                    <p className="font-medium">
+                                      • Section 07 80 00 - Fire Protection
+                                      (Pages 33-40)
+                                    </p>
+                                    <p>
+                                      • Section 07 90 00 - Joint Protection
+                                      (Pages 41-45)
+                                    </p>
+                                    <p>
+                                      • Testing and Commissioning (Pages 46-48)
+                                    </p>
                                     <p>• Appendices A-C (Pages 49-50)</p>
                                     <p>• Technical Data Sheets</p>
                                   </div>
                                 </div>
-                                <p className="text-center mt-4 font-medium">All sections contain detailed AI-highlighted requirements and manufacturer specifications</p>
+                                <p className="text-center mt-4 font-medium">
+                                  All sections contain detailed AI-highlighted
+                                  requirements and manufacturer specifications
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -817,7 +1526,7 @@ export default function Platform() {
                       </div>
                     </div>
                   </div>
-                                </div>
+                </div>
 
                 <div className="flex items-center justify-between pt-2 border-t">
                   <span className="text-sm text-gray-500">Page 1 of 50</span>
@@ -854,22 +1563,42 @@ export default function Platform() {
               <CardContent>
                 <div className="bg-white border rounded-lg shadow-sm h-[calc(50vh-100px)] overflow-y-auto">
                   <div className="bg-gray-100 px-4 py-2 border-b text-xs text-gray-600 flex justify-between items-center">
-                    <span>Metropolitan_Hospital_EPDM_Submittal_Package.pdf</span>
+                    <span>
+                      Metropolitan_Hospital_EPDM_Submittal_Package.pdf
+                    </span>
                     <span>Page 1 of 15 • Auto-Generated • 100% zoom</span>
                   </div>
-                  <div className="p-8 text-sm leading-relaxed" style={{ fontFamily: 'serif' }}>
+                  <div
+                    className="p-8 text-sm leading-relaxed"
+                    style={{ fontFamily: "serif" }}
+                  >
                     <div className="text-center mb-8">
-                      <h1 className="text-xl font-bold mb-2">SUBMITTAL PACKAGE</h1>
-                      <h2 className="text-lg font-semibold mb-1">Section 07 50 00 - Membrane Roofing</h2>
-                      <p className="text-gray-600">Metropolitan Hospital Expansion Project</p>
+                      <h1 className="text-xl font-bold mb-2">
+                        SUBMITTAL PACKAGE
+                      </h1>
+                      <h2 className="text-lg font-semibold mb-1">
+                        Section 07 50 00 - Membrane Roofing
+                      </h2>
+                      <p className="text-gray-600">
+                        Metropolitan Hospital Expansion Project
+                      </p>
                       <p className="text-gray-600">Project No: MHE-2024-007</p>
-                      <p className="text-gray-600 text-xs mt-2">Generated by Hafestus AI • {new Date().toLocaleDateString()}</p>
+                      <p className="text-gray-600 text-xs mt-2">
+                        Generated by Hafestus AI •{" "}
+                        {new Date().toLocaleDateString()}
+                      </p>
                     </div>
 
                     <div className="space-y-6">
                       <div className="bg-green-50 p-4 rounded border-l-4 border-green-500">
-                        <h3 className="font-bold text-green-900 mb-2">✓ AI COMPLIANCE VERIFICATION</h3>
-                        <p className="text-green-800 text-sm">This submittal package has been automatically generated and verified against all 47 specification requirements. Compliance rate: 100%</p>
+                        <h3 className="font-bold text-green-900 mb-2">
+                          ✓ AI COMPLIANCE VERIFICATION
+                        </h3>
+                        <p className="text-green-800 text-sm">
+                          This submittal package has been automatically
+                          generated and verified against all 47 specification
+                          requirements. Compliance rate: 100%
+                        </p>
                       </div>
 
                       <div>
@@ -879,32 +1608,86 @@ export default function Platform() {
 
                         <div className="space-y-6">
                           <div className="bg-blue-50 p-4 rounded">
-                            <h4 className="font-bold mb-3 text-blue-900">1. EPDM MEMBRANE SYSTEM</h4>
+                            <h4 className="font-bold mb-3 text-blue-900">
+                              1. EPDM MEMBRANE SYSTEM
+                            </h4>
 
                             <div className="space-y-4">
                               <div>
-                                <h5 className="font-semibold text-sm mb-2">Primary Membrane - Carlisle Sure-Weld EPDM</h5>
+                                <h5 className="font-semibold text-sm mb-2">
+                                  Primary Membrane - Carlisle Sure-Weld EPDM
+                                </h5>
                                 <div className="ml-4 space-y-2 text-xs">
                                   <div className="grid grid-cols-2 gap-4">
                                     <div>
-                                      <p><span className="font-medium">Manufacturer:</span> Carlisle SynTec Systems</p>
-                                      <p><span className="font-medium">Product:</span> Sure-Weld 0.060" EPDM Membrane</p>
-                                      <p><span className="font-medium">Color:</span> Black (Standard)</p>
-                                      <p><span className="font-medium">Width:</span> 50 feet (15.24 m)</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Manufacturer:
+                                        </span>{" "}
+                                        Carlisle SynTec Systems
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Product:
+                                        </span>{" "}
+                                        Sure-Weld 0.060" EPDM Membrane
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Color:
+                                        </span>{" "}
+                                        Black (Standard)
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Width:
+                                        </span>{" "}
+                                        50 feet (15.24 m)
+                                      </p>
                                     </div>
                                     <div>
-                                      <p><span className="font-medium">Thickness:</span> 0.060" (1.52 mm)</p>
-                                      <p><span className="font-medium">Standard:</span> ASTM D 4637 Type I</p>
-                                      <p><span className="font-medium">Warranty:</span> 20 Year NDL</p>
-                                      <p><span className="font-medium">Fire Rating:</span> Class A</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Thickness:
+                                        </span>{" "}
+                                        0.060" (1.52 mm)
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Standard:
+                                        </span>{" "}
+                                        ASTM D 4637 Type I
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Warranty:
+                                        </span>{" "}
+                                        20 Year NDL
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Fire Rating:
+                                        </span>{" "}
+                                        Class A
+                                      </p>
                                     </div>
                                   </div>
                                   <div className="bg-white p-3 rounded border">
-                                    <p className="font-medium text-green-700">✓ SPECIFICATION COMPLIANCE:</p>
+                                    <p className="font-medium text-green-700">
+                                      ✓ SPECIFICATION COMPLIANCE:
+                                    </p>
                                     <ul className="mt-1 space-y-1 text-green-600">
-                                      <li>• Meets ASTM D 4637 Type I requirements ✓</li>
-                                      <li>• 0.060" minimum thickness requirement ✓</li>
-                                      <li>• Approved manufacturer (Carlisle specified) ✓</li>
+                                      <li>
+                                        • Meets ASTM D 4637 Type I requirements
+                                        ✓
+                                      </li>
+                                      <li>
+                                        • 0.060" minimum thickness requirement ✓
+                                      </li>
+                                      <li>
+                                        • Approved manufacturer (Carlisle
+                                        specified) ✓
+                                      </li>
                                       <li>• 20-year warranty requirement ✓</li>
                                     </ul>
                                   </div>
@@ -912,41 +1695,83 @@ export default function Platform() {
                               </div>
 
                               <div>
-                                <h5 className="font-semibold text-sm mb-2">Technical Properties</h5>
+                                <h5 className="font-semibold text-sm mb-2">
+                                  Technical Properties
+                                </h5>
                                 <div className="ml-4">
                                   <table className="w-full text-xs border-collapse border border-gray-300">
                                     <thead>
                                       <tr className="bg-gray-100">
-                                        <th className="border border-gray-300 p-2 text-left">Property</th>
-                                        <th className="border border-gray-300 p-2 text-left">Test Method</th>
-                                        <th className="border border-gray-300 p-2 text-left">Value</th>
-                                        <th className="border border-gray-300 p-2 text-left">Spec Requirement</th>
+                                        <th className="border border-gray-300 p-2 text-left">
+                                          Property
+                                        </th>
+                                        <th className="border border-gray-300 p-2 text-left">
+                                          Test Method
+                                        </th>
+                                        <th className="border border-gray-300 p-2 text-left">
+                                          Value
+                                        </th>
+                                        <th className="border border-gray-300 p-2 text-left">
+                                          Spec Requirement
+                                        </th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td className="border border-gray-300 p-2">Tensile Strength</td>
-                                        <td className="border border-gray-300 p-2">ASTM D 412</td>
-                                        <td className="border border-gray-300 p-2 font-medium text-green-600">1,400 psi</td>
-                                        <td className="border border-gray-300 p-2">1,200 psi min</td>
+                                        <td className="border border-gray-300 p-2">
+                                          Tensile Strength
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          ASTM D 412
+                                        </td>
+                                        <td className="border border-gray-300 p-2 font-medium text-green-600">
+                                          1,400 psi
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          1,200 psi min
+                                        </td>
                                       </tr>
                                       <tr className="bg-gray-50">
-                                        <td className="border border-gray-300 p-2">Elongation at Break</td>
-                                        <td className="border border-gray-300 p-2">ASTM D 412</td>
-                                        <td className="border border-gray-300 p-2 font-medium text-green-600">400%</td>
-                                        <td className="border border-gray-300 p-2">300% min</td>
+                                        <td className="border border-gray-300 p-2">
+                                          Elongation at Break
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          ASTM D 412
+                                        </td>
+                                        <td className="border border-gray-300 p-2 font-medium text-green-600">
+                                          400%
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          300% min
+                                        </td>
                                       </tr>
                                       <tr>
-                                        <td className="border border-gray-300 p-2">Tear Resistance</td>
-                                        <td className="border border-gray-300 p-2">ASTM D 624</td>
-                                        <td className="border border-gray-300 p-2 font-medium text-green-600">250 lbf/in</td>
-                                        <td className="border border-gray-300 p-2">200 lbf/in min</td>
+                                        <td className="border border-gray-300 p-2">
+                                          Tear Resistance
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          ASTM D 624
+                                        </td>
+                                        <td className="border border-gray-300 p-2 font-medium text-green-600">
+                                          250 lbf/in
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          200 lbf/in min
+                                        </td>
                                       </tr>
                                       <tr className="bg-gray-50">
-                                        <td className="border border-gray-300 p-2">Ozone Resistance</td>
-                                        <td className="border border-gray-300 p-2">ASTM D 1149</td>
-                                        <td className="border border-gray-300 p-2 font-medium text-green-600">No Cracking</td>
-                                        <td className="border border-gray-300 p-2">No Cracking</td>
+                                        <td className="border border-gray-300 p-2">
+                                          Ozone Resistance
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          ASTM D 1149
+                                        </td>
+                                        <td className="border border-gray-300 p-2 font-medium text-green-600">
+                                          No Cracking
+                                        </td>
+                                        <td className="border border-gray-300 p-2">
+                                          No Cracking
+                                        </td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -956,33 +1781,87 @@ export default function Platform() {
                           </div>
 
                           <div className="bg-purple-50 p-4 rounded">
-                            <h4 className="font-bold mb-3 text-purple-900">2. INSULATION SYSTEM</h4>
+                            <h4 className="font-bold mb-3 text-purple-900">
+                              2. INSULATION SYSTEM
+                            </h4>
 
                             <div className="space-y-4">
                               <div>
-                                <h5 className="font-semibold text-sm mb-2">GAF EnergyGuard Polyiso Insulation</h5>
+                                <h5 className="font-semibold text-sm mb-2">
+                                  GAF EnergyGuard Polyiso Insulation
+                                </h5>
                                 <div className="ml-4 space-y-2 text-xs">
                                   <div className="grid grid-cols-2 gap-4">
                                     <div>
-                                      <p><span className="font-medium">Manufacturer:</span> GAF Materials Corporation</p>
-                                      <p><span className="font-medium">Product:</span> EnergyGuard HD Polyiso</p>
-                                      <p><span className="font-medium">Thickness:</span> 4.0" (R-25)</p>
-                                      <p><span className="font-medium">Facing:</span> Glass Mat Both Sides</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Manufacturer:
+                                        </span>{" "}
+                                        GAF Materials Corporation
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Product:
+                                        </span>{" "}
+                                        EnergyGuard HD Polyiso
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Thickness:
+                                        </span>{" "}
+                                        4.0" (R-25)
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Facing:
+                                        </span>{" "}
+                                        Glass Mat Both Sides
+                                      </p>
                                     </div>
                                     <div>
-                                      <p><span className="font-medium">R-Value:</span> R-6.2 per inch @ 75°F</p>
-                                      <p><span className="font-medium">Compressive Strength:</span> 25 psi min</p>
-                                      <p><span className="font-medium">Fire Rating:</span> Class A per ASTM E 84</p>
-                                      <p><span className="font-medium">Dimensions:</span> 4' x 8' (1.22m x 2.44m)</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          R-Value:
+                                        </span>{" "}
+                                        R-6.2 per inch @ 75°F
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Compressive Strength:
+                                        </span>{" "}
+                                        25 psi min
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Fire Rating:
+                                        </span>{" "}
+                                        Class A per ASTM E 84
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Dimensions:
+                                        </span>{" "}
+                                        4' x 8' (1.22m x 2.44m)
+                                      </p>
                                     </div>
                                   </div>
                                   <div className="bg-white p-3 rounded border">
-                                    <p className="font-medium text-green-700">✓ THERMAL COMPLIANCE:</p>
+                                    <p className="font-medium text-green-700">
+                                      ✓ THERMAL COMPLIANCE:
+                                    </p>
                                     <ul className="mt-1 space-y-1 text-green-600">
-                                      <li>• R-25 requirement: 4.0" @ R-6.2/inch = R-24.8 ✓</li>
-                                      <li>• Class A fire rating per ASTM E 84 ✓</li>
+                                      <li>
+                                        • R-25 requirement: 4.0" @ R-6.2/inch =
+                                        R-24.8 ✓
+                                      </li>
+                                      <li>
+                                        • Class A fire rating per ASTM E 84 ✓
+                                      </li>
                                       <li>• 25 psi compressive strength ✓</li>
-                                      <li>• Glass mat facing compatible with adhesive ✓</li>
+                                      <li>
+                                        • Glass mat facing compatible with
+                                        adhesive ✓
+                                      </li>
                                     </ul>
                                   </div>
                                 </div>
@@ -991,33 +1870,86 @@ export default function Platform() {
                           </div>
 
                           <div className="bg-orange-50 p-4 rounded">
-                            <h4 className="font-bold mb-3 text-orange-900">3. FASTENING SYSTEM</h4>
+                            <h4 className="font-bold mb-3 text-orange-900">
+                              3. FASTENING SYSTEM
+                            </h4>
 
                             <div className="space-y-4">
                               <div>
-                                <h5 className="font-semibold text-sm mb-2">Olympic Fastening OlyFast HD Fasteners</h5>
+                                <h5 className="font-semibold text-sm mb-2">
+                                  Olympic Fastening OlyFast HD Fasteners
+                                </h5>
                                 <div className="ml-4 space-y-2 text-xs">
                                   <div className="grid grid-cols-2 gap-4">
                                     <div>
-                                      <p><span className="font-medium">Manufacturer:</span> Olympic Fastening Systems</p>
-                                      <p><span className="font-medium">Product:</span> OlyFast 6" HD Fasteners</p>
-                                      <p><span className="font-medium">Length:</span> 6.0" (152mm)</p>
-                                      <p><span className="font-medium">Plate Size:</span> 3" (76mm) diameter</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Manufacturer:
+                                        </span>{" "}
+                                        Olympic Fastening Systems
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Product:
+                                        </span>{" "}
+                                        OlyFast 6" HD Fasteners
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Length:
+                                        </span>{" "}
+                                        6.0" (152mm)
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Plate Size:
+                                        </span>{" "}
+                                        3" (76mm) diameter
+                                      </p>
                                     </div>
                                     <div>
-                                      <p><span className="font-medium">Material:</span> Coated Steel</p>
-                                      <p><span className="font-medium">Pullout Strength:</span> 465 lbf</p>
-                                      <p><span className="font-medium">Pattern:</span> 4 per 4'x8' board</p>
-                                      <p><span className="font-medium">Installation:</span> Impact driver</p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Material:
+                                        </span>{" "}
+                                        Coated Steel
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Pullout Strength:
+                                        </span>{" "}
+                                        465 lbf
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Pattern:
+                                        </span>{" "}
+                                        4 per 4'x8' board
+                                      </p>
+                                      <p>
+                                        <span className="font-medium">
+                                          Installation:
+                                        </span>{" "}
+                                        Impact driver
+                                      </p>
                                     </div>
                                   </div>
                                   <div className="bg-white p-3 rounded border">
-                                    <p className="font-medium text-green-700">✓ WIND UPLIFT COMPLIANCE:</p>
+                                    <p className="font-medium text-green-700">
+                                      ✓ WIND UPLIFT COMPLIANCE:
+                                    </p>
                                     <ul className="mt-1 space-y-1 text-green-600">
-                                      <li>• 465 lbf pullout exceeds 400 lbf minimum ✓</li>
-                                      <li>• 165 lbf/sq ft uplift rating achieved ✓</li>
+                                      <li>
+                                        • 465 lbf pullout exceeds 400 lbf
+                                        minimum ✓
+                                      </li>
+                                      <li>
+                                        • 165 lbf/sq ft uplift rating achieved ✓
+                                      </li>
                                       <li>• FM 4470 tested and approved ✓</li>
-                                      <li>• Compatible with steel deck substrate ✓</li>
+                                      <li>
+                                        • Compatible with steel deck substrate ✓
+                                      </li>
                                     </ul>
                                   </div>
                                 </div>
@@ -1026,7 +1958,9 @@ export default function Platform() {
                           </div>
 
                           <div className="bg-gray-50 p-4 rounded mt-6">
-                            <h4 className="font-bold mb-3">MANUFACTURER CERTIFICATIONS</h4>
+                            <h4 className="font-bold mb-3">
+                              MANUFACTURER CERTIFICATIONS
+                            </h4>
                             <div className="grid grid-cols-3 gap-4 text-xs">
                               <div className="text-center">
                                 <div className="bg-white p-3 rounded border">
@@ -1044,7 +1978,9 @@ export default function Platform() {
                               </div>
                               <div className="text-center">
                                 <div className="bg-white p-3 rounded border">
-                                  <p className="font-medium">Olympic Fastening</p>
+                                  <p className="font-medium">
+                                    Olympic Fastening
+                                  </p>
                                   <p className="text-gray-600">FM Approved</p>
                                   <p className="text-green-600">✓ Certified</p>
                                 </div>
@@ -1053,14 +1989,43 @@ export default function Platform() {
                           </div>
 
                           <div className="bg-blue-50 p-4 rounded mt-6">
-                            <h4 className="font-bold mb-3 text-blue-900">AI ANALYSIS SUMMARY</h4>
+                            <h4 className="font-bold mb-3 text-blue-900">
+                              AI ANALYSIS SUMMARY
+                            </h4>
                             <div className="text-xs space-y-2">
-                              <p><span className="font-medium">Specification Requirements Analyzed:</span> 47 out of 47</p>
-                              <p><span className="font-medium">Manufacturer Products Evaluated:</span> 156 products across 23 manufacturers</p>
-                              <p><span className="font-medium">Compliance Verification:</span> 100% specification compliance achieved</p>
-                              <p><span className="font-medium">Cost Optimization:</span> 12% cost savings vs. typical manual selection</p>
-                              <p><span className="font-medium">Performance Rating:</span> Exceeds all minimum requirements</p>
-                              <p className="text-blue-700 font-medium">Generation Time: 4.2 seconds</p>
+                              <p>
+                                <span className="font-medium">
+                                  Specification Requirements Analyzed:
+                                </span>{" "}
+                                47 out of 47
+                              </p>
+                              <p>
+                                <span className="font-medium">
+                                  Manufacturer Products Evaluated:
+                                </span>{" "}
+                                156 products across 23 manufacturers
+                              </p>
+                              <p>
+                                <span className="font-medium">
+                                  Compliance Verification:
+                                </span>{" "}
+                                100% specification compliance achieved
+                              </p>
+                              <p>
+                                <span className="font-medium">
+                                  Cost Optimization:
+                                </span>{" "}
+                                12% cost savings vs. typical manual selection
+                              </p>
+                              <p>
+                                <span className="font-medium">
+                                  Performance Rating:
+                                </span>{" "}
+                                Exceeds all minimum requirements
+                              </p>
+                              <p className="text-blue-700 font-medium">
+                                Generation Time: 4.2 seconds
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -1070,7 +2035,9 @@ export default function Platform() {
                 </div>
 
                 <div className="flex items-center justify-between pt-2 border-t">
-                  <span className="text-sm text-gray-500">Page 1 of 15 • Auto-Generated</span>
+                  <span className="text-sm text-gray-500">
+                    Page 1 of 15 • Auto-Generated
+                  </span>
                   <div className="flex items-center space-x-2">
                     <Button variant="ghost" size="sm">
                       Previous
@@ -1090,65 +2057,69 @@ export default function Platform() {
 
           {/* Right Side - AI Recommendations & Submittal */}
           <div className="space-y-4">
-                        {/* AI Recommendations */}
+            {/* AI Recommendations */}
             <Card>
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center">
                   <Brain className="h-5 w-5 mr-2 text-primary" />
                   AI Recommendations
-                  <Badge variant="secondary" className="ml-2 bg-green-100 text-green-700">
+                  <Badge
+                    variant="secondary"
+                    className="ml-2 bg-green-100 text-green-700"
+                  >
                     12 Products Analyzed
                   </Badge>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="h-96 overflow-y-auto space-y-4 pr-2">
-                {aiRecommendations.map((rec) => (
-                  <div
-                    key={rec.id}
-                    className="border rounded-lg p-4 hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="flex items-start justify-between mb-2">
-                      <h4 className="font-semibold text-gray-900">
-                        {rec.title}
-                      </h4>
-                      <div className="flex items-center">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-1" />
-                        <span className="text-sm font-medium text-green-600">
-                          {rec.compliance}% Match
-                        </span>
+                  {aiRecommendations.map((rec) => (
+                    <div
+                      key={rec.id}
+                      className="border rounded-lg p-4 hover:bg-gray-50 transition-colors"
+                    >
+                      <div className="flex items-start justify-between mb-2">
+                        <h4 className="font-semibold text-gray-900">
+                          {rec.title}
+                        </h4>
+                        <div className="flex items-center">
+                          <CheckCircle className="h-4 w-4 text-green-500 mr-1" />
+                          <span className="text-sm font-medium text-green-600">
+                            {rec.compliance}% Match
+                          </span>
+                        </div>
+                      </div>
+                      <div className="space-y-1">
+                        <p className="text-sm text-gray-600">
+                          <span className="font-medium">Manufacturer:</span>{" "}
+                          {rec.manufacturer}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          <span className="font-medium">Product:</span>{" "}
+                          {rec.product}
+                        </p>
+                        <p className="text-sm text-gray-700 italic">
+                          {rec.reason}
+                        </p>
+                      </div>
+                      <div className="flex items-center justify-between mt-3">
+                        <Badge
+                          variant="outline"
+                          className="text-primary border-primary"
+                        >
+                          Used Manufacturer Data
+                        </Badge>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="text-primary"
+                        >
+                          Add to Submittal
+                        </Button>
                       </div>
                     </div>
-                    <div className="space-y-1">
-                      <p className="text-sm text-gray-600">
-                        <span className="font-medium">Manufacturer:</span>{" "}
-                        {rec.manufacturer}
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        <span className="font-medium">Product:</span>{" "}
-                        {rec.product}
-                      </p>
-                      <p className="text-sm text-gray-700 italic">
-                        {rec.reason}
-                      </p>
-                    </div>
-                    <div className="flex items-center justify-between mt-3">
-                      <Badge
-                        variant="outline"
-                        className="text-primary border-primary"
-                      >
-                        Used Manufacturer Data
-                      </Badge>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-primary"
-                      >
-                        Add to Submittal
-                      </Button>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </CardContent>
             </Card>
 
@@ -1212,7 +2183,7 @@ export default function Platform() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                                <div className="space-y-3">
+                <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700">
                       EPDM Membrane System
