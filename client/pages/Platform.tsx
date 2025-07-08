@@ -151,20 +151,135 @@ export default function Platform() {
     {
       type: "ai",
       message:
-        "I've analyzed the 50-page roofing specification document. Found 47 key requirements across membrane systems, insulation, and flashing. The project requires EPDM membrane with R-25 insulation and Class A fire rating. Would you like me to start generating recommendations?",
-      time: "2:34 PM",
+        "Hello! I'm analyzing your Metropolitan Hospital roofing specification document. I've processed all 50 pages and identified 47 critical requirements. Shall I begin the analysis?",
+      time: "2:15 PM",
     },
     {
       type: "user",
       message:
-        "Yes, please focus on the EPDM membrane requirements and compatible insulation systems.",
+        "Yes, please start. What are the main system requirements you've identified?",
+      time: "2:16 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "I've identified several key systems: EPDM membrane (0.060\" min, ASTM D 4637), R-25 polyiso insulation, mechanical fastening with 165 lbf/sq ft uplift resistance, and comprehensive flashing systems. The spec also requires Class A fire rating and 20-year warranty. Climate zone 4 thermal requirements apply.",
+      time: "2:17 PM",
+    },
+    {
+      type: "user",
+      message:
+        "What manufacturers do you recommend for the EPDM membrane system?",
+      time: "2:18 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "Based on the specification's approved manufacturer list and performance requirements, I recommend Carlisle Sure-Weld 0.060\" EPDM. It exceeds all ASTM D 4637 Type I requirements with 1,400 psi tensile strength (spec requires 1,200 psi) and comes with a 20-year NDL warranty. Firestone UltraPly is the alternative option.",
+      time: "2:19 PM",
+    },
+    {
+      type: "user",
+      message: "What about the insulation system to meet R-25 requirements?",
+      time: "2:20 PM",
+    },
+    {
+      type: "ai",
+      message:
+        'For R-25 compliance, I recommend GAF EnergyGuard Polyiso at 4.0" thickness (R-6.2 per inch = R-24.8). It meets the Class A fire rating per ASTM E 84 and has 25 psi compressive strength. The glass mat facing is compatible with both mechanical attachment and adhesive systems specified.',
+      time: "2:21 PM",
+    },
+    {
+      type: "user",
+      message: "Are there any wind uplift concerns for this hospital project?",
+      time: "2:22 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "Yes, the specification requires 165 lbf/sq ft wind uplift resistance per ASCE 7. I've analyzed the fastening pattern and recommend Olympic OlyFast 6\" HD fasteners with 465 lbf pullout strength. At 4 fasteners per 4'x8' board, this achieves the required uplift rating. The system is FM 4470 approved.",
+      time: "2:23 PM",
+    },
+    {
+      type: "user",
+      message: "What about roof drains and drainage requirements?",
+      time: "2:25 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "The spec requires 7.5 GPM per 100 sq ft capacity. I recommend Zurn Z100 4-inch cast iron drains with vandal-resistant domes. Based on the 45,000 sq ft roof area, you'll need 12 primary drains plus 12 overflow drains located 2 inches above primary inlets. All drains must have separate piping systems per code.",
+      time: "2:26 PM",
+    },
+    {
+      type: "user",
+      message:
+        "Can you analyze the flashing requirements around the mechanical equipment?",
+      time: "2:28 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "The specification requires 8-inch minimum base flashing height with cap flashing protection. For the 23 rooftop units identified, I recommend Firestone UltraPly TPO base flashing (heat-weldable to EPDM) with Drexel Metals Kynar 500 aluminum cap flashing. All penetrations need pre-formed EPDM boots with stainless steel clamps.",
+      time: "2:29 PM",
+    },
+    {
+      type: "user",
+      message:
+        "What's the cost impact of these recommendations vs. alternatives?",
+      time: "2:31 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "My analysis shows 12% cost savings compared to typical manual selection. The Carlisle EPDM system costs $4.85/sq ft vs. $5.20/sq ft for premium alternatives, while still exceeding all performance requirements. The GAF insulation provides better R-value per dollar than competitors. Total project cost: $847,000 vs. $963,000 baseline.",
+      time: "2:32 PM",
+    },
+    {
+      type: "user",
+      message:
+        "How do you ensure all these products are compatible with each other?",
+      time: "2:33 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "I've cross-referenced all manufacturer compatibility matrices and chemical interaction data. Carlisle EPDM with GAF polyiso is factory-tested compatible. The Olympic fasteners are approved for this insulation thickness. Tremco sealants are certified for EPDM chemistry. All products share ASTM test standards and have successful hospital project references.",
+      time: "2:34 PM",
+    },
+    {
+      type: "user",
+      message: "What about warranty coverage and long-term performance?",
       time: "2:35 PM",
     },
     {
       type: "ai",
       message:
-        "Based on the membrane specifications, I've identified Carlisle Sure-Weld 0.060\" EPDM as the optimal choice. It exceeds ASTM D 4637 requirements and comes with a 20-year warranty. The GAF EnergyGuard Polyiso provides the required R-25 value with perfect compatibility.",
+        "The Carlisle system includes a 20-year non-prorated warranty covering materials and labor. GAF provides 20-year insulation warranty. Olympic fasteners have 20-year corrosion warranty. I can coordinate single-source warranty from Carlisle to cover the entire assembly. Expected service life: 25-30 years with proper maintenance.",
       time: "2:36 PM",
+    },
+    {
+      type: "user",
+      message: "Can you generate the complete submittal package now?",
+      time: "2:37 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "Absolutely! I'm generating a 15-page submittal package including product data sheets, technical specifications, compatibility certifications, warranty documentation, and installation instructions. All 47 specification requirements have been verified for 100% compliance. The package will be ready for download in 30 seconds.",
+      time: "2:38 PM",
+    },
+    {
+      type: "user",
+      message:
+        "This is impressive. How long would this normally take manually?",
+      time: "2:39 PM",
+    },
+    {
+      type: "ai",
+      message:
+        "Traditional manual analysis and submittal preparation typically takes 3-5 days for a project of this complexity. Our AI completed the analysis in 4.2 seconds and generated the submittal package in under 5 minutes. We've reduced the timeline by 99.8% while improving accuracy and ensuring complete specification compliance.",
+      time: "2:40 PM",
     },
   ];
 
