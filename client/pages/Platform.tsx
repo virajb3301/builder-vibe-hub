@@ -3142,7 +3142,7 @@ export default function Platform() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 h-80 overflow-y-auto mb-4">
-                  {chatHistory.map((chat, index) => (
+                  {chatMessages.map((chat, index) => (
                     <div
                       key={index}
                       className={`flex ${chat.type === "user" ? "justify-end" : "justify-start"}`}
@@ -3167,6 +3167,32 @@ export default function Platform() {
                       </div>
                     </div>
                   ))}
+
+                  {/* Typing indicator */}
+                  {isTyping && (
+                    <div className="flex justify-start">
+                      <div className="bg-gray-100 text-gray-900 px-4 py-2 rounded-lg">
+                        <div className="flex items-center space-x-1">
+                          <div className="flex space-x-1">
+                            <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                            <div
+                              className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                              style={{ animationDelay: "0.1s" }}
+                            ></div>
+                            <div
+                              className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                              style={{ animationDelay: "0.2s" }}
+                            ></div>
+                          </div>
+                          <span className="text-xs text-gray-500 ml-2">
+                            AI is thinking...
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <div ref={chatEndRef} />
                 </div>
 
                 <div className="flex items-center space-x-2">
@@ -3174,9 +3200,16 @@ export default function Platform() {
                     placeholder="Ask about specifications or recommendations..."
                     value={chatMessage}
                     onChange={(e) => setChatMessage(e.target.value)}
+                    onKeyPress={handleKeyPress}
                     className="flex-1"
+                    disabled={isTyping}
                   />
-                  <Button size="sm" className="px-3">
+                  <Button
+                    size="sm"
+                    className="px-3"
+                    onClick={sendMessage}
+                    disabled={isTyping || !chatMessage.trim()}
+                  >
                     <Send className="h-4 w-4" />
                   </Button>
                 </div>
