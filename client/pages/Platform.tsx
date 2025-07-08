@@ -61,18 +61,19 @@ export default function Platform() {
     {
       type: "ai",
       message:
-        "I've analyzed the specification document. Found 23 key requirements across structural, mechanical, and electrical systems. Would you like me to start generating recommendations?",
+        "I've analyzed the 50-page roofing specification document. Found 47 key requirements across membrane systems, insulation, and flashing. The project requires EPDM membrane with R-25 insulation and Class A fire rating. Would you like me to start generating recommendations?",
       time: "2:34 PM",
     },
     {
       type: "user",
-      message: "Yes, please focus on the structural steel requirements first.",
+      message:
+        "Yes, please focus on the EPDM membrane requirements and compatible insulation systems.",
       time: "2:35 PM",
     },
     {
       type: "ai",
       message:
-        "Based on the structural specifications, I've identified ArcelorMittal's W18x76 beam as the optimal choice. It exceeds the required 50 ksi yield strength and matches the specified dimensions perfectly.",
+        "Based on the membrane specifications, I've identified Carlisle Sure-Weld 0.060\" EPDM as the optimal choice. It exceeds ASTM D 4637 requirements and comes with a 20-year warranty. The GAF EnergyGuard Polyiso provides the required R-25 value with perfect compatibility.",
       time: "2:36 PM",
     },
   ];
