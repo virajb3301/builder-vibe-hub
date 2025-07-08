@@ -1092,7 +1092,7 @@ export default function Platform() {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700">
-                      Structural Steel
+                      EPDM Membrane System
                     </span>
                     <div className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-1" />
@@ -1101,7 +1101,7 @@ export default function Platform() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700">
-                      Concrete Materials
+                      Roof Insulation
                     </span>
                     <div className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-1" />
@@ -1110,7 +1110,7 @@ export default function Platform() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700">
-                      HVAC Equipment
+                      Flashing & Sheet Metal
                     </span>
                     <div className="flex items-center">
                       <AlertCircle className="h-4 w-4 text-yellow-500 mr-1" />
@@ -1121,7 +1121,7 @@ export default function Platform() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700">
-                      Electrical Systems
+                      Roof Specialties
                     </span>
                     <div className="flex items-center">
                       <AlertCircle className="h-4 w-4 text-gray-400 mr-1" />
