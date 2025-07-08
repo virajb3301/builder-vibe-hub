@@ -124,7 +124,7 @@ export default function Platform() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-white border rounded-lg shadow-sm h-[600px] overflow-y-auto">
+                <div className="bg-white border rounded-lg shadow-sm h-[calc(100vh-200px)] overflow-y-auto">
                   <div className="bg-gray-100 px-4 py-2 border-b text-xs text-gray-600 flex justify-between items-center">
                     <span>
                       Metropolitan_Hospital_Roofing_Specifications.pdf
@@ -207,7 +207,7 @@ export default function Platform() {
                                 <div className="ml-4 space-y-2 text-justify">
                                   <p>A. Section includes:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
                                       1. Fully adhered EPDM membrane roofing
                                       system
                                     </li>
@@ -218,7 +218,7 @@ export default function Platform() {
                                     <li>
                                       3. Ballasted EPDM membrane roofing system
                                     </li>
-                                    <li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
                                       4. TPO membrane roofing system with
                                       mechanically attached membrane
                                     </li>
@@ -325,7 +325,7 @@ export default function Platform() {
                                     <li>
                                       1. Design for wind uplift loads per ASCE 7
                                     </li>
-                                    <li>
+                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
                                       2. Minimum uplift rating: 165 lbf/sq ft
                                       (7.9 kN/sq m)
                                     </li>
@@ -333,7 +333,7 @@ export default function Platform() {
                                       3. Factory Mutual approved systems where
                                       indicated
                                     </li>
-                                    <li>
+                                    <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
                                       4. Testing per ASTM D 6878 and UL 580
                                     </li>
                                   </ul>
@@ -353,11 +353,11 @@ export default function Platform() {
                                   </ul>
                                   <p>D. Thermal Performance:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>
+                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
                                       1. Minimum R-value: R-25 (RSI-4.4) for
                                       climate zone 4
                                     </li>
-                                    <li>
+                                    <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
                                       2. Thermal bridging mitigation per ASHRAE
                                       90.1
                                     </li>
@@ -685,7 +685,7 @@ export default function Platform() {
                                 <div className="ml-4 space-y-3">
                                   <p>A. EPDM Membrane:</p>
                                   <ul className="ml-4 space-y-1">
-                                    <li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
                                       1. Manufacturer: Carlisle, Firestone, or
                                       GAF as basis of design
                                     </li>
@@ -693,7 +693,7 @@ export default function Platform() {
                                       2. Type: Ethylene propylene diene
                                       terpolymer (EPDM)
                                     </li>
-                                    <li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
                                       3. Thickness: 0.060 inch (1.52 mm) minimum
                                     </li>
                                     <li>
@@ -704,7 +704,7 @@ export default function Platform() {
                                       5. Color: Black standard, white where
                                       indicated
                                     </li>
-                                    <li>
+                                    <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
                                       6. Properties per ASTM D 4637, Type I
                                     </li>
                                   </ul>
