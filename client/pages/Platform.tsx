@@ -927,23 +927,506 @@ export default function Platform() {
                                 </div>
                               </div>
 
-                              <div className="space-y-4 mt-6 text-xs text-gray-600">
-                                <p className="text-center border-t pt-4">
-                                  --- PAGE BREAK ---
+                              <div>
+                                <h5 className="font-semibold text-sm">
+                                  2.5 VAPOR RETARDERS
+                                </h5>
+                                <div className="ml-4 space-y-3">
+                                  <p>A. Self-Adhering Vapor Retarder:</p>
+                                  <ul className="ml-4 space-y-1">
+                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                      1. Type: Self-adhering modified bitumen
+                                      membrane
+                                    </li>
+                                    <li>
+                                      2. Thickness: 40 mils (1.0 mm) minimum
+                                    </li>
+                                    <li className="bg-purple-100 px-2 py-1 rounded border-l-4 border-purple-500">
+                                      3. Permeance: 0.05 perms maximum per ASTM
+                                      E 96
+                                    </li>
+                                    <li>
+                                      4. Reinforcement: Cross-laminated
+                                      polyethylene film
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div>
+                                <h5 className="font-semibold text-sm">
+                                  2.6 FASTENERS AND ADHESIVES
+                                </h5>
+                                <div className="ml-4 space-y-3">
+                                  <p>A. Mechanical Fasteners:</p>
+                                  <ul className="ml-4 space-y-1">
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      1. Type: Coated steel screws with
+                                      polyolefin plates
+                                    </li>
+                                    <li>
+                                      2. Length: Penetrate structural deck
+                                      minimum 3/4 inch
+                                    </li>
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      3. Pullout strength: 400 lbf minimum per
+                                      FM 4470
+                                    </li>
+                                    <li>
+                                      4. Corrosion resistance: 500-hour salt
+                                      spray test
+                                    </li>
+                                  </ul>
+                                  <p>B. Contact Adhesive:</p>
+                                  <ul className="ml-4 space-y-1">
+                                    <li>
+                                      1. Type: Solvent-based contact adhesive
+                                    </li>
+                                    <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                      2. Coverage rate: 1 gallon per 200 sq ft
+                                    </li>
+                                    <li>
+                                      3. Open time: 30 minutes minimum at 70°F
+                                    </li>
+                                    <li>
+                                      4. Service temperature: -40°F to 200°F
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div>
+                                <h5 className="font-semibold text-sm">
+                                  2.7 ROOF DRAINS AND ACCESSORIES
+                                </h5>
+                                <div className="ml-4 space-y-3">
+                                  <p>A. Primary Roof Drains:</p>
+                                  <ul className="ml-4 space-y-1">
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      1. Type: Cast iron with clamping ring
+                                    </li>
+                                    <li>2. Size: 4-inch minimum diameter</li>
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      3. Capacity: 7.5 GPM per 100 sq ft of roof
+                                      area
+                                    </li>
+                                    <li>
+                                      4. Dome strainer: Vandal-resistant cast
+                                      iron
+                                    </li>
+                                  </ul>
+                                  <p>B. Overflow Drains:</p>
+                                  <ul className="ml-4 space-y-1">
+                                    <li>
+                                      1. Located 2 inches above primary drain
+                                      inlet
+                                    </li>
+                                    <li className="bg-indigo-100 px-2 py-1 rounded border-l-4 border-indigo-500">
+                                      2. Same capacity as primary drain system
+                                    </li>
+                                    <li>3. Separate overflow piping system</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div className="border-t pt-6 mt-8">
+                                <h4 className="font-bold mb-3 text-base">
+                                  PART 3 - EXECUTION
+                                </h4>
+
+                                <div className="space-y-4">
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.1 EXAMINATION
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>
+                                        A. Examine substrates for conditions
+                                        affecting performance:
+                                      </p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                          1. Verify structural adequacy and
+                                          proper slopes
+                                        </li>
+                                        <li>
+                                          2. Check for smooth, clean, and dry
+                                          surfaces
+                                        </li>
+                                        <li className="bg-red-100 px-2 py-1 rounded border-l-4 border-red-500">
+                                          3. Confirm proper installation of
+                                          vapor retarder
+                                        </li>
+                                        <li>
+                                          4. Verify coordination with other
+                                          building systems
+                                        </li>
+                                      </ul>
+                                      <p>
+                                        B. Proceed with installation only after
+                                        unsatisfactory conditions have been
+                                        corrected.
+                                      </p>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.2 PREPARATION
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>
+                                        A. Clean substrate of dust, debris, and
+                                        foreign matter.
+                                      </p>
+                                      <p>
+                                        B. Complete installation of items that
+                                        penetrate membrane before membrane
+                                        installation.
+                                      </p>
+                                      <p className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                        C. Install temporary edge protection
+                                        during membrane installation.
+                                      </p>
+                                      <p>
+                                        D. Coordinate with rooftop equipment
+                                        installation schedule.
+                                      </p>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.3 INSTALLATION OF INSULATION
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>
+                                        A. General Installation Requirements:
+                                      </p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li>
+                                          1. Install insulation in single or
+                                          multiple layers
+                                        </li>
+                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                          2. Stagger joints between layers
+                                          minimum 6 inches
+                                        </li>
+                                        <li>
+                                          3. Fit tightly together without gaps
+                                          or voids
+                                        </li>
+                                        <li className="bg-green-100 px-2 py-1 rounded border-l-4 border-green-500">
+                                          4. Minimum 3-inch clearance from roof
+                                          drains
+                                        </li>
+                                      </ul>
+                                      <p>B. Fastening Requirements:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                          1. Mechanically fasten first layer at
+                                          4 fasteners per board
+                                        </li>
+                                        <li>
+                                          2. Adhesively attach subsequent layers
+                                        </li>
+                                        <li className="bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500">
+                                          3. Install fasteners minimum 2 inches
+                                          from board edges
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.4 MEMBRANE INSTALLATION
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>A. EPDM Membrane Installation:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          1. Install membrane in largest
+                                          practical sizes
+                                        </li>
+                                        <li>
+                                          2. Allow membrane to relax minimum 30
+                                          minutes before adhering
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          3. Apply adhesive at manufacturer's
+                                          specified coverage rate
+                                        </li>
+                                        <li>
+                                          4. Install membrane without wrinkles
+                                          or air bubbles
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          5. Seam overlap: 3 inches minimum, 6
+                                          inches maximum
+                                        </li>
+                                      </ul>
+                                      <p>B. Seaming Procedures:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li>
+                                          1. Clean seam area with manufacturer's
+                                          cleaner
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          2. Apply primer and allow to dry
+                                          completely
+                                        </li>
+                                        <li>
+                                          3. Install seam tape with firm
+                                          pressure
+                                        </li>
+                                        <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                          4. Apply sealant to edges of seam tape
+                                        </li>
+                                        <li>
+                                          5. Test seams with probe after 24-hour
+                                          cure time
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.5 FLASHING INSTALLATION
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>A. Base Flashing:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          1. Extend minimum 8 inches onto roof
+                                          surface
+                                        </li>
+                                        <li>
+                                          2. Extend minimum 8 inches up vertical
+                                          surfaces
+                                        </li>
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          3. Install without wrinkles or
+                                          bridging
+                                        </li>
+                                        <li>
+                                          4. Seal all terminations and
+                                          penetrations
+                                        </li>
+                                      </ul>
+                                      <p>B. Cap Flashing:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li>
+                                          1. Install over base flashing with
+                                          proper overlap
+                                        </li>
+                                        <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                          2. Secure with concealed fasteners
+                                        </li>
+                                        <li>
+                                          3. Seal all joints and terminations
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.6 QUALITY CONTROL
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>A. Field Quality Control:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          1. Daily inspection of installation
+                                          progress
+                                        </li>
+                                        <li>
+                                          2. Weather monitoring and
+                                          documentation
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          3. Seam testing with probe at 6-foot
+                                          intervals
+                                        </li>
+                                        <li>
+                                          4. Flood testing of completed areas
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          5. Electronic leak detection where
+                                          specified
+                                        </li>
+                                      </ul>
+                                      <p>B. Testing Requirements:</p>
+                                      <ul className="ml-4 space-y-1">
+                                        <li>
+                                          1. All seams tested for continuity
+                                        </li>
+                                        <li className="bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500">
+                                          2. Flood test duration: 24 hours
+                                          minimum
+                                        </li>
+                                        <li>
+                                          3. Water depth: 2 inches minimum
+                                        </li>
+                                        <li>
+                                          4. Document test results with
+                                          photographs
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+
+                                  <div>
+                                    <h5 className="font-semibold text-sm">
+                                      3.7 PROTECTION AND CLEANING
+                                    </h5>
+                                    <div className="ml-4 space-y-3">
+                                      <p>
+                                        A. Protect installed roofing from damage
+                                        during construction.
+                                      </p>
+                                      <p>
+                                        B. Prohibit foot traffic except where
+                                        necessary for construction.
+                                      </p>
+                                      <p>
+                                        C. Install protective walkways for
+                                        maintenance access.
+                                      </p>
+                                      <p>
+                                        D. Clean membrane surface of debris and
+                                        foreign materials.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="border-t pt-6 mt-8">
+                                <h3 className="text-lg font-bold mb-3 uppercase tracking-wide border-b border-gray-300 pb-1">
+                                  SECTION 07 60 00 - FLASHING AND SHEET METAL
+                                </h3>
+
+                                <div className="space-y-4">
+                                  <div>
+                                    <h4 className="font-bold mb-2">
+                                      PART 1 - GENERAL
+                                    </h4>
+
+                                    <div className="space-y-3">
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          1.1 SUMMARY
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>A. Section includes:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              1. Through-wall flashing systems
+                                            </li>
+                                            <li>
+                                              2. Metal roof drainage systems
+                                            </li>
+                                            <li className="bg-gray-100 px-2 py-1 rounded border-l-4 border-gray-500">
+                                              3. Expansion joint covers
+                                            </li>
+                                            <li>
+                                              4. Metal copings and cap flashings
+                                            </li>
+                                            <li>
+                                              5. Reglets and counterflashings
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+                                      <div>
+                                        <h5 className="font-semibold">
+                                          1.2 PERFORMANCE REQUIREMENTS
+                                        </h5>
+                                        <div className="ml-4 space-y-2">
+                                          <p>A. Structural Performance:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              1. Wind load resistance: 150 mph
+                                              basic wind speed
+                                            </li>
+                                            <li>
+                                              2. Seismic design per ASCE 7
+                                              requirements
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              3. Thermal movement accommodation
+                                            </li>
+                                          </ul>
+                                          <p>B. Water Resistance:</p>
+                                          <ul className="ml-4 space-y-1">
+                                            <li>
+                                              1. Watertight construction under
+                                              test pressure
+                                            </li>
+                                            <li className="bg-blue-100 px-2 py-1 rounded border-l-4 border-primary">
+                                              2. Drainage capacity per local
+                                              plumbing codes
+                                            </li>
+                                            <li>
+                                              3. Compatible with building
+                                              envelope systems
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="space-y-4 mt-8 text-xs text-gray-600 bg-gray-50 p-4 rounded">
+                                <p className="text-center font-semibold">
+                                  --- DOCUMENT CONTINUES ---
                                 </p>
                                 <p className="text-center">
-                                  Continued on next page with Section 2.5 Vapor
-                                  Retarders through Section 07 60 00 Flashing
-                                  and Sheet Metal...
+                                  Pages 2-50 contain additional sections
+                                  including:
                                 </p>
-                                <p className="text-center">
-                                  Additional content includes: Fasteners and
-                                  Adhesives, Roof Drains, Equipment Supports,
-                                  Installation Procedures, Quality Control,
-                                  Testing Requirements, Maintenance
-                                  Instructions, and detailed specifications for
-                                  all roofing components totaling 50
-                                  comprehensive pages.
+                                <div className="grid grid-cols-2 gap-2 mt-4 text-[10px]">
+                                  <div>
+                                    <p className="font-medium">
+                                      • Sheet Metal Materials (Pages 8-12)
+                                    </p>
+                                    <p>
+                                      • Installation Procedures (Pages 13-17)
+                                    </p>
+                                    <p>• Quality Control (Pages 18-20)</p>
+                                    <p>
+                                      • Section 07 70 00 - Roof Specialties
+                                      (Pages 21-28)
+                                    </p>
+                                    <p>
+                                      • Roof Hatches and Curbs (Pages 29-32)
+                                    </p>
+                                  </div>
+                                  <div>
+                                    <p className="font-medium">
+                                      • Section 07 80 00 - Fire Protection
+                                      (Pages 33-40)
+                                    </p>
+                                    <p>
+                                      • Section 07 90 00 - Joint Protection
+                                      (Pages 41-45)
+                                    </p>
+                                    <p>
+                                      • Testing and Commissioning (Pages 46-48)
+                                    </p>
+                                    <p>• Appendices A-C (Pages 49-50)</p>
+                                    <p>• Technical Data Sheets</p>
+                                  </div>
+                                </div>
+                                <p className="text-center mt-4 font-medium">
+                                  All sections contain detailed AI-highlighted
+                                  requirements and manufacturer specifications
                                 </p>
                               </div>
                             </div>
