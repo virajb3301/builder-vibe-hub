@@ -2,6 +2,7 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
+  "homepage": "https://hafestus.github.io",
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -12,9 +13,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
+    "build:client": "vite build --outDir docs",
     "build:server": "vite build --config vite.config.server.ts",
+    "build": "npm run build:client && npm run build:server",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
@@ -97,5 +98,7 @@
     "vaul": "^0.9.3",
     "vite": "^6.2.2",
     "vitest": "^3.1.4"
-  }
+    }
 }
+
+ 
