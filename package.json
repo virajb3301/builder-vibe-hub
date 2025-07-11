@@ -17,7 +17,7 @@
     "build:server": "vite build --config vite.config.server.ts",
     "build": "npm run build:client && npm run build:server",
     "build:cloudflare": "vite build --outDir dist && vite build --config vite.config.cloudflare.ts",
-    "deploy:cloudflare": "npm run build:cloudflare && wrangler deploy",
+    "deploy:cloudflare": "npm run build:cloudflare && npx wrangler deploy",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
