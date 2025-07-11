@@ -2,8 +2,3 @@
 name = "hafestuswebsite"
 compatibility_date = "2024-12-01"
 pages_build_output_dir = "dist"
-
-# Pages Functions (Workers for Pages)
-[[pages.functions]]
-pattern = "/api/*"
-module = "_worker.js"
