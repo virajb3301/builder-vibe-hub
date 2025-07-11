@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
+import InteractiveDemo from "../components/InteractiveDemo";
 
 export default function Index() {
   const features = [
