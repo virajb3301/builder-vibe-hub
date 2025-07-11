@@ -1,6 +1,6 @@
 # for a Worker + static assets
-name = "my-site"
+name = "fusion-starter"
 main = "./dist/_worker.js"
-compatibility_date = "2025-07-11"
+compatibility_date = "2024-12-01"
 [assets]
 directory = "./dist"
