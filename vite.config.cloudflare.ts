@@ -11,6 +11,7 @@ export default defineConfig({
       formats: ["es"],
     },
     outDir: "dist",
+    emptyOutDir: false,
     target: "esnext",
     rollupOptions: {
       external: [],
