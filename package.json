@@ -2,7 +2,7 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "homepage": "https://hafestus.github.io",
+  "homepage": "https://hafestus.com",
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -99,7 +99,6 @@
     "typescript": "^5.5.3",
     "vaul": "^0.9.3",
     "vite": "^6.2.2",
-    "vitest": "^3.1.4",
-    "wrangler": "^4.24.3"
+    "vitest": "^3.1.4"
   }
 }
