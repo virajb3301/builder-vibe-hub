@@ -1,5 +1,5 @@
 # for a Worker + static assets
-name = "fusion-starter"
+name = "hafestus-com"
 main = "./dist/_worker.js"
 compatibility_date = "2024-12-01"
 [assets]
