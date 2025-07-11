@@ -115,17 +115,10 @@ export default function Index() {
             </p>
           </div>
 
-          {/* Hero Image Placeholder */}
+          {/* Interactive Demo */}
           <div className="mt-16 relative">
             <div className="bg-gradient-to-r from-brand-blue-100 to-brand-orange-100 rounded-2xl p-8 shadow-2xl">
-              <div className="bg-white rounded-xl p-6 h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <FileText className="h-16 w-16 text-brand-gray-400 mx-auto mb-4" />
-                  <p className="text-brand-gray-500">
-                    Interactive Product Demo
-                  </p>
-                </div>
-              </div>
+              <InteractiveDemo />
             </div>
           </div>
         </div>
