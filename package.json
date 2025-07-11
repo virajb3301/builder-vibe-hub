@@ -16,7 +16,7 @@
     "build:client": "vite build --outDir docs",
     "build:server": "vite build --config vite.config.server.ts",
     "build": "npm run build:client && npm run build:server",
-    "build:cloudflare": "BUILD_TARGET=cloudflare vite build && vite build --config vite.config.cloudflare.ts && echo '_worker.js' > dist/.assetsignore",
+    "build:cloudflare": "BUILD_TARGET=cloudflare vite build && vite build --config vite.config.cloudflare.ts && echo '_worker.js' > dist/.assetsignore && echo '/api/* 200\n/* /index.html 200' > dist/_redirects",
     "deploy:cloudflare": "npm run build:cloudflare && npx wrangler deploy",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
