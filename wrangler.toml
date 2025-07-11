@@ -1,5 +1,5 @@
 # for a Worker + static assets
-name = "hafestus-com"
+name = "hafestuswebsite"
 main = "./dist/_worker.js"
 compatibility_date = "2024-12-01"
 [assets]
