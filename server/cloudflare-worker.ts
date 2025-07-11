@@ -13,9 +13,9 @@ export default {
       return handleApiRoute(request, url);
     }
 
-    // For non-API routes, let Cloudflare serve static assets
-    // The static assets will be handled by the [assets] configuration in wrangler.toml
-    return new Response("Not found", { status: 404 });
+    // For all other routes, return null to let Cloudflare Pages serve static assets
+    // This allows the React SPA routing to work properly
+    return null;
   },
 };
 
