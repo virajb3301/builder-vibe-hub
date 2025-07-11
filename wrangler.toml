@@ -1,0 +1,6 @@
+# for a Worker + static assets
+name = "my-site"
+main = "./dist/_worker.js"
+compatibility_date = "2025-07-11"
+[assets]
+directory = "./dist"
