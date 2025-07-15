@@ -48,9 +48,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Process Section */}
-      <section className="py-24 bg-brand-gray-50">
+      <section className="py-12 md:py-24 bg-brand-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-gray-900 mb-4">
               Our Process
             </h2>
