@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   const navigation = [
-    { name: "Platform", href: "/platform" },
+    { name: "Demo", href: "/platform" },
     { name: "About Us", href: "/about" },
   ];
 
