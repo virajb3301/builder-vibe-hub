@@ -83,6 +83,25 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-brand-gray-700 mb-2"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-brand-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+                    placeholder="Your full name"
+                  />
+                </div>
+
+                <div>
+                  <label
                     htmlFor="email"
                     className="block text-sm font-medium text-brand-gray-700 mb-2"
                   >
