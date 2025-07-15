@@ -47,19 +47,6 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-b from-brand-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-brand-gray-900 mb-6">
-            About Us
-          </h1>
-          <p className="text-xl text-brand-gray-600 max-w-3xl mx-auto">
-            Transforming construction management through AI-powered innovation
-            and human expertise.
-          </p>
-        </div>
-      </section>
-
       {/* Process Section */}
       <section className="py-24 bg-brand-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
