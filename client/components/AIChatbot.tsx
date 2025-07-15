@@ -89,11 +89,18 @@ export default function AIChatbot() {
     };
 
     setMessages((prev) => [...prev, userMessage]);
+    const messageToSend = currentMessage;
     setCurrentMessage("");
     setIsTyping(true);
 
+    // Update conversation history
+    setConversationHistory((prev) => [
+      ...prev,
+      { role: "user", content: messageToSend },
+    ]);
+
     try {
-      const aiResponse = await generateAIResponse(currentMessage);
+      const aiResponse = await generateAIResponse(messageToSend);
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: aiResponse,
@@ -102,6 +109,12 @@ export default function AIChatbot() {
       };
 
       setMessages((prev) => [...prev, aiMessage]);
+
+      // Add AI response to conversation history
+      setConversationHistory((prev) => [
+        ...prev,
+        { role: "assistant", content: aiResponse },
+      ]);
     } catch (error) {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
