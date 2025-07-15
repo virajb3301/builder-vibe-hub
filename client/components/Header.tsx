@@ -54,12 +54,6 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/login"
-              className="text-brand-gray-600 hover:text-brand-gray-900 font-medium transition-colors duration-200"
-            >
-              Sign In
-            </Link>
             <Button asChild>
               <Link to="/get-started">Get Started</Link>
             </Button>
