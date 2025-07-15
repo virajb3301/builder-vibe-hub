@@ -2532,7 +2532,7 @@ export default function Platform() {
                 </div>
 
                 <div className="flex items-center justify-between pt-2 border-t">
-                  <span className="text-sm text-gray-500">Page 1 of 50</span>
+                                    <span className="text-sm text-gray-500">Specification Document</span>
                   
                 </div>
               </CardContent>
