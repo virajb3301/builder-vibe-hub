@@ -60,6 +60,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={() => handleNavClick(item.href)}
                 className="text-brand-gray-600 hover:text-brand-gray-900 font-medium transition-colors duration-200"
               >
                 {item.name}
