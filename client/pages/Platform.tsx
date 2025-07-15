@@ -83,23 +83,33 @@ export default function Platform() {
     setChatMessage("");
     setIsTyping(true);
 
-    // Simulate AI thinking delay
-    setTimeout(
-      () => {
-        const aiResponse = {
-          type: "ai",
-          message: getAIResponse(chatMessage),
-          time: new Date().toLocaleTimeString([], {
-            hour: "2-digit",
-            minute: "2-digit",
-          }),
-        };
+    // Get AI response
+    try {
+      const aiResponseText = await getAIResponse(chatMessage);
+      const aiResponse = {
+        type: "ai",
+        message: aiResponseText,
+        time: new Date().toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+      };
 
-        setChatMessages((prev) => [...prev, aiResponse]);
-        setIsTyping(false);
-      },
-      1000 + Math.random() * 2000,
-    ); // 1-3 second delay for realism
+      setChatMessages((prev) => [...prev, aiResponse]);
+    } catch (error) {
+      const errorResponse = {
+        type: "ai",
+        message:
+          "I'm sorry, I'm having trouble responding right now. Please try again.",
+        time: new Date().toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+      };
+      setChatMessages((prev) => [...prev, errorResponse]);
+    }
+
+    setIsTyping(false);
   };
 
   // Handle Enter key press
