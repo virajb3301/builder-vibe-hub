@@ -112,7 +112,7 @@ export default function About() {
                       src={member.image}
                       alt={member.name}
                       className={`w-40 h-40 rounded-full mx-auto object-cover shadow-lg ${
-                        member.name === "Viraj Bodiwala" ? "object-top" : ""
+                        member.name === "Viraj Bodiwala" ? "object-center" : ""
                       }`}
                     />
                   </div>
