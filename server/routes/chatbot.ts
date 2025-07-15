@@ -56,8 +56,15 @@ export const handleChatbot: RequestHandler = async (req, res) => {
       return res.status(400).json({ error: "Message is required" });
     }
 
+    // Try to get API key from environment variables
+    // In Cloudflare this would be context.env.OPENAI_API_KEY
+    // In Node.js this is process.env.OPENAI_API_KEY
     const apiKey = process.env.OPENAI_API_KEY;
     if (!apiKey) {
+      console.error(
+        "Environment variables:",
+        Object.keys(process.env).filter((key) => key.includes("OPENAI")),
+      );
       return res.status(500).json({
         error: "OpenAI API key not configured",
       });
