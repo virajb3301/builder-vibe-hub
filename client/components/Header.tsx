@@ -21,7 +21,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F2adb5974514344c081f34879ffd5d897?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F11d5890310554b5580f6995fa335c2ec?format=webp&width=800"
               alt="Hafestus Logo"
               className="h-24 w-auto"
               onError={(e) => {
