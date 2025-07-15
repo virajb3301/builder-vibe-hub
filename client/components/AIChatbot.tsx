@@ -9,7 +9,11 @@ import {
   User,
   Minimize2,
   Maximize2,
+  Paperclip,
+  FileText,
+  Upload,
 } from "lucide-react";
+import { extractTextFromPDF, isValidPDF } from "../utils/pdfUtils";
 
 interface Message {
   id: string;
