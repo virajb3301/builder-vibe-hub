@@ -5,6 +5,7 @@ import { Mail, Send } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     subject: "",
     message: "",
