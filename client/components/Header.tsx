@@ -55,7 +55,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Button asChild>
-              <Link to="/get-started">Get Started</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -93,7 +93,7 @@ export default function Header() {
                     to="/get-started"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Get Started
+                    Contact Us
                   </Link>
                 </Button>
               </div>
