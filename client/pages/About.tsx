@@ -12,7 +12,7 @@ export default function About() {
     },
     {
       number: "2",
-      title: "Our Objective",
+      title: "Objective",
       icon: Target,
       description:
         "We eliminate the most tedious part of a contractor's workflow and gather the data needed to train our AI. The result? Faster, more accurate pre-construction documents and fewer errors on the job.",
