@@ -31,23 +31,17 @@ export default function About() {
       name: "Andre de la Cruz",
       role: "Co-Founder",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2Fbb7311f9070044ee8cab7f581a3d1860?format=webp&width=800",
-      credentials: [
-        "B.S. Computer Science, specialization in Machine Learning",
-        "Previously engineer at a CNVC-finalist AI-robotics startup",
-        "UChicago HCI researcher",
-      ],
+        "https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F144149e81a5841f09cec5c376f34d780?format=webp&width=800",
+      description:
+        "Hi,\nWe are two UChicago students studying CS with a strong focus on ML. We have been working on projects together since first year, when we met, and are passionate about making construction more straightforward. The world around us was built by people, and we want to want to empower contractors to build more by removing the tedium.",
     },
     {
       name: "Viraj Bodiwala",
       role: "Co-Founder",
       image:
-        "https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F144149e81a5841f09cec5c376f34d780?format=webp&width=800",
-      credentials: [
-        "B.S. Computer Science, specialization in Machine Learning",
-        "Previously founding engineer of a George Schultz–winning startup",
-        "UChicago Neuro-AI researcher",
-      ],
+        "https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2Fbb7311f9070044ee8cab7f581a3d1860?format=webp&width=800",
+      description:
+        "Hi,\nWe are two UChicago students studying CS with a strong focus on ML. We have been working on projects together since first year, when we met, and are passionate about making construction more straightforward. The world around us was built by people, and we want to want to empower contractors to build more by removing the tedium.",
     },
   ];
 
