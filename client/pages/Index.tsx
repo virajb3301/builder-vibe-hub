@@ -240,10 +240,7 @@ export default function Index() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Ready to Transform Your Construction Workflow?
           </h2>
-          <p className="mt-6 text-xl text-blue-100">
-            Join thousands of construction professionals who trust Hafestus to
-            streamline their projects.
-          </p>
+
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
