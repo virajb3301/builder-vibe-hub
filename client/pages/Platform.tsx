@@ -23,24 +23,9 @@ import { Input } from "../components/ui/input";
 import { Badge } from "../components/ui/badge";
 
 export default function Platform() {
-  const [chatMessage, setChatMessage] = useState("");
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [chatMessages, setChatMessages] = useState([
-    {
-      type: "ai",
-      message:
-        "Hello! I'm analyzing your Metropolitan Hospital roofing specification document. I've processed all 50 pages and identified 47 critical requirements. How can I assist you?",
-      time: new Date().toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
-    },
-  ]);
-  const [isTyping, setIsTyping] = useState(false);
-  const chatEndRef = useRef(null);
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
@@ -2686,7 +2671,9 @@ export default function Platform() {
                                         • Approved manufacturer (Carlisle
                                         specified) ✓
                                       </li>
-                                      <li>• 20-year warranty requirement ✓</li>
+                                      <li>
+                                        • 20-year warranty requirement ���
+                                      </li>
                                     </ul>
                                   </div>
                                 </div>
