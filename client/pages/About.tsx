@@ -102,27 +102,36 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-40 h-40 rounded-full mx-auto object-cover shadow-lg"
-                  />
+          <div className="max-w-4xl mx-auto">
+            {/* Team Photos */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-8">
+              {teamMembers.map((member, index) => (
+                <div key={index} className="text-center">
+                  <div className="mb-6">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className={`w-40 h-40 rounded-full mx-auto object-cover shadow-lg ${
+                        member.name === "Viraj Bodiwala" ? "object-top" : ""
+                      }`}
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-brand-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-lg text-primary font-semibold">
+                    {member.role}
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-brand-gray-900 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-lg text-primary font-semibold mb-4">
-                  {member.role}
-                </p>
-                <p className="text-brand-gray-600 leading-relaxed whitespace-pre-line">
-                  {member.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {/* Shared Description */}
+            <div className="text-center max-w-2xl mx-auto">
+              <p className="text-brand-gray-600 leading-relaxed whitespace-pre-line">
+                {teamMembers[0].description}
+              </p>
+            </div>
           </div>
         </div>
       </section>
