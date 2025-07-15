@@ -2562,7 +2562,7 @@ export default function Platform() {
                     <span>
                       Metropolitan_Hospital_EPDM_Submittal_Package.pdf
                     </span>
-                    <span>Page 1 of 15 • Auto-Generated • 100% zoom</span>
+                                        <span>Auto-Generated</span>
                   </div>
                   <div
                     className="p-8 text-sm leading-relaxed"
