@@ -40,7 +40,7 @@ export default function Index() {
   const benefits = [
     {
       icon: Clock,
-      title: "10x Faster",
+      title: "25x Faster",
       description: "Reduce submittal creation time from days to minutes",
     },
     {
