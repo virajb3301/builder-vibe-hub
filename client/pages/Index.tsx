@@ -91,22 +91,11 @@ export default function Index() {
               process. Upload specs, get AI recommendations, and create
               compliant submittals in minutes.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-10 flex justify-center">
               <Button size="lg" className="text-lg px-8 py-4" asChild>
                 <Link to="/contact">
                   Contact Us
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 py-4"
-                asChild
-              >
-                <Link to="/demo">
-                  <PlayCircle className="mr-2 h-5 w-5" />
-                  Watch Demo
                 </Link>
               </Button>
             </div>
