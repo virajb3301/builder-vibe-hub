@@ -21,7 +21,7 @@ export default function Contact() {
     const mailtoLink = `mailto:andre@hafestus.com?subject=${encodeURIComponent(
       formData.subject,
     )}&body=${encodeURIComponent(
-      `From: ${formData.email}\n\n${formData.message}`,
+      `From: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     )}`;
 
     // Open mailto link
@@ -33,7 +33,7 @@ export default function Contact() {
 
     // Reset form after a delay
     setTimeout(() => {
-      setFormData({ email: "", subject: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setSubmitted(false);
     }, 3000);
   };
