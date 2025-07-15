@@ -95,7 +95,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-gray-900 mb-4">
-              Our Team
+              Team
             </h2>
             <p className="text-xl text-brand-gray-600">
               Meet the founders building the future of construction technology
