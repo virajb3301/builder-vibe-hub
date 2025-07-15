@@ -33,7 +33,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={handleLogoClick}>
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F11d5890310554b5580f6995fa335c2ec?format=webp&width=800"
               alt="Hafestus Logo"
