@@ -163,7 +163,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-brand-gray-700 pt-8">
           <p className="text-base text-brand-gray-400 xl:text-center">
-            &copy; 2024 Hafestus, Inc. All rights reserved.
+            &copy; 2025 Hafestus, Inc. All rights reserved.
           </p>
         </div>
       </div>
