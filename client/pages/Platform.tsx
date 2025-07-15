@@ -49,7 +49,8 @@ export default function Platform() {
         body: JSON.stringify({
           message: userMessage,
           conversationHistory: [],
-          pdfContent: null,
+          pdfContent:
+            'ROOFING TECHNICAL SPECIFICATIONS - Metropolitan Hospital Expansion Project (Project No: MHE-2024-007) - This is a 50-page specification document for a 45,000 sq ft hospital roofing project requiring EPDM membrane system with R-25 insulation, 165 lbf/sq ft wind uplift resistance, Class A fire rating, and 7.5 GPM per 100 sq ft drainage capacity. Key requirements include Carlisle Sure-Weld 0.060" EPDM membrane, GAF EnergyGuard Polyiso insulation, Olympic OlyFast fasteners, and Zurn Z100 4-inch cast iron drains. The project has 23 rooftop units requiring equipment curbs and flashing systems.',
         }),
       });
 
