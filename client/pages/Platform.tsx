@@ -315,7 +315,7 @@ export default function Platform() {
         <div className="max-w-full mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <h1 className="text-2xl font-bold text-gray-900">Platform</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Demo</h1>
               <Badge variant="secondary" className="bg-primary/10 text-primary">
                 AI Analysis Complete
               </Badge>
