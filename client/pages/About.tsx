@@ -131,16 +131,9 @@ export default function About() {
                 <p className="text-lg text-primary font-semibold mb-4">
                   {member.role}
                 </p>
-                <div className="space-y-2">
-                  {member.credentials.map((credential, credIndex) => (
-                    <p
-                      key={credIndex}
-                      className="text-brand-gray-600 leading-relaxed"
-                    >
-                      {credential}
-                    </p>
-                  ))}
-                </div>
+                <p className="text-brand-gray-600 leading-relaxed whitespace-pre-line">
+                  {member.description}
+                </p>
               </div>
             ))}
           </div>
