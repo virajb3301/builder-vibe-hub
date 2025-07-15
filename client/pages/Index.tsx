@@ -252,7 +252,7 @@ export default function Index() {
               asChild
             >
               <Link to="/get-started">
-                Start Free Trial
+                Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -262,12 +262,9 @@ export default function Index() {
               className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary"
               asChild
             >
-              <Link to="/contact">Contact Sales</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
-          <p className="mt-4 text-blue-100">
-            14-day free trial • No credit card required • Cancel anytime
-          </p>
         </div>
       </section>
     </div>
