@@ -115,7 +115,7 @@ export default function About() {
                       style={{
                         objectPosition:
                           member.name === "Viraj Bodiwala"
-                            ? "50% 20%"
+                            ? "50% 40%"
                             : "center",
                       }}
                     />
