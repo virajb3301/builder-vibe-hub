@@ -25,7 +25,17 @@ import { Badge } from "../components/ui/badge";
 
 export default function Platform() {
   const [chatMessage, setChatMessage] = useState("");
-  const [chatMessages, setChatMessages] = useState([]);
+  const [chatMessages, setChatMessages] = useState([
+    {
+      type: "ai",
+      message:
+        "Hello! I'm your AI assistant specialized in construction specification analysis and submittal package creation. I've analyzed the Metropolitan Hospital roofing specification and I'm ready to help with your project requirements. Do you have any questions about the specification or would you like assistance with creating submittal documents?",
+      time: new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    },
+  ]);
   const [isTyping, setIsTyping] = useState(false);
   const chatEndRef = useRef(null);
 
@@ -2445,7 +2455,7 @@ export default function Platform() {
                                       </p>
                                       <p className="text-center text-gray-600 mt-2">
                                         Metropolitan Hospital Expansion Project
-                                        • 50 Pages Complete
+                                        ��� 50 Pages Complete
                                       </p>
                                       <p className="text-center text-gray-500 text-[10px] mt-1">
                                         This document contains comprehensive
