@@ -350,7 +350,7 @@ export default function Platform() {
                     <span>
                       Metropolitan_Hospital_Roofing_Specifications.pdf
                     </span>
-                    <span>Page 1 of 50 • 100% zoom</span>
+                    <span>100% zoom</span>
                   </div>
                   <div
                     className="p-8 text-sm leading-relaxed"
