@@ -300,15 +300,30 @@ export default function AIChatbot() {
 
           <div className="border-t p-4">
             <div className="flex space-x-2">
-              <textarea
-                value={currentMessage}
-                onChange={(e) => setCurrentMessage(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Ask me about Hafestus..."
-                className="flex-1 resize-none border border-brand-gray-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
-                rows={1}
-                style={{ minHeight: "40px", maxHeight: "80px" }}
-              />
+              <div className="flex-1 relative">
+                <textarea
+                  value={currentMessage}
+                  onChange={(e) => setCurrentMessage(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  placeholder={
+                    pdfContent
+                      ? "Ask about your specification..."
+                      : "Upload a PDF spec or describe your requirements..."
+                  }
+                  className="w-full resize-none border border-brand-gray-200 rounded-lg px-3 py-2 pr-10 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
+                  rows={1}
+                  style={{ minHeight: "40px", maxHeight: "80px" }}
+                />
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={triggerFileUpload}
+                  className="absolute right-1 top-1 h-8 w-8 p-0 text-brand-gray-400 hover:text-primary"
+                  title="Upload PDF specification"
+                >
+                  <Paperclip className="h-4 w-4" />
+                </Button>
+              </div>
               <Button
                 onClick={sendMessage}
                 disabled={!currentMessage.trim() || isTyping}
@@ -318,6 +333,13 @@ export default function AIChatbot() {
                 <Send className="h-4 w-4" />
               </Button>
             </div>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".pdf"
+              onChange={handleFileUpload}
+              className="hidden"
+            />
           </div>
         </CardContent>
       )}
