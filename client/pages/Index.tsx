@@ -94,7 +94,7 @@ export default function Index() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-4" asChild>
                 <Link to="/get-started">
-                  Start Free Trial
+                  Get Started
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -110,9 +110,6 @@ export default function Index() {
                 </Link>
               </Button>
             </div>
-            <p className="mt-4 text-sm text-brand-gray-500">
-              No credit card required • 14-day free trial
-            </p>
           </div>
 
           {/* Interactive Demo */}
