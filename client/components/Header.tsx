@@ -5,6 +5,23 @@ import { Button } from "./ui/button";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handleNavClick = (href: string) => {
+    if (location.pathname === href) {
+      window.location.reload();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.location.reload();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  };
 
   const navigation = [
     { name: "Platform", href: "/platform" },
