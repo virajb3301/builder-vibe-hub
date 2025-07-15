@@ -19,7 +19,8 @@ const queryClient = new QueryClient();
 
 const AppContent = () => {
   const location = useLocation();
-  const showChatbot = location.pathname !== "/";
+  // Hide chatbot for current iteration - set to false to disable completely
+  const showChatbot = false; // location.pathname !== '/';
 
   return (
     <div className="min-h-screen flex flex-col">
