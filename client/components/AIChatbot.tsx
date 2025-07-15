@@ -207,7 +207,12 @@ export default function AIChatbot() {
       <CardHeader className="flex flex-row items-center justify-between py-3 px-4 bg-primary text-white rounded-t-lg">
         <div className="flex items-center space-x-2">
           <Bot className="h-5 w-5" />
-          <h3 className="font-semibold">Hafestus AI Assistant</h3>
+          <div>
+            <h3 className="font-semibold">Hafestus AI Assistant</h3>
+            {uploadedFileName && (
+              <p className="text-xs text-blue-100">📄 {uploadedFileName}</p>
+            )}
+          </div>
         </div>
         <div className="flex items-center space-x-1">
           <Button
