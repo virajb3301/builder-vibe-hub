@@ -25,14 +25,7 @@ interface Message {
 export default function AIChatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "1",
-      text: "Hi! I'm your AI assistant specialized in construction specification analysis and submittal package creation. I can help you:\n\n• Analyze technical specification files\n• Create professional submittal packages\n• Review compliance requirements\n• Draft submittal documents\n\nYou can upload a PDF specification file or describe your project requirements. How can I assist you today?",
-      isUser: false,
-      timestamp: new Date(),
-    },
-  ]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [currentMessage, setCurrentMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [conversationHistory, setConversationHistory] = useState<
