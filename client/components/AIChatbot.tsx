@@ -135,6 +135,57 @@ export default function AIChatbot() {
     }
   };
 
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (!isValidPDF(file)) {
+      const errorMessage: Message = {
+        id: Date.now().toString(),
+        text: "Please upload a PDF file. I can analyze PDF specification documents to help you create submittal packages.",
+        isUser: false,
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+      return;
+    }
+
+    setIsTyping(true);
+
+    try {
+      const extractedText = await extractTextFromPDF(file);
+      setPdfContent(extractedText);
+      setUploadedFileName(file.name);
+
+      const confirmMessage: Message = {
+        id: Date.now().toString(),
+        text: `📄 PDF uploaded: ${file.name}\n\nI've received your specification document. I can now help you analyze this spec and create a professional submittal package. What specific aspect would you like me to focus on first?\n\n• General specification overview\n• Compliance requirements analysis\n• Submittal document outline\n• Specific section review`,
+        isUser: false,
+        timestamp: new Date(),
+      };
+
+      setMessages((prev) => [...prev, confirmMessage]);
+    } catch (error) {
+      const errorMessage: Message = {
+        id: Date.now().toString(),
+        text: "I had trouble processing your PDF file. Please try uploading again or describe your specification requirements in text form.",
+        isUser: false,
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    }
+
+    setIsTyping(false);
+    // Reset file input
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+  };
+
+  const triggerFileUpload = () => {
+    fileInputRef.current?.click();
+  };
+
   if (!isOpen) {
     return (
       <Button
