@@ -109,8 +109,11 @@ export default function Header() {
               <div className="pt-4 space-y-2">
                 <Button asChild className="w-full">
                   <Link
-                    to="/get-started"
-                    onClick={() => setMobileMenuOpen(false)}
+                    to="/contact"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      handleNavClick("/contact");
+                    }}
                   >
                     Contact Us
                   </Link>
