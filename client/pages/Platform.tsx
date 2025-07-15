@@ -28,11 +28,6 @@ export default function Platform() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Auto-scroll to bottom when new messages arrive
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [chatMessages, isTyping]);
-
   // AI Response Simulation
   const getAIResponse = (userMessage) => {
     const message = userMessage.toLowerCase();
