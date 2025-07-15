@@ -88,13 +88,6 @@ export default function Header() {
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
-                <Link
-                  to="/login"
-                  className="block text-brand-gray-600 hover:text-brand-gray-900 font-medium py-2 transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Sign In
-                </Link>
                 <Button asChild className="w-full">
                   <Link
                     to="/get-started"
