@@ -241,25 +241,17 @@ export default function Index() {
             Ready to Transform Your Construction Workflow?
           </h2>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-10 flex justify-center">
             <Button
               size="lg"
               variant="secondary"
               className="text-lg px-8 py-4"
               asChild
             >
-              <Link to="/get-started">
-                Get Started
+              <Link to="/contact">
+                Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-4 border-white text-white bg-transparent hover:bg-white hover:text-primary"
-              asChild
-            >
-              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>
