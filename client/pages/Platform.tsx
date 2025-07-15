@@ -320,16 +320,6 @@ export default function Platform() {
                 AI Analysis Complete
               </Badge>
             </div>
-            <div className="flex items-center space-x-4">
-              <Button variant="outline" className="flex items-center">
-                <Upload className="h-4 w-4 mr-2" />
-                Upload Specifications
-              </Button>
-              <Button className="flex items-center">
-                <Download className="h-4 w-4 mr-2" />
-                Export Submittal
-              </Button>
-            </div>
           </div>
         </div>
       </div>
