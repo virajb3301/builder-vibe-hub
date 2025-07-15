@@ -69,9 +69,10 @@ export default function Platform() {
   const sendMessage = async () => {
     if (!chatMessage.trim()) return;
 
+    const messageToSend = chatMessage;
     const userMsg = {
       type: "user",
-      message: chatMessage,
+      message: messageToSend,
       time: new Date().toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit",
@@ -85,7 +86,7 @@ export default function Platform() {
 
     // Get AI response
     try {
-      const aiResponseText = await getAIResponse(chatMessage);
+      const aiResponseText = await getAIResponse(messageToSend);
       const aiResponse = {
         type: "ai",
         message: aiResponseText,
@@ -1145,7 +1146,7 @@ export default function Platform() {
                                       3. Open time: 30 minutes minimum at 70°F
                                     </li>
                                     <li>
-                                      4. Service temperature: -40°F to 200°F
+                                      4. Service temperature: -40°F to 200��F
                                     </li>
                                   </ul>
                                 </div>
@@ -2610,7 +2611,7 @@ export default function Platform() {
                                     </p>
                                     <ul className="mt-1 space-y-1 text-green-600">
                                       <li>
-                                        • Meets ASTM D 4637 Type I requirements
+                                        �� Meets ASTM D 4637 Type I requirements
                                         ✓
                                       </li>
                                       <li>
