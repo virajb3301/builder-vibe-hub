@@ -23,6 +23,10 @@ import { Badge } from "../components/ui/badge";
 
 export default function Platform() {
   const [chatMessage, setChatMessage] = useState("");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [chatMessages, setChatMessages] = useState([
     {
       type: "ai",
@@ -3045,7 +3049,7 @@ export default function Platform() {
 
                 <div className="flex items-center justify-between pt-2 border-t">
                   <span className="text-sm text-gray-500">
-                    Page 1 of 15 • Auto-Generated
+                    Page 1 of 15 �� Auto-Generated
                   </span>
                   <div className="flex items-center space-x-2">
                     <Button variant="ghost" size="sm">
