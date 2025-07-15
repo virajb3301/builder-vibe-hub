@@ -98,7 +98,10 @@ export default function Header() {
                   key={item.name}
                   to={item.href}
                   className="block text-brand-gray-600 hover:text-brand-gray-900 font-medium py-2 transition-colors duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    handleNavClick(item.href);
+                  }}
                 >
                   {item.name}
                 </Link>
