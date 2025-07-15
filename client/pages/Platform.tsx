@@ -38,98 +38,31 @@ export default function Platform() {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatMessages, isTyping]);
 
-  // AI Response Simulation
-  const getAIResponse = (userMessage) => {
-    const message = userMessage.toLowerCase();
+  // AI Response using GPT-4 API
+  const getAIResponse = async (userMessage) => {
+    try {
+      const response = await fetch("/api/chatbot", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userMessage,
+          conversationHistory: [],
+          pdfContent: null,
+        }),
+      });
 
-    // Roofing-specific responses
-    if (message.includes("epdm") || message.includes("membrane")) {
-      return 'I recommend the Carlisle Sure-Weld 0.060" EPDM membrane system. It exceeds ASTM D 4637 Type I specifications with 1,400 psi tensile strength and comes with a 20-year warranty. This system has proven performance in hospital installations.';
+      if (!response.ok) {
+        throw new Error("Failed to get AI response");
+      }
+
+      const data = await response.json();
+      return data.response;
+    } catch (error) {
+      console.error("Error calling AI:", error);
+      return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
     }
-
-    if (
-      message.includes("insulation") ||
-      message.includes("r-value") ||
-      message.includes("thermal")
-    ) {
-      return 'For R-25 compliance, I recommend GAF EnergyGuard Polyiso at 4.0" thickness (R-6.2 per inch = R-24.8). It meets Class A fire rating per ASTM E 84 and has 25 psi compressive strength. The glass mat facing is compatible with both mechanical and adhesive systems.';
-    }
-
-    if (
-      message.includes("wind") ||
-      message.includes("uplift") ||
-      message.includes("fastener")
-    ) {
-      return "Wind uplift requires 165 lbf/sq ft resistance per ASCE 7. I recommend Olympic OlyFast 6\" HD fasteners with 465 lbf pullout strength. At 4 fasteners per 4'x8' board, this achieves the required uplift rating and is FM 4470 approved.";
-    }
-
-    if (
-      message.includes("drain") ||
-      message.includes("drainage") ||
-      message.includes("water")
-    ) {
-      return "Based on 7.5 GPM per 100 sq ft capacity requirements and the 45,000 sq ft roof area, you'll need 12 primary Zurn Z100 4-inch cast iron drains plus 12 overflow drains located 2 inches above primary inlets. All require separate piping systems.";
-    }
-
-    if (
-      message.includes("flashing") ||
-      message.includes("equipment") ||
-      message.includes("curb")
-    ) {
-      return "For the 23 rooftop units, I recommend 8-inch minimum height base flashing with Firestone UltraPly TPO (heat-weldable to EPDM) plus Drexel Metals Kynar 500 aluminum cap flashing. All penetrations need pre-formed EPDM boots with stainless steel clamps.";
-    }
-
-    if (
-      message.includes("cost") ||
-      message.includes("price") ||
-      message.includes("budget")
-    ) {
-      return "My analysis shows 12% cost savings compared to typical manual selection. The recommended system costs $4.85/sq ft vs. $5.20/sq ft for premium alternatives while exceeding all performance requirements. Total project cost: $847,000 vs. $963,000 baseline.";
-    }
-
-    if (message.includes("warranty") || message.includes("guarantee")) {
-      return "The Carlisle system includes a 20-year non-prorated warranty covering materials and labor. GAF provides 20-year insulation warranty. I can coordinate single-source warranty coverage for the entire assembly. Expected service life: 25-30 years with proper maintenance.";
-    }
-
-    if (
-      message.includes("time") ||
-      message.includes("schedule") ||
-      message.includes("how long")
-    ) {
-      return "Traditional manual analysis takes 3-5 days for this complexity. Our AI completed the analysis in 4.2 seconds and generated the submittal package in under 5 minutes - a 99.8% time reduction while improving accuracy and specification compliance.";
-    }
-
-    if (
-      message.includes("submittal") ||
-      message.includes("generate") ||
-      message.includes("package")
-    ) {
-      return "I can generate a complete 15-page submittal package including product data sheets, technical specifications, compatibility certifications, warranty documentation, and installation instructions. All 47 specification requirements have been verified for 100% compliance.";
-    }
-
-    if (
-      message.includes("fire") ||
-      message.includes("safety") ||
-      message.includes("rating")
-    ) {
-      return "The specification requires Class A fire rating per ASTM E 108 and 2-hour assembly rating per UL 263. All recommended products meet these requirements: Carlisle EPDM with Class A rating, GAF polyiso with Class A per ASTM E 84, and FM Global approved systems.";
-    }
-
-    // General helpful responses
-    if (
-      message.includes("hello") ||
-      message.includes("hi") ||
-      message.includes("help")
-    ) {
-      return "Hello! I'm here to help with your roofing project analysis. I can provide recommendations for membranes, insulation, fasteners, drainage, flashing, cost analysis, warranties, and generate complete submittal packages. What would you like to know?";
-    }
-
-    if (message.includes("thank")) {
-      return "You're welcome! I'm here to help streamline your construction management process. Feel free to ask about any other aspects of the roofing specification or if you need me to generate additional documentation.";
-    }
-
-    // Default intelligent response
-    return `I've analyzed your question about "${userMessage}". Based on the 50-page Metropolitan Hospital roofing specification, I can provide detailed recommendations for materials, installation procedures, compliance requirements, and cost optimization. Could you be more specific about which aspect you'd like me to focus on?`;
   };
 
   // Send message function
