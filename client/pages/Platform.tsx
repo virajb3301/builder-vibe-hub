@@ -3056,7 +3056,7 @@ export default function Platform() {
               <CardHeader className="pb-4">
                 <CardTitle className="flex items-center">
                   <MessageSquare className="h-5 w-5 mr-2 text-primary" />
-                  AI Assistant (Demo Mode)
+                  AI Assistant
                 </CardTitle>
                 <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <div className="flex items-center">
