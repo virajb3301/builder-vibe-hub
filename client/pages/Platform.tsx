@@ -2533,6 +2533,7 @@ export default function Platform() {
 
                 <div className="flex items-center justify-between pt-2 border-t">
                   <span className="text-sm text-gray-500">Page 1 of 50</span>
+                  
                 </div>
               </CardContent>
             </Card>
@@ -3030,16 +3031,9 @@ export default function Platform() {
                 </div>
 
                 <div className="flex items-center justify-between pt-2 border-t">
-                  <span className="text-sm text-gray-500">
-                    Page 1 of 15 �� Auto-Generated
+                                    <span className="text-sm text-gray-500">
+                    Auto-Generated
                   </span>
-                  <div className="flex items-center space-x-2">
-                    <Button variant="ghost" size="sm">
-                      Previous
-                    </Button>
-                    <Button variant="ghost" size="sm">
-                      Next
-                    </Button>
                     <Button size="sm" className="ml-2">
                       <Download className="h-4 w-4 mr-1" />
                       Export PDF
