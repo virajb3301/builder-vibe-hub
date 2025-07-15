@@ -28,14 +28,20 @@ export default function AIChatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hi! I'm your AI assistant for Hafestus. I can help you with construction management questions, specification analysis, and our platform features. How can I assist you today?",
+      text: "Hi! I'm your AI assistant specialized in construction specification analysis and submittal package creation. I can help you:\n\n• Analyze technical specification files\n• Create professional submittal packages\n• Review compliance requirements\n• Draft submittal documents\n\nYou can upload a PDF specification file or describe your project requirements. How can I assist you today?",
       isUser: false,
       timestamp: new Date(),
     },
   ]);
   const [currentMessage, setCurrentMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
+  const [conversationHistory, setConversationHistory] = useState<
+    Array<{ role: "user" | "assistant"; content: string }>
+  >([]);
+  const [pdfContent, setPdfContent] = useState<string | null>(null);
+  const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
