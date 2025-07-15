@@ -111,9 +111,13 @@ export default function About() {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className={`w-40 h-40 rounded-full mx-auto object-cover shadow-lg ${
-                        member.name === "Viraj Bodiwala" ? "object-center" : ""
-                      }`}
+                      className="w-40 h-40 rounded-full mx-auto object-cover shadow-lg"
+                      style={{
+                        objectPosition:
+                          member.name === "Viraj Bodiwala"
+                            ? "50% 20%"
+                            : "center",
+                      }}
                     />
                   </div>
                   <h3 className="text-2xl font-bold text-brand-gray-900 mb-2">
