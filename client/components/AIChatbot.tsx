@@ -52,49 +52,30 @@ export default function AIChatbot() {
   }, [messages]);
 
   const generateAIResponse = async (userMessage: string): Promise<string> => {
-    // Simulate AI thinking
-    await new Promise((resolve) =>
-      setTimeout(resolve, 1000 + Math.random() * 2000),
-    );
+    try {
+      const response = await fetch("/api/chatbot", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: userMessage,
+          conversationHistory: conversationHistory,
+          pdfContent: pdfContent,
+        }),
+      });
 
-    const message = userMessage.toLowerCase();
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to get AI response");
+      }
 
-    // Construction/Hafestus specific responses
-    if (message.includes("hafestus") || message.includes("platform")) {
-      return "Hafestus is an AI-powered construction management platform that streamlines specification analysis and submittal generation. We help contractors reduce submittal creation time from days to minutes using advanced machine learning.";
+      const data = await response.json();
+      return data.response;
+    } catch (error) {
+      console.error("Error calling AI:", error);
+      return "I'm experiencing some technical difficulties right now. Please try again in a moment, or contact our team at andre@hafestus.com for immediate assistance with your specification analysis needs.";
     }
-
-    if (message.includes("submittal") || message.includes("specification")) {
-      return "Our AI analyzes construction specifications and automatically generates compliant submittal packages. The system can process up to 1,000-page spec files and cross-reference manufacturer data to identify optimal matches, ensuring 100% compliance.";
-    }
-
-    if (message.includes("demo") || message.includes("try")) {
-      return "You can try our demo right here on this page! The demo shows how our AI processes specifications and generates submittals. You can also contact us to schedule a personalized demonstration of the full platform.";
-    }
-
-    if (message.includes("pricing") || message.includes("cost")) {
-      return "We offer flexible pricing based on your project volume and needs. Our platform typically pays for itself by reducing the 40+ hours typically spent on submittal creation per project. Contact us to discuss pricing that works for your business.";
-    }
-
-    if (message.includes("contact") || message.includes("support")) {
-      return "You can reach our team at andre@hafestus.com or use the Contact Us form on our website. We're here to help with any questions about our platform or implementation.";
-    }
-
-    if (message.includes("ai") || message.includes("machine learning")) {
-      return "Our AI uses advanced machine learning models trained specifically on construction documents and industry standards. We employ human-in-the-loop validation to ensure accuracy and continuously improve our models with real project data.";
-    }
-
-    // General helpful responses
-    if (message.includes("hello") || message.includes("hi")) {
-      return "Hello! I'm here to help you learn about Hafestus and how our AI can streamline your construction management workflow. What would you like to know?";
-    }
-
-    if (message.includes("help")) {
-      return "I can help you with information about:\n• Hafestus platform features\n• AI-powered specification analysis\n• Submittal generation process\n• Pricing and implementation\n• Technical questions\n\nWhat interests you most?";
-    }
-
-    // Default response
-    return "That's a great question! While I can provide information about Hafestus and our AI-powered construction management platform, for specific technical details I'd recommend contacting our team at andre@hafestus.com. Is there anything else about our platform I can help explain?";
   };
 
   const sendMessage = async () => {
