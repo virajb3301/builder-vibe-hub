@@ -2533,14 +2533,6 @@ export default function Platform() {
 
                 <div className="flex items-center justify-between pt-2 border-t">
                   <span className="text-sm text-gray-500">Page 1 of 50</span>
-                  <div className="flex items-center space-x-2">
-                    <Button variant="ghost" size="sm">
-                      Previous
-                    </Button>
-                    <Button variant="ghost" size="sm">
-                      Next
-                    </Button>
-                  </div>
                 </div>
               </CardContent>
             </Card>
