@@ -8,6 +8,7 @@ import {
   CheckCircle,
   AlertCircle,
   MessageSquare,
+  MessageCircle,
   Settings,
   Search,
 } from "lucide-react";
