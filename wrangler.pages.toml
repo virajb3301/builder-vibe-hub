@@ -1,0 +1,6 @@
+# Temporary file for Pages Functions compilation
+# This helps wrangler find the correct directories when building
+
+[build]
+directory = "./dist/functions"
+build_output_directory = "./dist"
