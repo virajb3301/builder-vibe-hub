@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { handleDemo } from "./routes/demo";
-import { handleChatbot } from "./routes/chatbot";
 
 // Load environment variables
 dotenv.config();
@@ -21,7 +20,6 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
-  app.post("/api/chatbot", handleChatbot);
 
   return app;
 }
