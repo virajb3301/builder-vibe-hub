@@ -76,10 +76,12 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     if (!accountId || !gatewayId) {
       return res.status(500).json({
         error: "AI Gateway configuration missing",
-        debug: "ACCOUNT_ID or GATEWAY_ID not configured",
-        availableEnvVars: Object.keys(process.env).filter(
-          (key) => key.includes("ACCOUNT") || key.includes("GATEWAY"),
-        ),
+        debug: {
+          accountId: accountId || "not found",
+          gatewayId: gatewayId || "not found",
+          openaiKeyExists: !!openaiApiKey,
+          openaiKeyValue: openaiApiKey || "not found",
+        },
       });
     }
 
