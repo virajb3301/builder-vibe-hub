@@ -70,7 +70,15 @@ export default function Platform() {
       }
 
       const data = await response.json();
-      return data.response;
+      if (data.response) {
+        return data.response;
+      } else if (data.error) {
+        console.error("API returned error:", data.error);
+        return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
+      } else {
+        console.error("Unexpected API response format:", data);
+        return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
+      }
     } catch (error) {
       console.error("Error calling AI:", error);
       console.error("Error details:", {
