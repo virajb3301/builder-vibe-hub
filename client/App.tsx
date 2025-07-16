@@ -54,11 +54,21 @@ const App = () => (
   </QueryClientProvider>
 );
 
-const container = document.getElementById("root")!;
-if (!container._reactRoot) {
-  const root = createRoot(container);
-  container._reactRoot = root;
+let root: ReturnType<typeof createRoot> | null = null;
+
+function renderApp() {
+  const container = document.getElementById("root")!;
+  if (!root) {
+    root = createRoot(container);
+  }
   root.render(<App />);
-} else {
-  container._reactRoot.render(<App />);
+}
+
+renderApp();
+
+// Handle hot module replacement
+if (import.meta.hot) {
+  import.meta.hot.accept(() => {
+    renderApp();
+  });
 }
