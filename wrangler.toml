@@ -3,14 +3,14 @@ name = "hafestuswebsite"
 compatibility_date = "2025-01-01"
 main = "./dist/worker/index.js"
 
-# Assets configuration (was pages_build_output_dir)
-[assets]
-directory = "./dist"
-not_found_handling = "single-page-application"
-binding = "ASSETS"
-
 # Enable preview URLs for development
 preview_urls = true
 
 # Use workers.dev subdomain
 workers_dev = true
+
+# Assets configuration (was pages_build_output_dir)
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+binding = "ASSETS"
