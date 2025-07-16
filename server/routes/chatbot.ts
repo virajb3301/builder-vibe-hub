@@ -57,7 +57,7 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     }
 
     // Get OpenAI API key
-    const apiKey = process.env.OPENAI_API_KEY;
+    const apiKey = context.env.OPENAI_API_KEY;
     if (!apiKey) {
       console.error(
         "Environment variables:",
