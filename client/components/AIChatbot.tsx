@@ -58,7 +58,9 @@ export default function AIChatbot() {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || "Failed to get AI response");
+        const detailedError = `API Error (${response.status}): ${errorData.error || "Unknown error"}${errorData.details ? "\n\nDetails: " + JSON.stringify(errorData.details, null, 2) : ""}${errorData.debug ? "\n\nDebug: " + errorData.debug : ""}`;
+        console.error("API Error Response:", errorData);
+        return `🔧 DEBUG: ${detailedError}`;
       }
 
       const data = await response.json();
@@ -66,7 +68,9 @@ export default function AIChatbot() {
       return data.content || data.response || "No response received";
     } catch (error) {
       console.error("Error calling AI:", error);
-      return "I'm experiencing some technical difficulties right now. Please try again in a moment, or contact our team at andre@hafestus.com for immediate assistance with your specification analysis needs.";
+      const errorMessage =
+        error instanceof Error ? error.message : "Unknown error";
+      return `🔧 DEBUG: Network/Parse Error: ${errorMessage}\n\nOriginal error: ${error}`;
     }
   };
 
