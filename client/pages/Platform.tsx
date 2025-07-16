@@ -58,10 +58,7 @@ export default function Platform() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: userMessage,
-          conversationHistory: [],
-          pdfContent:
-            'ROOFING TECHNICAL SPECIFICATIONS - Metropolitan Hospital Expansion Project (Project No: MHE-2024-007) - This is a 50-page specification document for a 45,000 sq ft hospital roofing project requiring EPDM membrane system with R-25 insulation, 165 lbf/sq ft wind uplift resistance, Class A fire rating, and 7.5 GPM per 100 sq ft drainage capacity. Key requirements include Carlisle Sure-Weld 0.060" EPDM membrane, GAF EnergyGuard Polyiso insulation, Olympic OlyFast fasteners, and Zurn Z100 4-inch cast iron drains. The project has 23 rooftop units requiring equipment curbs and flashing systems.',
+          prompt: `Context: You are analyzing the Metropolitan Hospital roofing specification - a 50-page document for a 45,000 sq ft hospital roofing project requiring EPDM membrane system with R-25 insulation, 165 lbf/sq ft wind uplift resistance, Class A fire rating, and 7.5 GPM per 100 sq ft drainage capacity. Key requirements include Carlisle Sure-Weld 0.060" EPDM membrane, GAF EnergyGuard Polyiso insulation, Olympic OlyFast fasteners, and Zurn Z100 4-inch cast iron drains. The project has 23 rooftop units requiring equipment curbs and flashing systems.\n\nUser question: ${userMessage}`,
         }),
       });
 
@@ -912,7 +909,7 @@ export default function Platform() {
                                       5. UV resistance: Excellent per ASTM G 154
                                     </li>
                                     <li>
-                                      6. Temperature range: -40°F to 180°F
+                                      6. Temperature range: -40°F to 180��F
                                       (-40°C to 82°C)
                                     </li>
                                   </ul>
