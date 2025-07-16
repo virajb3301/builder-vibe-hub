@@ -56,17 +56,22 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     const gatewayId = process.env.GATEWAY_ID;
     const openaiApiKey = process.env.OPENAI_API_KEY;
 
-    // Simple check for OPENAI_API_KEY
-    const openaiKeyExists = !!process.env.OPENAI_API_KEY;
-    const openaiKeyValue = process.env.OPENAI_API_KEY;
+    // Check for required environment variables
+    if (!openaiApiKey) {
+      const openaiKeyExists = !!process.env.OPENAI_API_KEY;
+      const openaiKeyValue = process.env.OPENAI_API_KEY;
 
-    return res.status(200).json({
-      openaiKeyExists,
-      openaiKeyValue: openaiKeyValue || "not found",
-      openaiKeyLength: openaiKeyValue ? openaiKeyValue.length : 0,
-      accountId,
-      gatewayId,
-    });
+      return res.status(500).json({
+        error: "OPENAI_API_KEY missing",
+        debug: {
+          openaiKeyExists,
+          openaiKeyValue: openaiKeyValue || "not found",
+          openaiKeyLength: openaiKeyValue ? openaiKeyValue.length : 0,
+          accountId,
+          gatewayId,
+        },
+      });
+    }
 
     if (!accountId || !gatewayId) {
       return res.status(500).json({
