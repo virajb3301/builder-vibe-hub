@@ -1,0 +1,16 @@
+# Cloudflare Workers configuration for deployment environments
+name = "hafestuswebsite"
+compatibility_date = "2025-01-01"
+main = "./worker/index.js"
+
+# Enable preview URLs for development
+preview_urls = true
+
+# Use workers.dev subdomain
+workers_dev = true
+
+# Assets configuration for deployment environment
+[assets]
+directory = "./repo"
+not_found_handling = "single-page-application"
+binding = "ASSETS"
