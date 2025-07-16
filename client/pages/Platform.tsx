@@ -3061,8 +3061,7 @@ export default function Platform() {
               </CardContent>
             </Card>
 
-            {/* Chat Interface - Hidden for current iteration */}
-            {false && (
+                        {/* Chat Interface */}
               <Card>
                 <CardHeader className="pb-4">
                   <CardTitle className="flex items-center">
