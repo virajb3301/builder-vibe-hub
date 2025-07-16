@@ -63,7 +63,10 @@ export default function Platform() {
       });
 
       if (!response.ok) {
-        throw new Error("Failed to get AI response");
+        const errorData = await response.json();
+        const detailedError = `API Error (${response.status}): ${errorData.error || "Unknown error"}${errorData.details ? "\n\nDetails: " + JSON.stringify(errorData.details, null, 2) : ""}${errorData.debug ? "\n\nDebug: " + errorData.debug : ""}`;
+        console.error("API Error Response:", errorData);
+        return `🔧 DEBUG: ${detailedError}`;
       }
 
       const data = await response.json();
@@ -72,10 +75,11 @@ export default function Platform() {
         return data.content;
       } else if (data.error) {
         console.error("API returned error:", data.error);
-        return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
+        const detailedError = `Response Error: ${data.error}${data.details ? "\n\nDetails: " + JSON.stringify(data.details, null, 2) : ""}${data.debug ? "\n\nDebug: " + data.debug : ""}`;
+        return `🔧 DEBUG: ${detailedError}`;
       } else {
         console.error("Unexpected API response format:", data);
-        return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
+        return `🔧 DEBUG: Unexpected API response format\n\nReceived: ${JSON.stringify(data, null, 2)}`;
       }
     } catch (error) {
       console.error("Error calling AI:", error);
@@ -84,7 +88,9 @@ export default function Platform() {
         stack: error instanceof Error ? error.stack : "No stack trace",
         userMessage,
       });
-      return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
+      const errorMessage =
+        error instanceof Error ? error.message : "Unknown error";
+      return `🔧 DEBUG: Network/Parse Error: ${errorMessage}\n\nFull error: ${error}`;
     }
   };
 
