@@ -52,9 +52,7 @@ export default function AIChatbot() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: userMessage,
-          conversationHistory: conversationHistory,
-          pdfContent: pdfContent,
+          prompt: userMessage,
         }),
       });
 
