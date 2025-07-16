@@ -56,37 +56,17 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     const gatewayId = process.env.GATEWAY_ID;
     const openaiApiKey = process.env.OPENAI_API_KEY;
 
-    // Check for required environment variables with detailed debugging
-    console.log("Environment variable check:", {
-      hasOpenaiApiKey: !!openaiApiKey,
-      openaiApiKeyLength: openaiApiKey ? openaiApiKey.length : 0,
-      openaiApiKeyStart: openaiApiKey
-        ? openaiApiKey.substring(0, 8) + "..."
-        : "undefined",
-      allEnvKeys: Object.keys(process.env).filter(
-        (key) =>
-          key.includes("OPENAI") ||
-          key.includes("ACCOUNT") ||
-          key.includes("GATEWAY"),
-      ),
-    });
+    // Simple check for OPENAI_API_KEY
+    const openaiKeyExists = !!process.env.OPENAI_API_KEY;
+    const openaiKeyValue = process.env.OPENAI_API_KEY;
 
-    if (!openaiApiKey) {
-      return res.status(500).json({
-        error: "OPENAI_API_KEY not configured in environment variables",
-        debug: "Check .env file or environment variables",
-        openaiKeyExists: !!process.env.OPENAI_API_KEY,
-        openaiKeyValue: process.env.OPENAI_API_KEY
-          ? `${process.env.OPENAI_API_KEY.substring(0, 8)}...`
-          : "undefined",
-        availableEnvVars: Object.keys(process.env).filter(
-          (key) =>
-            key.includes("OPENAI") ||
-            key.includes("ACCOUNT") ||
-            key.includes("GATEWAY"),
-        ),
-      });
-    }
+    return res.status(200).json({
+      openaiKeyExists,
+      openaiKeyValue: openaiKeyValue || "not found",
+      openaiKeyLength: openaiKeyValue ? openaiKeyValue.length : 0,
+      accountId,
+      gatewayId,
+    });
 
     if (!accountId || !gatewayId) {
       return res.status(500).json({
