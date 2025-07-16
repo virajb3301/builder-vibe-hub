@@ -63,8 +63,14 @@ export default function Platform() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        const detailedError = `API Error (${response.status}): ${errorData.error || "Unknown error"}${errorData.details ? "\n\nDetails: " + JSON.stringify(errorData.details, null, 2) : ""}${errorData.debug ? "\n\nDebug: " + errorData.debug : ""}`;
+        let errorData;
+        try {
+          errorData = await response.json();
+        } catch (parseError) {
+          const responseText = await response.text();
+          return `🔧 DEBUG: API Error (${response.status}) - Could not parse response as JSON\n\nResponse: ${responseText || "Empty response"}\n\nParse Error: ${parseError}`;
+        }
+        const detailedError = `API Error (${response.status}): ${errorData.error || "Unknown error"}${errorData.details ? "\n\nDetails: " + JSON.stringify(errorData.details, null, 2) : ""}${errorData.debug ? "\n\nDebug: " + errorData.debug : ""}${errorData.message ? "\n\nMessage: " + errorData.message : ""}`;
         console.error("API Error Response:", errorData);
         return `🔧 DEBUG: ${detailedError}`;
       }
