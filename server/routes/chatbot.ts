@@ -90,12 +90,11 @@ export const handleChatbot: RequestHandler = async (req, res) => {
       content: message,
     });
 
-    // Call OpenAI GPT-4o via Cloudflare AI Gateway
-    const gatewayUrl = `https://gateway.ai.cloudflare.com/v1/${accountId}/${gatewayId}/openai/chat/completions`;
-    const response = await fetch(gatewayUrl, {
+    // Call OpenAI GPT-4o API directly
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${cfToken}`,
+        Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
