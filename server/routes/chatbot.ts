@@ -133,12 +133,34 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
-      console.error("AI Gateway API Error:", errorData);
+      let errorData;
+      const responseText = await response.text();
+
+      try {
+        errorData = JSON.parse(responseText);
+      } catch (parseError) {
+        errorData = {
+          rawResponse: responseText,
+          parseError: parseError.message,
+        };
+      }
+
+      console.error("AI Gateway API Error:", {
+        status: response.status,
+        statusText: response.statusText,
+        headers: Object.fromEntries(response.headers.entries()),
+        responseText,
+        parsedError: errorData,
+      });
+
       return res.status(500).json({
-        error: "Failed to get response from AI service",
-        details: errorData,
-        debug: `AI Gateway returned ${response.status}`,
+        error: "API Server Error Response",
+        httpStatus: response.status,
+        httpStatusText: response.statusText,
+        apiResponse: errorData,
+        rawResponse: responseText,
+        gatewayUrl,
+        debug: `AI Gateway returned ${response.status}: ${response.statusText}`,
       });
     }
 
