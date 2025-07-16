@@ -1,4 +1,15 @@
-# Cloudflare Pages configuration
+# Cloudflare Workers configuration (migrated from Pages)
 name = "hafestuswebsite"
 compatibility_date = "2025-01-01"
-pages_build_output_dir = "dist"
+
+# Assets configuration (was pages_build_output_dir)
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+run_worker_first = true
+
+# Enable preview URLs for development
+preview_urls = true
+
+# Use workers.dev subdomain
+workers_dev = true
