@@ -49,8 +49,9 @@ export default function Platform() {
   }, [chatMessages, isTyping]);
 
   // AI Response using GPT-4 API
-  const getAIResponse = async (userMessage) => {
+  const getAIResponse = async (userMessage: string): Promise<string> => {
     try {
+      console.log("Calling AI with message:", userMessage);
       const response = await fetch("/api/chatbot", {
         method: "POST",
         headers: {
