@@ -1,6 +1,7 @@
 # Cloudflare Workers configuration (migrated from Pages)
 name = "hafestuswebsite"
 compatibility_date = "2025-01-01"
+main = "./dist/worker/index.js"
 
 # Assets configuration (was pages_build_output_dir)
 [assets]
