@@ -67,8 +67,9 @@ export default function Platform() {
       }
 
       const data = await response.json();
-      if (data.response) {
-        return data.response;
+      // New API returns the message object directly
+      if (data.content) {
+        return data.content;
       } else if (data.error) {
         console.error("API returned error:", data.error);
         return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
