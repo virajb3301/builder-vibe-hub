@@ -11,6 +11,6 @@ workers_dev = true
 
 # Assets configuration (was pages_build_output_dir)
 [assets]
-directory = "./dist"
+directory = "./repo"
 not_found_handling = "single-page-application"
 binding = "ASSETS"
