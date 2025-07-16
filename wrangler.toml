@@ -3,6 +3,11 @@ name = "hafestuswebsite"
 compatibility_date = "2025-01-01"
 main = "./worker/index.js"
 
+# Custom domain routing
+routes = [
+  { pattern = "www.hafestus.com/*", zone_name = "hafestus.com" }
+]
+
 # Enable preview URLs for development
 preview_urls = true
 
