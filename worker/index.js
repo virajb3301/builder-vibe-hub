@@ -183,7 +183,7 @@ async function onRequest3(context) {
 }
 __name(onRequest3, "onRequest");
 
-// ../.wrangler/tmp/pages-7meeEv/functionsRoutes-0.38684457253822035.mjs
+// ../.wrangler/tmp/pages-zcMDBA/functionsRoutes-0.7066297282012746.mjs
 var routes = [
   {
     routePath: "/api/chatbot",
