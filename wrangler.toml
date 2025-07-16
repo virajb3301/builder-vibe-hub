@@ -8,10 +8,22 @@ routes = [
   { pattern = "www.hafestus.com/*", zone_name = "hafestus.com" }
 ]
 
+# Development environment variables
+[env.development]
+name = "hafestuswebsite-dev"
+workers_dev = true
+
+# Production environment
+[env.production]
+name = "hafestuswebsite"
+routes = [
+  { pattern = "www.hafestus.com/*", zone_name = "hafestus.com" }
+]
+
 # Enable preview URLs for development
 preview_urls = true
 
-# Use workers.dev subdomain
+# Use workers.dev subdomain for dev
 workers_dev = true
 
 # Assets configuration (was pages_build_output_dir)
