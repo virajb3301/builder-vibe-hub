@@ -1,7 +1,7 @@
 # Cloudflare Workers configuration (migrated from Pages)
 name = "hafestuswebsite"
 compatibility_date = "2025-01-01"
-main = "./dist/worker/index.js"
+# main will be set dynamically based on environment
 
 # Enable preview URLs for development
 preview_urls = true
