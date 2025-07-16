@@ -73,6 +73,11 @@ export default function Platform() {
       return data.response;
     } catch (error) {
       console.error("Error calling AI:", error);
+      console.error("Error details:", {
+        message: error instanceof Error ? error.message : "Unknown error",
+        stack: error instanceof Error ? error.stack : "No stack trace",
+        userMessage,
+      });
       return "I'm experiencing some technical difficulties right now. Please try again in a moment.";
     }
   };
