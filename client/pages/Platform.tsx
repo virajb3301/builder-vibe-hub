@@ -123,6 +123,7 @@ export default function Platform() {
 
       setChatMessages((prev) => [...prev, aiResponse]);
     } catch (error) {
+      console.error("Error in sendMessage:", error);
       const errorResponse = {
         type: "ai",
         message:
