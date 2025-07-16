@@ -62,7 +62,8 @@ export default function AIChatbot() {
       }
 
       const data = await response.json();
-      return data.response;
+      // New API returns the message object directly
+      return data.content || data.response || "No response received";
     } catch (error) {
       console.error("Error calling AI:", error);
       return "I'm experiencing some technical difficulties right now. Please try again in a moment, or contact our team at andre@hafestus.com for immediate assistance with your specification analysis needs.";
