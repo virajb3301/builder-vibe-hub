@@ -133,50 +133,40 @@ export const handleChatbot: RequestHandler = async (req, res) => {
     });
 
     if (!response.ok) {
-      let errorData;
-      let responseText;
-
       try {
-        // Try to parse as JSON first
-        errorData = await response.json();
-        responseText = JSON.stringify(errorData);
-      } catch (jsonError) {
-        try {
-          // If JSON parsing fails, clone the response and get text
-          const responseClone = response.clone();
-          responseText = await responseClone.text();
-          errorData = {
-            rawResponse: responseText,
-            parseError: jsonError.message,
-            contentType: response.headers.get("content-type"),
-          };
-        } catch (textError) {
-          responseText = "Could not read response body";
-          errorData = {
-            parseError: jsonError.message,
-            textError: textError.message,
-            contentType: response.headers.get("content-type"),
-          };
-        }
+        const errorData = await response.json();
+        console.error("AI Gateway API Error:", {
+          status: response.status,
+          statusText: response.statusText,
+          errorData,
+        });
+
+        return res.status(500).json({
+          error: "API Server Error Response",
+          httpStatus: response.status,
+          httpStatusText: response.statusText,
+          apiResponse: errorData,
+          gatewayUrl,
+          debug: `AI Gateway returned ${response.status}: ${response.statusText}`,
+        });
+      } catch (parseError) {
+        console.error("Could not parse error response:", {
+          status: response.status,
+          statusText: response.statusText,
+          parseError: parseError.message,
+          contentType: response.headers.get("content-type"),
+        });
+
+        return res.status(500).json({
+          error: "API Server Error - Could not parse response",
+          httpStatus: response.status,
+          httpStatusText: response.statusText,
+          parseError: parseError.message,
+          contentType: response.headers.get("content-type"),
+          gatewayUrl,
+          debug: `AI Gateway returned ${response.status} but response was not parseable JSON`,
+        });
       }
-
-      console.error("AI Gateway API Error:", {
-        status: response.status,
-        statusText: response.statusText,
-        headers: Object.fromEntries(response.headers.entries()),
-        responseText,
-        parsedError: errorData,
-      });
-
-      return res.status(500).json({
-        error: "API Server Error Response",
-        httpStatus: response.status,
-        httpStatusText: response.statusText,
-        apiResponse: errorData,
-        rawResponse: responseText,
-        gatewayUrl,
-        debug: `AI Gateway returned ${response.status}: ${response.statusText}`,
-      });
     }
 
     const data = await response.json();
