@@ -22,16 +22,8 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
-  // Temporary route - chatbot functionality moved to Cloudflare Functions
-  app.post("/api/chatbot", (req, res) => {
-    res.status(503).json({
-      error:
-        "Chatbot functionality has been moved to Cloudflare Pages Functions",
-      message:
-        "Please ensure OPENAI_API_KEY is set in Cloudflare Pages environment variables",
-      debug: "This endpoint is no longer served by Express in development",
-    });
-  });
+  // Chatbot API route
+  app.post("/api/chatbot", handleChatbot);
 
   return app;
 }
