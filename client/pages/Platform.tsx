@@ -3061,106 +3061,104 @@ export default function Platform() {
               </CardContent>
             </Card>
 
-                        {/* Chat Interface */}
-              <Card>
-                <CardHeader className="pb-4">
-                  <CardTitle className="flex items-center">
-                    <MessageSquare className="h-5 w-5 mr-2 text-primary" />
-                    AI Assistant
-                  </CardTitle>
-                  <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <div className="flex items-center">
-                      <MessageCircle className="h-5 w-5 text-blue-600 mr-2" />
-                      <div>
-                        <p className="text-sm font-medium text-blue-800">
-                          🚀 New: GPT-4 Powered AI Assistant Available
-                        </p>
-                        <p className="text-xs text-blue-600 mt-1">
-                          Click the floating chat button (bottom-right) to
-                          access our advanced AI that can analyze PDF
-                          specifications and create professional submittal
-                          packages.
+            {/* Chat Interface */}
+            <Card>
+              <CardHeader className="pb-4">
+                <CardTitle className="flex items-center">
+                  <MessageSquare className="h-5 w-5 mr-2 text-primary" />
+                  AI Assistant
+                </CardTitle>
+                <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <div className="flex items-center">
+                    <MessageCircle className="h-5 w-5 text-blue-600 mr-2" />
+                    <div>
+                      <p className="text-sm font-medium text-blue-800">
+                        🚀 New: GPT-4 Powered AI Assistant Available
+                      </p>
+                      <p className="text-xs text-blue-600 mt-1">
+                        Click the floating chat button (bottom-right) to access
+                        our advanced AI that can analyze PDF specifications and
+                        create professional submittal packages.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 h-80 overflow-y-auto mb-4">
+                  {chatMessages.map((chat, index) => (
+                    <div
+                      key={index}
+                      className={`flex ${chat.type === "user" ? "justify-end" : "justify-start"}`}
+                    >
+                      <div
+                        className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
+                          chat.type === "user"
+                            ? "bg-primary text-white"
+                            : "bg-gray-100 text-gray-900"
+                        }`}
+                      >
+                        <p className="text-sm">{chat.message}</p>
+                        <p
+                          className={`text-xs mt-1 ${
+                            chat.type === "user"
+                              ? "text-blue-100"
+                              : "text-gray-500"
+                          }`}
+                        >
+                          {chat.time}
                         </p>
                       </div>
                     </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4 h-80 overflow-y-auto mb-4">
-                    {chatMessages.map((chat, index) => (
-                      <div
-                        key={index}
-                        className={`flex ${chat.type === "user" ? "justify-end" : "justify-start"}`}
-                      >
-                        <div
-                          className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
-                            chat.type === "user"
-                              ? "bg-primary text-white"
-                              : "bg-gray-100 text-gray-900"
-                          }`}
-                        >
-                          <p className="text-sm">{chat.message}</p>
-                          <p
-                            className={`text-xs mt-1 ${
-                              chat.type === "user"
-                                ? "text-blue-100"
-                                : "text-gray-500"
-                            }`}
-                          >
-                            {chat.time}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
+                  ))}
 
-                    {/* Typing indicator */}
-                    {isTyping && (
-                      <div className="flex justify-start">
-                        <div className="bg-gray-100 text-gray-900 px-4 py-2 rounded-lg">
-                          <div className="flex items-center space-x-1">
-                            <div className="flex space-x-1">
-                              <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                              <div
-                                className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-                                style={{ animationDelay: "0.1s" }}
-                              ></div>
-                              <div
-                                className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-                                style={{ animationDelay: "0.2s" }}
-                              ></div>
-                            </div>
-                            <span className="text-xs text-gray-500 ml-2">
-                              AI is thinking...
-                            </span>
+                  {/* Typing indicator */}
+                  {isTyping && (
+                    <div className="flex justify-start">
+                      <div className="bg-gray-100 text-gray-900 px-4 py-2 rounded-lg">
+                        <div className="flex items-center space-x-1">
+                          <div className="flex space-x-1">
+                            <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                            <div
+                              className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                              style={{ animationDelay: "0.1s" }}
+                            ></div>
+                            <div
+                              className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+                              style={{ animationDelay: "0.2s" }}
+                            ></div>
                           </div>
+                          <span className="text-xs text-gray-500 ml-2">
+                            AI is thinking...
+                          </span>
                         </div>
                       </div>
-                    )}
+                    </div>
+                  )}
 
-                    <div ref={chatEndRef} />
-                  </div>
+                  <div ref={chatEndRef} />
+                </div>
 
-                  <div className="flex items-center space-x-2">
-                    <Input
-                      placeholder="Ask about specifications or recommendations..."
-                      value={chatMessage}
-                      onChange={(e) => setChatMessage(e.target.value)}
-                      onKeyPress={handleKeyPress}
-                      className="flex-1"
-                      disabled={isTyping}
-                    />
-                    <Button
-                      size="sm"
-                      className="px-3"
-                      onClick={sendMessage}
-                      disabled={isTyping || !chatMessage.trim()}
-                    >
-                      <Send className="h-4 w-4" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
+                <div className="flex items-center space-x-2">
+                  <Input
+                    placeholder="Ask about specifications or recommendations..."
+                    value={chatMessage}
+                    onChange={(e) => setChatMessage(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    className="flex-1"
+                    disabled={isTyping}
+                  />
+                  <Button
+                    size="sm"
+                    className="px-3"
+                    onClick={sendMessage}
+                    disabled={isTyping || !chatMessage.trim()}
+                  >
+                    <Send className="h-4 w-4" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Submittal Status */}
             <Card>
