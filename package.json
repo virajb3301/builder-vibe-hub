@@ -18,6 +18,7 @@
     "build": "npm run build:client && npm run build:server",
     "build:worker": "cp -r ./dist/functions ./functions-backup 2>/dev/null || echo 'No functions to backup' && BUILD_TARGET=cloudflare vite build && cp -r ./functions-backup ./dist/functions 2>/dev/null || echo 'No functions to restore' && npx wrangler pages functions build --directory=./dist/functions --outdir=./dist/worker/ && rm -rf ./functions-backup",
     "build:worker:deploy": "BUILD_TARGET=cloudflare vite build && mkdir -p dist/functions/api && echo 'Verifying functions exist...' && ls -la ./dist/functions/api/ && npx wrangler pages functions build --directory=./dist/functions --outdir=./dist/worker/ --build-output-directory=./dist",
+    "build:pages-deploy": "BUILD_TARGET=cloudflare vite build --outDir=repo && npx wrangler pages functions build --directory=./functions --outdir=./worker/",
     "deploy:worker": "npm run build:worker && npx wrangler deploy",
     "dev:worker": "npx wrangler dev",
     "build:cloudflare": "npm run build:worker",
