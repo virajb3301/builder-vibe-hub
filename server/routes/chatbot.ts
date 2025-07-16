@@ -134,15 +134,30 @@ export const handleChatbot: RequestHandler = async (req, res) => {
 
     if (!response.ok) {
       let errorData;
-      const responseText = await response.text();
+      let responseText;
 
       try {
-        errorData = JSON.parse(responseText);
-      } catch (parseError) {
-        errorData = {
-          rawResponse: responseText,
-          parseError: parseError.message,
-        };
+        // Try to parse as JSON first
+        errorData = await response.json();
+        responseText = JSON.stringify(errorData);
+      } catch (jsonError) {
+        try {
+          // If JSON parsing fails, clone the response and get text
+          const responseClone = response.clone();
+          responseText = await responseClone.text();
+          errorData = {
+            rawResponse: responseText,
+            parseError: jsonError.message,
+            contentType: response.headers.get("content-type"),
+          };
+        } catch (textError) {
+          responseText = "Could not read response body";
+          errorData = {
+            parseError: jsonError.message,
+            textError: textError.message,
+            contentType: response.headers.get("content-type"),
+          };
+        }
       }
 
       console.error("AI Gateway API Error:", {
