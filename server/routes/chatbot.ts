@@ -56,19 +56,15 @@ export const handleChatbot: RequestHandler = async (req, res) => {
       return res.status(400).json({ error: "Message is required" });
     }
 
-    // Get Cloudflare AI Gateway configuration
-    const accountId = process.env.ACCOUNT_ID;
-    const gatewayId = process.env.GATEWAY_ID;
-    const cfToken = process.env.CF_TOKEN;
-
-    if (!accountId || !gatewayId || !cfToken) {
-      console.error("Missing Cloudflare AI Gateway configuration:", {
-        accountId: !!accountId,
-        gatewayId: !!gatewayId,
-        cfToken: !!cfToken,
-      });
+    // Get OpenAI API key
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+      console.error(
+        "Environment variables:",
+        Object.keys(process.env).filter((key) => key.includes("OPENAI")),
+      );
       return res.status(500).json({
-        error: "Cloudflare AI Gateway not configured",
+        error: "OpenAI API key not configured",
       });
     }
 
